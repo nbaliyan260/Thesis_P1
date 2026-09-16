@@ -1,0 +1,4338 @@
+{
+  "status": "complete",
+  "study": "posthoc_baseline_sensitivity",
+  "not_preregistered": true,
+  "primary_raw_sha256": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+  "primary_metadata_sha256": "eac1c4fadb579a1cb580a93243ed79d4e5124fa7638b32bd52fcbcfd41eb88aa",
+  "config_sha256": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+  "manifest_sha256": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+  "source_sha256": {
+    "run_optimized_replay.py": "6081ddd9c7d8572e0e0e9ac67b8a2017e2865034115cc75207642a0995076ac1",
+    "prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "methods": [
+    "full",
+    "layer_view_full",
+    "checkpoint_alias_full",
+    "sparse",
+    "all"
+  ],
+  "repetitions": 5,
+  "warmups": 1,
+  "expected_cases": 192,
+  "models": [
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--HuggingFaceTB--SmolLM2-135M/snapshots/93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"
+    }
+  ],
+  "python": "3.13.9",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.51.3",
+  "cuda": "12.4",
+  "gpu": "NVIDIA RTX 5000 Ada Generation",
+  "deterministic_algorithms": true,
+  "tf32": false,
+  "attention": "eager",
+  "dtype": "bfloat16",
+  "allow_bf16_reduced_precision_reduction": true,
+  "float32_matmul_precision": "highest",
+  "cublas_workspace_config": ":4096:8",
+  "equality": "exact elementwise; immutable-snapshot guards use raw bytes",
+  "timing_boundary": "Common working-cache clone excluded, even when unused by alias; restoration/replay included; diagnostics excluded",
+  "memory_scope": "Fixture-inclusive; views retain backing storage until replaced; no claim of early suffix-memory release",
+  "checkpoint_assumption": "Trusted immutable resident GPU checkpoint; alias needs no layer/coordinate privilege",
+  "sparse_all_scope": "Original conservative restoration retained; not their optimized attainable frontier",
+  "detector_scope": "Persistent post-checkpoint old-prefix changes only; no suffix/transient/pre-checkpoint coverage",
+  "detector_timing": "Separate 5 repetitions plus warmup; outside recovery timing; one consolidated layer-decision transfer",
+  "no_alarm_policy": "Conservative cut0; layer_view_full falls back to checkpoint_alias_full",
+  "expected_detection_cases": 216,
+  "native_parity": {
+    "HuggingFaceTB/SmolLM2-135M": {
+      "passed": true,
+      "prefix_tokens": 128,
+      "decode_steps": 14,
+      "trace": [
+        {
+          "position": 0,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 1,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 2,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 3,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 4,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 5,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 6,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 7,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 8,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 9,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 10,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 11,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 12,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 13,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 14,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 15,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 16,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 17,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 18,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 19,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 20,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 21,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 22,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 23,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 24,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 25,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 26,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 27,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 28,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 29,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 30,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 31,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 32,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 33,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 34,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 35,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 36,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 37,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 38,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 39,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 40,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 41,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 42,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 43,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 44,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 45,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 46,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 47,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 48,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 49,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 50,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 51,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 52,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 53,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 54,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 55,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 56,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 57,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 58,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 59,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 60,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 61,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 62,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 63,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 64,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 65,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 66,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 67,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 68,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 69,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 70,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 71,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 72,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 73,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 74,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 75,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 76,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 77,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 78,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 79,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 80,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 81,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 82,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 83,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 84,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 85,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 86,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 87,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 88,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 89,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 90,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 91,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 92,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 93,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 94,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 95,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 96,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 97,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 98,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 99,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 100,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 101,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 102,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 103,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 104,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 105,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 106,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 107,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 108,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 109,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 110,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 111,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 112,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 113,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 114,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 115,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 116,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 117,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 118,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 119,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 120,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 121,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 122,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 123,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 124,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 125,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 126,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 127,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 128,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 129,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 130,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 131,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 132,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 133,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 134,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 135,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 136,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 137,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 138,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 139,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 140,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 141,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        }
+      ]
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "passed": true,
+      "prefix_tokens": 128,
+      "decode_steps": 14,
+      "trace": [
+        {
+          "position": 0,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 1,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 2,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 3,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 4,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 5,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 6,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 7,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 8,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 9,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 10,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 11,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 12,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 13,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 14,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 15,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 16,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 17,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 18,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 19,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 20,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 21,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 22,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 23,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 24,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 25,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 26,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 27,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 28,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 29,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 30,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 31,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 32,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 33,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 34,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 35,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 36,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 37,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 38,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 39,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 40,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 41,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 42,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 43,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 44,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 45,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 46,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 47,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 48,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 49,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 50,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 51,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 52,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 53,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 54,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 55,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 56,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 57,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 58,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 59,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 60,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 61,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 62,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 63,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 64,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 65,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 66,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 67,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 68,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 69,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 70,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 71,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 72,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 73,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 74,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 75,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 76,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 77,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 78,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 79,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 80,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 81,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 82,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 83,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 84,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 85,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 86,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 87,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 88,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 89,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 90,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 91,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 92,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 93,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 94,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 95,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 96,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 97,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 98,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 99,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 100,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 101,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 102,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 103,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 104,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 105,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 106,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 107,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 108,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 109,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 110,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 111,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 112,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 113,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 114,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 115,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 116,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 117,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 118,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 119,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 120,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 121,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 122,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 123,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 124,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 125,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 126,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 127,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 128,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 129,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 130,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 131,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 132,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 133,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 134,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 135,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 136,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 137,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 138,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 139,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 140,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        },
+        {
+          "position": 141,
+          "logits": {
+            "equal": true,
+            "finite": true,
+            "max_abs_error": 0.0
+          },
+          "cache": {
+            "equal": true,
+            "eq": true,
+            "max_abs_error": 0.0,
+            "finite": true,
+            "mismatches": []
+          }
+        }
+      ]
+    }
+  },
+  "cases_completed": 192,
+  "detection_cases_completed": 216,
+  "episodes_sha256": "21fce35699c89381dcb44957874ba7cf32842917f9b77e0c2bfdb21457f5eafe",
+  "detection_sha256": "0a4688934acbe0886450f53b09aa0ad441b7536bd41c75f44e328fd43e1e30ba"
+}

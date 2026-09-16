@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "version": "RECUT-supplement-audit-v1",
+  "audited_utc": "2026-09-16T00:39:08.996365+00:00",
+  "run": "/Users/nazishbaliyan/Desktop/Research Work/Thesis Work/research-next/runs/sensitivity-v1",
+  "limitations": [
+    "Supplemental correctness and immutability checks are recorded runner assertions. No supplemental tensor snapshots were saved or independently loaded; no model inference was rerun by this auditor.",
+    "Native parity flags and coordinate/vector reconstruction are checked and bound to primary records; this is not independent hardware/model replication or authentication of every model-weight byte.",
+    "The single warmup per method is declared in metadata/source and excluded from recorded trials. Its actual execution cannot be independently reconstructed from the saved timing rows.",
+    "Five repeated timings per policy are not independent fault trials; paired case medians describe these constructed cases, not an IID population, field fault rates, or statistically proven dominance.",
+    "No new normal-decoding overhead measurements were made. Detector comparison time is measured separately, outside recovery timing. No end-to-end break-even, commit-delay, protected-memory cost or serving-system performance claim follows.",
+    "Checkpoint-alias full replay assumes an immutable trusted resident GPU checkpoint and ordinary DynamicCache out-of-place append. Prefix views retain backing allocations until replaced.",
+    "The common working-cache clone is excluded even when unused by checkpoint-alias replay. Policy-specific restoration and replay are timed; correctness diagnostics are excluded.",
+    "Sparse/all retain their original conservative restoration, not their optimized attainable frontier. This post-hoc baseline sensitivity does not replace or pool primary timing measurements.",
+    "c0 controls are perturbed cases with zero selected sparse cut or fault layer, not no-op injections.",
+    "The naive prefix detector covers persistent post-checkpoint changes in the old K/V prefix only. Suffix-only changes, transient/reverted faults, pre-checkpoint errors, and dirty/corrupt trusted checkpoints are not covered. It is a bounded feasibility mechanism, not a production detector.",
+    "Detector bytes are logical reads of current and trusted old-prefix tensor payload, not measured physical memory traffic. One consolidated decision transfer is supported by source inspection, not independently profiled here. No-alarm forces conservative full replay; multiple layers fail closed."
+  ],
+  "input_sha256": {
+    "episodes": "21fce35699c89381dcb44957874ba7cf32842917f9b77e0c2bfdb21457f5eafe",
+    "metadata": "58a16cda18ee08fb7653ecf943e77eedebbfd7c55090911a24753de39e507c21",
+    "detection": "0a4688934acbe0886450f53b09aa0ad441b7536bd41c75f44e328fd43e1e30ba",
+    "primary_episodes": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+    "primary_metadata": "eac1c4fadb579a1cb580a93243ed79d4e5124fa7638b32bd52fcbcfd41eb88aa",
+    "config": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+    "manifest": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+    "auditor": "c29ba1ebbf1f8e757fa3da1545bef122e6e6f98af316599d3fd1e256be42beaf",
+    "run_optimized_replay.py": "6081ddd9c7d8572e0e0e9ac67b8a2017e2865034115cc75207642a0995076ac1",
+    "prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "summary_sha256": "0012b26b6b372b06b1f42af375ebcac9f13edc32f9e6a6bc6526769f2c38b39e",
+  "source_sha256": {
+    "run_optimized_replay.py": "6081ddd9c7d8572e0e0e9ac67b8a2017e2865034115cc75207642a0995076ac1",
+    "prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "checks": 98997,
+  "counts": {
+    "rows": 192,
+    "models": 2,
+    "per_model": {
+      "HuggingFaceTB/SmolLM2-135M": 96,
+      "Qwen/Qwen2.5-0.5B": 96
+    },
+    "perturbed_cases": 192,
+    "noop_cases": 0,
+    "trials": 4800,
+    "methods": 5,
+    "repetitions_per_method": 5,
+    "recorded_warmups": 0,
+    "declared_excluded_warmups_per_method": 1,
+    "native_parity_positions_per_model": 142,
+    "independently_loaded_tensor_snapshots": 0,
+    "detection_cases": 216,
+    "detection_perturbed_cases": 192,
+    "detection_noops": 24,
+    "detection_timing_samples": 1080
+  },
+  "failures": []
+}

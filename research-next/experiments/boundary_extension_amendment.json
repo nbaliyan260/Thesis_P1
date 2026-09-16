@@ -1,0 +1,14 @@
+{
+  "study": "posthoc_observed_boundary_extension",
+  "primary_raw_sha256": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "case_id": "primary-063",
+  "original_window": 12,
+  "diagnostic_window": 14,
+  "expected_first_divergence": 12,
+  "expected_sparse_cut": 6,
+  "expected_fault_layer": 11,
+  "new_fault_samples": false,
+  "performance_evidence": false,
+  "rationale": "The frozen primary has only final-output divergences, so its measured replay windows contain no post-divergence full-layer step. Reuse exactly this observed fault and extend the window by two transitions to check the already-specified fallback boundary. This is a selected diagnostic, not additional primary evidence or a new fault sweep."
+}

@@ -1,0 +1,488 @@
+{
+  "date": "2026-09-16",
+  "source_directory": "/Users/nazishbaliyan/Desktop/Research Work/Thesis Work/tmp/pdfs/text",
+  "page_reference_convention": "Physical PDF page markers in existing extraction, including proceedings cover pages. Not printed page numbers.",
+  "review_integrity": "Every assigned paper was opened through its actual extracted text; this ledger does NOT claim 33 full line-by-line reads. Review depth explicitly distinguishes selected-section screening from deeper focused reviews. Unlabelled limitations are prefixed reviewer/scope; author claims are not independently reproduced. No experiments, attacks, or HPC jobs run.",
+  "papers": [
+    {
+      "id": "035",
+      "title": "Pruning Unsafe Tickets: A Resource-Efficient Framework for Safer and More Robust LLMs",
+      "contribution": "Gradient-free, model-specific attribution plus iterative pruning removes parameters associated with unsafe behavior; works with quantized variants.",
+      "limitations": "Authors: beam search costs more than greedy/one-pass; static token attribution may miss semantics/context.",
+      "connection": "Already occupies lightweight safety pruning; not a persistent-state repair method.",
+      "page_refs": [
+        1,
+        3,
+        9
+      ],
+      "publication_status": "ACL 2026 long-paper header in supplied PDF",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "036",
+      "title": "RAIL Guard: Closing the Evaluation-to-Remediation Gap in Responsible AI for LLM Agents",
+      "contribution": "Eight-dimension evaluate-rewrite-reevaluate pipeline; reports 96.9% convergence vs 49.1% block/retry, with a 22.3% utility penalty for its strongest convergence method.",
+      "limitations": "Authors: model-judge dependence, 12.4% regression among remediation failures, English scope, small domain samples.",
+      "connection": "Output remediation and pre-action checks overlap generic ProofOps framing; no numerical-state recovery mechanism.",
+      "page_refs": [
+        1,
+        3,
+        12
+      ],
+      "publication_status": "Preprint; supplied first-page arXiv identifier/date appear inconsistent and need publisher verification",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "037",
+      "title": "Robust and Efficient Guardrails with Latent Reasoning",
+      "contribution": "CoLaGuard replaces explicit reasoning with recurrent latent states learned through staged supervision; reports matched GuardReasoner macro-F1 and 12.9x speedup.",
+      "limitations": "Authors: text-only harmfulness detection; no broader policy, multilingual, multimodal, adaptive or long-horizon evaluation; inherited supervision bias; more causal interventions needed.",
+      "connection": "Evidence that efficient moderation is crowded; latent-state execution fidelity is an adjacent systems question, not yet established here.",
+      "page_refs": [
+        1,
+        3,
+        9
+      ],
+      "publication_status": "arXiv:2605.29068v2, 3 Sep 2026; no acceptance established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "038",
+      "title": "Why LLM Safety Guardrails Collapse After Fine-tuning: A Similarity Analysis Between Alignment and Fine-tuning Datasets",
+      "contribution": "Relates upstream alignment/downstream fine-tuning representation similarity to safety degradation; lower similarity improves robustness.",
+      "limitations": "Reviewer inference: concerns dataset selection and weight adaptation, not fixed-weight execution transformations; observational correlation alone is not a numerical fault mechanism.",
+      "connection": "Prevents treating benign adaptation-induced safety drift as new; possible methodological control for weight changes.",
+      "page_refs": [
+        1,
+        3,
+        9
+      ],
+      "publication_status": "ACL 2026 long-paper header",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "039",
+      "title": "Benchmarking Confidential GPU Inference on NVIDIA H100 under Intel TDX",
+      "contribution": "Compares confidential/nonconfidential execution for Mistral-7B and Qwen3-30B-A3B on one H100; measures saturation and latency/throughput penalty.",
+      "limitations": "Authors: two models/one setup, Secure Boot disabled, no low-level profiling to attribute overhead.",
+      "connection": "Useful end-to-end cost-accounting example; insufficient novelty foundation for dependable semantic execution.",
+      "page_refs": [
+        1,
+        3,
+        8
+      ],
+      "publication_status": "Preprint; supplied identifier/date inconsistency requires verification",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "040",
+      "title": "CloakLM: Obfuscating GPU Memory Layout to Mitigate Model Ex-filtration for Serving",
+      "contribution": "Software memory-obfuscation across transfer layout, weight placement and physical HBM pages while preserving authorized logical views.",
+      "limitations": "Authors' scope: trusts serving OS/runtime/metadata and does not defend full serving-stack compromise. Reviewer: obfuscation is not a cryptographic guarantee.",
+      "connection": "Privacy defense, not benign numerical reliability; do not convert its threat model into an offensive reproduction.",
+      "page_refs": [
+        1,
+        3
+      ],
+      "publication_status": "Preprint 2026 header",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "041",
+      "title": "DP-Fusion: Token-Level Differentially Private Inference for Large Language Models",
+      "contribution": "Blends private-context and redacted-context output distributions to bound tagged tokens' influence, with token-group privacy accounting.",
+      "limitations": "Authors: guarantees cover tagged spans only; m groups need m+1 distributions per step; single-group implementation trades strength for smoother/cheaper behavior.",
+      "connection": "Strong example of stating a precise distributional contract and compute cost; formal privacy is different from restoring exact numerical execution.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "ICLR 2026 conference-paper header",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "042",
+      "title": "EncFormer: Secure and Efficient Transformer Inference over Encrypted Data",
+      "contribution": "Co-designs compatible ciphertext layouts, CKKS/MPC conversions and nonlinear kernels; reports communication and latency gains on GPT2/BERT.",
+      "limitations": "Scope: semi-honest two-party setting and selected GLUE accuracy; submitted manuscript rather than established accepted venue.",
+      "connection": "Cross-stage representation contracts are prior art; approximate cryptographic arithmetic motivates distinguishing functional quality from exactness.",
+      "page_refs": [
+        1,
+        3,
+        13
+      ],
+      "publication_status": "Submitted to IEEE TDSC, arXiv:2604.09975v1; acceptance not established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "043",
+      "title": "Gecko: Fast Private Inference via Secure Public Encoder Offloading",
+      "contribution": "Public frozen encoder plus projections and a private gated predictor reduces encrypted computation; assesses extra extraction risk from reusing the public encoder.",
+      "limitations": "Authors: evaluated CNN image/audio classifiers; transformer/generative extension introduces richer output and predictor challenges.",
+      "connection": "Low relevance to KV fault recovery; valuable example of narrowing a guarantee to precisely evaluated leakage.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "arXiv:2608.02378v1 preprint",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "044",
+      "title": "Governing the KV Cache: Preventing Timing Side-Channel Leakage in Multi-Tenant LLM Inference",
+      "contribution": "KVGov uses principal-scoped cache identities and discusses different cache matching mechanisms; isolation is the central defense.",
+      "limitations": "Authors: defense and attack-rate experiments mainly simulation; boundary-salt efficiency extrapolated; semantic caches require separate isolation mechanism.",
+      "connection": "State-sharing isolation is already addressed; separate namespace/integrity problems from numerical state repair. No attack reproduction proposed.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "Preprint; venue not established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "045",
+      "title": "Privacy from Symmetry: Orthogonally Equivariant Transformers for LLM Inference",
+      "contribution": "ConjFormer enables inference in a rotated hidden-state basis using scalar RMSNorm and weight conjugation; fine-tuned small-model experiments.",
+      "limitations": "Authors explicitly disclaim formal cryptographic guarantees; purpose is to remove direct nearest-neighbor inversion in original coordinates.",
+      "connection": "Relevant to semantics-preserving transformations but not a general security or finite-precision exactness guarantee.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "Preprint; venue not established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "046",
+      "title": "Scaling up FHE-based Privacy-Preserving ML: Higher Throughput, Longer Inputs for LLama-3-8B",
+      "contribution": "Sylph co-designs outlier control, polynomial nonlinear evaluation and mixed public/private context processing for encrypted Llama inference.",
+      "limitations": "Scope: long-context setting encrypts only last prompt portion; 8 RTX PRO 6000 GPUs; ciphertext approximation/domain assumptions matter.",
+      "connection": "Useful contrast: practical confidentiality requires operator and precision co-design; hardware need makes this a poor first one-GPU thesis direction.",
+      "page_refs": [
+        1,
+        3,
+        13
+      ],
+      "publication_status": "Preprint; venue not established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "047",
+      "title": "Your Inference Request Will Become a Black Box: Confidential Inference for Cloud-based Large Language Models",
+      "contribution": "Talaria partitions inference between a client-verified confidential VM and cloud, using reversible masking; reports identical outputs and lower token recovery.",
+      "limitations": "Authors: honest-but-curious cloud that executes protocol correctly. Reviewer: bitwise claims apply to evaluated protocol/setup, not arbitrary faults.",
+      "connection": "Exact output preservation is already a systems claim in confidentiality; does not address delayed internal-state corruption.",
+      "page_refs": [
+        1,
+        3,
+        9
+      ],
+      "publication_status": "ACL 2026 long-paper header",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "048",
+      "title": "AOI: Turning Failed Trajectories into Training Signals for Autonomous Cloud Diagnosis",
+      "contribution": "Read-write separated multi-agent diagnostic runtime, GRPO-trained observer, failure-trajectory correction; AIOpsLab evaluation.",
+      "limitations": "Authors: production validation and broader benchmarks remain future work. Distinguish best@5 from avg@1/avg@5.",
+      "connection": "Strong overlap with generic operational-agent repair; avoids assuming wrapper-level permission controls are a new scientific contribution.",
+      "page_refs": [
+        1,
+        3,
+        15
+      ],
+      "publication_status": "Preprint dated Mar 16 2026",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "049",
+      "title": "Evaluating Kubernetes Performance for GenAI Inference: From Automatic Speech Recognition to LLM Summarization",
+      "contribution": "Industry integration/evaluation of Kueue, accelerator slicing and inference-aware routing for Whisper and summarization.",
+      "limitations": "Scope: illustrative pipeline and component workloads. Reviewer: a performance-integration study, no semantic correctness or numerical fault assurance.",
+      "connection": "Use realistic scheduling context only; reproducing orchestration improvements alone is weak novelty.",
+      "page_refs": [
+        1,
+        3,
+        6,
+        14
+      ],
+      "publication_status": "arXiv:2602.04900v3 preprint",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "050",
+      "title": "Stalled, Biased, and Confused: Uncovering Reasoning Failures in LLMs for Cloud-Based Root Cause Analysis",
+      "contribution": "Controlled RCA evaluation isolates reasoning failures across six models, two agent workflows and two cases; 16-category taxonomy.",
+      "limitations": "Authors: one known fault at a time; noisy alerts; sensitivity to phrasing/representation; LLM-judge limitations.",
+      "connection": "Supports controlled mechanism experiments and confound isolation; not a GPU-state recovery system.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "FORGE 2026, DOI 10.1145/3793655.3793732 in PDF",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "051",
+      "title": "TopoEvo: A Topology-Aware Self-Evolving Multi-Agent Framework for Root Cause Analysis in Microservices",
+      "contribution": "Combines multimodal alignment, topology embeddings/symptom tokens, hypothesis-evidence-test reasoning and incident-memory adaptation.",
+      "limitations": "Authors: stronger intervention-aware causal validation, safer cost-aware adaptation and broader platforms left future work.",
+      "connection": "Topology-aware symptom repair is not new at the application level; inferential topology constraints should not be called causal proof.",
+      "page_refs": [
+        1,
+        3,
+        10
+      ],
+      "publication_status": "Preprint; venue not established",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "052",
+      "title": "Guaranteed Guess: A Language Modeling Approach for CISC-to-RISC Transpilation with Testing Guarantees",
+      "contribution": "Mahmoud coauthored system combines specialized small models, tokenizer changes, context extension and test validation for ISA transpilation.",
+      "limitations": "Authors: tests/coverage do not guarantee full semantic equivalence; O2 hurts accuracy sharply (HumanEval ARMv8 99.39% O0 vs 45.12% O2); real BringUpBench 49.23% O0.",
+      "connection": "Direct adviser alignment: model capability paired with explicit hardware/software correctness checks. Inspiration is contract clarity, not claiming tested outputs are formally proved.",
+      "page_refs": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "publication_status": "Findings of EMNLP 2025 header",
+      "review_depth": "Focused full-text section review (method, results, limitations; not full line-by-line appendix review)"
+    },
+    {
+      "id": "053",
+      "title": "Wafer-Scale Systems: A Carbon Perspective",
+      "contribution": "Mahmoud coauthored comparison of operational and embodied carbon for wafer-scale vs GPU LLM systems using total carbon-delay product.",
+      "limitations": "Authors: yield assumptions; flash excluded for comparison (including maximum CS-3 flash changes embodied carbon greatly); utilization reporting uncertainty.",
+      "connection": "Adviser alignment in cross-layer measurement and cost accounting. Recovery energy/cost could be secondary metric, not substitute for correctness mechanism.",
+      "page_refs": [
+        1,
+        3,
+        6
+      ],
+      "publication_status": "Supplied paper; venue not established by selected text",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "054",
+      "title": "BlitzScale: Fast and Live Large Model Autoscaling with O(1) Host Caching",
+      "contribution": "Network-aware parameter multicast and layer-granular remote execution make autoscaling fast/live without many host copies.",
+      "limitations": "Authors: scaling policy and elastic parallel configurations left future work. Reviewer: cached-model availability is distinct from request KV semantic recovery.",
+      "connection": "Distributed load/live execution baseline; generic fast restart or layer-level scheduling alone not novel.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        15
+      ],
+      "publication_status": "OSDI 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "055",
+      "title": "Colocating ML Inference and Training with Fast GPU Memory Handover",
+      "contribution": "Sirius resizes training memory at millisecond scale, safely reclaims memory and reallocates under inference SLOs.",
+      "limitations": "Reviewer scope limit: colocation resource safety and latency; not protection against silent numerical corruption. Hardware/workload effects need replication.",
+      "connection": "Useful for journal memory and recovery interference costs; no proof that adding metadata journals is inexpensive.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        14
+      ],
+      "publication_status": "USENIX ATC 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "056",
+      "title": "DeepServe: Serverless Large Language Model Serving at Scale",
+      "contribution": "Production Ascend platform with request-job-task abstraction, FlowServe, mixed PD scheduling and rapid prewarmed scaling.",
+      "limitations": "Scope: industrial architecture and deployment-specific components; first GPU experiment cannot reproduce full production scale.",
+      "connection": "Important evidence inference is stateful/distributed; avoid promising a whole new serving platform as thesis novelty.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        14
+      ],
+      "publication_status": "USENIX ATC 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "057",
+      "title": "Helix: Serving Large Language Models over Heterogeneous GPUs and Network via Max-Flow",
+      "contribution": "Joint model placement/request scheduling formulated as max-flow and solved via MILP; evaluates 24-42 heterogeneous GPU nodes.",
+      "limitations": "Reviewer: optimality is with respect to formulated capacities/objective, not universal runtime or fault model.",
+      "connection": "Hardware heterogeneity alone and topology-aware scheduling already mature; recovery needs a distinct correctness/cost objective.",
+      "page_refs": [
+        1,
+        4,
+        14
+      ],
+      "publication_status": "ASPLOS 2025, DOI 10.1145/3669940.3707215",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "058",
+      "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+      "contribution": "Global distributed prefix KV pool uses CPU DRAM/SSD/network with disaggregated prefill/decode and cache-aware scheduling.",
+      "limitations": "Authors implement transfer completion/error status and alternate paths for temporary NIC failures; this is not detection of semantically corrupted yet successfully transferred state. Public evaluation uses dummy architecture in some trace experiments.",
+      "connection": "Closest systems motivation for persistent/reused KV. Prefix blocks are keyed by prefix content, may have replicas, and feed incremental prefill; repair descendants require separate semantics.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        14
+      ],
+      "publication_status": "FAST 2025 proceedings",
+      "review_depth": "Focused full-text section review (method, results, limitations; not full line-by-line appendix review)"
+    },
+    {
+      "id": "059",
+      "title": "NanoFlow: Towards Optimal Large Language Model Serving Throughput",
+      "contribution": "Splits into nano-batches and overlaps compute, memory and communication within devices; automated search balances interference.",
+      "limitations": "Reviewer: throughput-optimal model and common workloads do not establish deterministic outputs under changed reduction order or fault protection.",
+      "connection": "Sets realistic high-utilization baseline; journals and replay must be costed against overlap already present.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        15
+      ],
+      "publication_status": "OSDI 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "060",
+      "title": "Resource Multiplexing in Tuning and Serving Large Language Models",
+      "contribution": "LLMStation couples iteration scheduling, suspendable autograd and batching tuning/inference to use spare resources while meeting latency SLOs.",
+      "limitations": "Reviewer: shared-resource throughput gains do not establish numerical equivalence or state recovery after corruption.",
+      "connection": "Shows coexistence/resource overhead to include; not a direct competing reliability mechanism.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        14
+      ],
+      "publication_status": "USENIX ATC 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "061",
+      "title": "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference",
+      "contribution": "Late binds models from main memory to GPUs; overlaps loading/execution and schedules with interference awareness.",
+      "limitations": "Scope: model-swapping and latency/resource cost, not persistent KV consistency or delayed-error repair.",
+      "connection": "Supports performance model for replay/journal transfer, not a novel safety claim.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        14
+      ],
+      "publication_status": "USENIX ATC 2025 proceedings cover in supplied PDF",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "062",
+      "title": "WaferLLM: Large Language Model Inference at Wafer Scale",
+      "contribution": "PLMR hardware model guides wafer-scale parallelism and MeshGEMM/MeshGEMV on Cerebras WSE2.",
+      "limitations": "Authors: current wafer-scale software limits; reviewer: raw comparisons span very different accelerator sizes and budgets.",
+      "connection": "Useful adviser-adjacent architecture background; cannot claim feasibility from GPU-only resources.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        15
+      ],
+      "publication_status": "OSDI 2025 proceedings cover",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "063",
+      "title": "Weaver: Efficient Multi-LLM Serving with Attention Offloading",
+      "contribution": "Offloads hot-model attention to spare cold-model GPUs; GPU-driven control and operator splitting limit head-of-line blocking.",
+      "limitations": "Reviewer: performance sharing and modest cold-model latency overhead, not integrity of remote KV or recovery semantics.",
+      "connection": "Important reminder KV-only placement is possible because attention has no weights; remote-state fault recovery adds distinct requirements.",
+      "page_refs": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "publication_status": "USENIX ATC 2025 proceedings",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "064",
+      "title": "Accelerating LLM Inference Throughput via Asynchronous KV Cache Prefetching",
+      "contribution": "Prefetches future KV blocks into GPU L2 to overlap loads and attention compute; H20 results vs XFormers/FA3.",
+      "limitations": "Authors show diminishing I/O optimization scope as tensor parallelism shards heads; reviewer: H20/kernel-specific measurements.",
+      "connection": "Any reliability scanning/replay competes with optimized memory path; asynchronous reads create lifetime boundaries that a protocol must specify.",
+      "page_refs": [
+        1,
+        4,
+        7
+      ],
+      "publication_status": "arXiv:2504.06319v2 preprint",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "065",
+      "title": "BitDecoding: Unlocking Tensor Cores for Long-Context LLMs with Low-Bit KV Cache",
+      "contribution": "Layout induction, warp cooperation, online residual-block quantization and pipelined dequantization use Tensor/CUDA cores; multiple GPU generations.",
+      "limitations": "Average LongBench quality is evaluated, not rare semantic or fault outcomes. Scale/zero metadata and packed KV are distinct state. Correct cooperative softmax is essential, with invalid output without it in ablation.",
+      "connection": "Closest low-bit systems neighbor. Half-precision residual windows roll into low-bit packed state, so repair must restore data and quantizer metadata and respect quantization group boundaries.",
+      "page_refs": [
+        1,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "publication_status": "arXiv:2503.18773v3 (5 Jan 2026); source filename year is initial version, acceptance not established",
+      "review_depth": "Focused full-text section review (method, results, limitations; not full line-by-line appendix review)"
+    },
+    {
+      "id": "066",
+      "title": "EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test",
+      "contribution": "Token prediction from fused multi-layer target features and training-time tests improves speculative draft scaling and accepted length.",
+      "limitations": "Exact target-distribution property comes from verifier/rejection sampling assumptions; paper does not prove robustness of a faulty/approximate verifier.",
+      "connection": "Key contract precedent: approximate proposing plus trusted verification. A recovery proposal must not assume current faulty state is a trusted target.",
+      "page_refs": [
+        1,
+        4,
+        9
+      ],
+      "publication_status": "arXiv:2503.01840v3 preprint in supplied copy",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    },
+    {
+      "id": "067",
+      "title": "Fast and Cost-effective Speculative Edge-Cloud Decoding with Early Exits",
+      "contribution": "Early target exits allow the edge to pre-draft future branches while awaiting final verification; tested on Jetson/A100 and robot VLM task.",
+      "limitations": "Scope: edge/cloud communication, small draft/target pairs and evaluated workloads; early predictions are not final output until verified.",
+      "connection": "Pre-draft buffering overlaps delayed commitment/replay; any new holdback protocol must distinguish itself from speculative verification.",
+      "page_refs": [
+        1,
+        4,
+        12
+      ],
+      "publication_status": "arXiv:2505.21594v1 preprint",
+      "review_depth": "Targeted full-text screen (abstract/introduction, selected body excerpt, conclusion/limitations when identified); not a full line-by-line read"
+    }
+  ]
+}

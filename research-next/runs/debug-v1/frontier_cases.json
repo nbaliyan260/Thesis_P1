@@ -1,0 +1,1786 @@
+[
+  {
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "case_id": "debug-0",
+    "case": {
+      "id": "debug-0",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.0,
+      "kind": "V",
+      "fault": "scalar",
+      "window": 1,
+      "seed": 11000
+    },
+    "num_layers": 30,
+    "layer": 0,
+    "population": "injected_fault",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 1,
+    "checkpoint_payload_bytes": 737280,
+    "recovery_seconds": {
+      "full": 0.030030246009118855,
+      "sparse": 0.03167116595432162,
+      "all": 0.03166014701128006
+    },
+    "normal_seconds": {
+      "none": 0.029610161436721683,
+      "sparse": 0.03014058998087421,
+      "all": 0.030777781503275037
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.030030246009118855
+      },
+      "sparse": {
+        "0": 0.03167116595432162
+      },
+      "all": {
+        "0": 0.03166014701128006
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.029596879961900413,
+        "1": 0.029623442911542952
+      },
+      "sparse": {
+        "0": 0.029513970017433167,
+        "1": 0.030767209944315255
+      },
+      "all": {
+        "0": 0.03068671701475978,
+        "1": 0.030868845991790295
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 30.030246009118855,
+        "q25": 30.030246009118855,
+        "median": 30.030246009118855,
+        "q75": 30.030246009118855,
+        "max": 30.030246009118855,
+        "mean": 30.030246009118855
+      },
+      "sparse": {
+        "n": 1,
+        "min": 31.671165954321623,
+        "q25": 31.671165954321623,
+        "median": 31.671165954321623,
+        "q75": 31.671165954321623,
+        "max": 31.671165954321623,
+        "mean": 31.671165954321623
+      },
+      "all": {
+        "n": 1,
+        "min": 31.66014701128006,
+        "q25": 31.66014701128006,
+        "median": 31.66014701128006,
+        "q75": 31.66014701128006,
+        "max": 31.66014701128006,
+        "mean": 31.66014701128006
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 29.596879961900413,
+        "q25": 29.603520699311048,
+        "median": 29.610161436721683,
+        "q75": 29.616802174132317,
+        "max": 29.623442911542952,
+        "mean": 29.610161436721683
+      },
+      "sparse": {
+        "n": 2,
+        "min": 29.513970017433167,
+        "q25": 29.82727999915369,
+        "median": 30.14058998087421,
+        "q75": 30.453899962594733,
+        "max": 30.767209944315255,
+        "mean": 30.14058998087421
+      },
+      "all": {
+        "n": 2,
+        "min": 30.68671701475978,
+        "q25": 30.732249259017408,
+        "median": 30.777781503275037,
+        "q75": 30.823313747532666,
+        "max": 30.868845991790295,
+        "mean": 30.777781503275037
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.0003480382778271,
+      "sparse_minus_all_recovery_ms": 0.011018943041563034,
+      "sparse_minus_all_normal_ms": -0.6371915224008262,
+      "sparse_over_all_journal_payload_ratio": 0.10344827586206896,
+      "saved_journal_payload_bytes": 29952,
+      "extra_layer_steps": 0,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 0.011018943041563034,
+          "q25": 0.011018943041563034,
+          "median": 0.011018943041563034,
+          "q75": 0.011018943041563034,
+          "max": 0.011018943041563034,
+          "mean": 0.011018943041563034
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -1.1727469973266125,
+          "q25": -0.9049692598637193,
+          "median": -0.6371915224008262,
+          "q75": -0.3694137849379331,
+          "max": -0.10163604747503996,
+          "mean": -0.6371915224008262
+        },
+        "observed_ranges_overlap": true,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 0.9481888368881203,
+        "recovery_saving_ms": -1.6409199452027678,
+        "signed_normal_cost_ms": 0.530428544152528,
+        "nonnegative_normal_cost_ms": 0.530428544152528,
+        "normal_overhead_fraction": 0.017913733610878113,
+        "layer_steps": 30,
+        "layer_step_fraction": 1.0,
+        "cut": 0,
+        "journal_payload_bytes": 3456,
+        "journal_over_checkpoint_fraction": 0.0046875,
+        "nonnegative_cost_sensitivity_ratio": null,
+        "break_even_status": "no_positive_recovery_saving"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 0.9485188428979658,
+        "recovery_saving_ms": -1.6299010021612048,
+        "signed_normal_cost_ms": 1.1676200665533543,
+        "nonnegative_normal_cost_ms": 1.1676200665533543,
+        "normal_overhead_fraction": 0.03943308681543711,
+        "layer_steps": 30,
+        "layer_step_fraction": 1.0,
+        "cut": 0,
+        "journal_payload_bytes": 33408,
+        "journal_over_checkpoint_fraction": 0.0453125,
+        "nonnegative_cost_sensitivity_ratio": null,
+        "break_even_status": "no_positive_recovery_saving"
+      }
+    }
+  },
+  {
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "case_id": "debug-1",
+    "case": {
+      "id": "debug-1",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11001
+    },
+    "num_layers": 30,
+    "layer": 14,
+    "population": "injected_fault",
+    "first_divergence": 3,
+    "divergence_class": "delayed",
+    "changed_elements": 64,
+    "checkpoint_payload_bytes": 737280,
+    "recovery_seconds": {
+      "full": 0.1188766899285838,
+      "sparse": 0.10297087300568819,
+      "all": 0.07999604404903948
+    },
+    "normal_seconds": {
+      "none": 0.12056032801046968,
+      "sparse": 0.11857823247555643,
+      "all": 0.1243986280169338
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.1188766899285838
+      },
+      "sparse": {
+        "0": 0.10297087300568819
+      },
+      "all": {
+        "0": 0.07999604404903948
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.1229122260119766,
+        "1": 0.11820843000896275
+      },
+      "sparse": {
+        "0": 0.11892222194001079,
+        "1": 0.11823424301110208
+      },
+      "all": {
+        "0": 0.12920259404927492,
+        "1": 0.11959466198459268
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 118.8766899285838,
+        "q25": 118.8766899285838,
+        "median": 118.8766899285838,
+        "q75": 118.8766899285838,
+        "max": 118.8766899285838,
+        "mean": 118.8766899285838
+      },
+      "sparse": {
+        "n": 1,
+        "min": 102.97087300568819,
+        "q25": 102.97087300568819,
+        "median": 102.97087300568819,
+        "q75": 102.97087300568819,
+        "max": 102.97087300568819,
+        "mean": 102.97087300568819
+      },
+      "all": {
+        "n": 1,
+        "min": 79.99604404903948,
+        "q25": 79.99604404903948,
+        "median": 79.99604404903948,
+        "q75": 79.99604404903948,
+        "max": 79.99604404903948,
+        "mean": 79.99604404903948
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 118.20843000896275,
+        "q25": 119.38437900971621,
+        "median": 120.56032801046968,
+        "q75": 121.73627701122314,
+        "max": 122.9122260119766,
+        "mean": 120.56032801046968
+      },
+      "sparse": {
+        "n": 2,
+        "min": 118.23424301110208,
+        "q25": 118.40623774332926,
+        "median": 118.57823247555643,
+        "q75": 118.75022720778361,
+        "max": 118.92222194001079,
+        "mean": 118.57823247555643
+      },
+      "all": {
+        "n": 2,
+        "min": 119.59466198459268,
+        "q25": 121.99664500076324,
+        "median": 124.3986280169338,
+        "q75": 126.80061103310436,
+        "max": 129.20259404927492,
+        "mean": 124.3986280169338
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.2871995638004874,
+      "sparse_minus_all_recovery_ms": 22.974828956648707,
+      "sparse_minus_all_normal_ms": -5.820395541377366,
+      "sparse_over_all_journal_payload_ratio": 0.10344827586206896,
+      "saved_journal_payload_bytes": 119808,
+      "extra_layer_steps": 21,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 22.974828956648707,
+          "q25": 22.974828956648707,
+          "median": 22.974828956648707,
+          "q75": 22.974828956648707,
+          "max": 22.974828956648707,
+          "mean": 22.974828956648707
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -10.280372109264135,
+          "q25": -8.05038382532075,
+          "median": -5.820395541377366,
+          "q75": -3.5904072574339807,
+          "max": -1.3604189734905958,
+          "mean": -5.820395541377366
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": false,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": false,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 1.1544690887685973,
+        "recovery_saving_ms": 15.90581692289561,
+        "signed_normal_cost_ms": -1.9820955349132419,
+        "nonnegative_normal_cost_ms": 0.0,
+        "normal_overhead_fraction": -0.016440694610096895,
+        "layer_steps": 99,
+        "layer_step_fraction": 0.825,
+        "cut": 7,
+        "journal_payload_bytes": 13824,
+        "journal_over_checkpoint_fraction": 0.01875,
+        "nonnegative_cost_sensitivity_ratio": 0.0,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 1.4860321074840845,
+        "recovery_saving_ms": 38.88064587954432,
+        "signed_normal_cost_ms": 3.8383000064641237,
+        "nonnegative_normal_cost_ms": 3.8383000064641237,
+        "normal_overhead_fraction": 0.031837172889333853,
+        "layer_steps": 78,
+        "layer_step_fraction": 0.65,
+        "cut": 14,
+        "journal_payload_bytes": 133632,
+        "journal_over_checkpoint_fraction": 0.18125,
+        "nonnegative_cost_sensitivity_ratio": 0.0987200680347625,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "case_id": "debug-2",
+    "case": {
+      "id": "debug-2",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 1.0,
+      "kind": "V",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11002
+    },
+    "num_layers": 30,
+    "layer": 29,
+    "population": "injected_fault",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 64,
+    "checkpoint_payload_bytes": 737280,
+    "recovery_seconds": {
+      "full": 0.12070098100230098,
+      "sparse": 0.03465525002684444,
+      "all": 0.005776818958111107
+    },
+    "normal_seconds": {
+      "none": 0.12498183449497446,
+      "sparse": 0.12140500795794651,
+      "all": 0.12285772600444034
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.12070098100230098
+      },
+      "sparse": {
+        "0": 0.03465525002684444
+      },
+      "all": {
+        "0": 0.005776818958111107
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.11994031898211688,
+        "1": 0.13002335000783205
+      },
+      "sparse": {
+        "0": 0.12106475594919175,
+        "1": 0.12174525996670127
+      },
+      "all": {
+        "0": 0.12271122203674167,
+        "1": 0.123004229972139
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 120.70098100230098,
+        "q25": 120.70098100230098,
+        "median": 120.70098100230098,
+        "q75": 120.70098100230098,
+        "max": 120.70098100230098,
+        "mean": 120.70098100230098
+      },
+      "sparse": {
+        "n": 1,
+        "min": 34.65525002684444,
+        "q25": 34.65525002684444,
+        "median": 34.65525002684444,
+        "q75": 34.65525002684444,
+        "max": 34.65525002684444,
+        "mean": 34.65525002684444
+      },
+      "all": {
+        "n": 1,
+        "min": 5.776818958111107,
+        "q25": 5.776818958111107,
+        "median": 5.776818958111107,
+        "q75": 5.776818958111107,
+        "max": 5.776818958111107,
+        "mean": 5.776818958111107
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 119.94031898211688,
+        "q25": 122.46107673854567,
+        "median": 124.98183449497446,
+        "q75": 127.50259225140326,
+        "max": 130.02335000783205,
+        "mean": 124.98183449497446
+      },
+      "sparse": {
+        "n": 2,
+        "min": 121.06475594919175,
+        "q25": 121.23488195356913,
+        "median": 121.40500795794651,
+        "q75": 121.57513396232389,
+        "max": 121.74525996670127,
+        "mean": 121.40500795794651
+      },
+      "all": {
+        "n": 2,
+        "min": 122.71122203674167,
+        "q25": 122.784474020591,
+        "median": 122.85772600444034,
+        "q75": 122.93097798828967,
+        "max": 123.004229972139,
+        "mean": 122.85772600444034
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 5.999019577753211,
+      "sparse_minus_all_recovery_ms": 28.878431068733335,
+      "sparse_minus_all_normal_ms": -1.4527180464938283,
+      "sparse_over_all_journal_payload_ratio": 0.10344827586206896,
+      "saved_journal_payload_bytes": 119808,
+      "extra_layer_steps": 28,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 28.878431068733335,
+          "q25": 28.878431068733335,
+          "median": 28.878431068733335,
+          "q75": 28.878431068733335,
+          "max": 28.878431068733335,
+          "mean": 28.878431068733335
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -1.6464660875499249,
+          "q25": -1.5495920670218766,
+          "median": -1.4527180464938283,
+          "q75": -1.35584402596578,
+          "max": -1.2589700054377317,
+          "mean": -1.4527180464938283
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 3.4829060794195486,
+        "recovery_saving_ms": 86.04573097545654,
+        "signed_normal_cost_ms": -3.576826537027955,
+        "nonnegative_normal_cost_ms": 0.0,
+        "normal_overhead_fraction": -0.028618771291693434,
+        "layer_steps": 32,
+        "layer_step_fraction": 0.26666666666666666,
+        "cut": 22,
+        "journal_payload_bytes": 13824,
+        "journal_over_checkpoint_fraction": 0.01875,
+        "nonnegative_cost_sensitivity_ratio": 0.0,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 20.894021757913553,
+        "recovery_saving_ms": 114.92416204418987,
+        "signed_normal_cost_ms": -2.1241084905341268,
+        "nonnegative_normal_cost_ms": 0.0,
+        "normal_overhead_fraction": -0.01699533775542028,
+        "layer_steps": 4,
+        "layer_step_fraction": 0.03333333333333333,
+        "cut": 29,
+        "journal_payload_bytes": 133632,
+        "journal_over_checkpoint_fraction": 0.18125,
+        "nonnegative_cost_sensitivity_ratio": 0.0,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "case_id": "debug-3",
+    "case": {
+      "id": "debug-3",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "noop",
+      "window": 4,
+      "seed": 11003
+    },
+    "num_layers": 30,
+    "layer": 14,
+    "population": "noop_control",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 0,
+    "checkpoint_payload_bytes": 737280,
+    "recovery_seconds": {
+      "full": 0.11964363697916269,
+      "sparse": 0.09377017396036536,
+      "all": 0.06990306195802987
+    },
+    "normal_seconds": {
+      "none": 0.12948499398771673,
+      "sparse": 0.12170795898418874,
+      "all": 0.1323458090191707
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.11964363697916269
+      },
+      "sparse": {
+        "0": 0.09377017396036536
+      },
+      "all": {
+        "0": 0.06990306195802987
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.1184068099828437,
+        "1": 0.14056317799258977
+      },
+      "sparse": {
+        "0": 0.11950540100224316,
+        "1": 0.12391051696613431
+      },
+      "all": {
+        "0": 0.12184129608795047,
+        "1": 0.14285032195039093
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 119.6436369791627,
+        "q25": 119.6436369791627,
+        "median": 119.6436369791627,
+        "q75": 119.6436369791627,
+        "max": 119.6436369791627,
+        "mean": 119.6436369791627
+      },
+      "sparse": {
+        "n": 1,
+        "min": 93.77017396036536,
+        "q25": 93.77017396036536,
+        "median": 93.77017396036536,
+        "q75": 93.77017396036536,
+        "max": 93.77017396036536,
+        "mean": 93.77017396036536
+      },
+      "all": {
+        "n": 1,
+        "min": 69.90306195802987,
+        "q25": 69.90306195802987,
+        "median": 69.90306195802987,
+        "q75": 69.90306195802987,
+        "max": 69.90306195802987,
+        "mean": 69.90306195802987
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 118.4068099828437,
+        "q25": 123.94590198528022,
+        "median": 129.48499398771673,
+        "q75": 135.02408599015325,
+        "max": 140.56317799258977,
+        "mean": 129.48499398771673
+      },
+      "sparse": {
+        "n": 2,
+        "min": 119.50540100224316,
+        "q25": 120.60667999321595,
+        "median": 121.70795898418874,
+        "q75": 122.80923797516152,
+        "max": 123.91051696613431,
+        "mean": 121.70795898418874
+      },
+      "all": {
+        "n": 2,
+        "min": 121.84129608795047,
+        "q25": 127.09355255356058,
+        "median": 132.3458090191707,
+        "q75": 137.59806548478082,
+        "max": 142.85032195039093,
+        "mean": 132.3458090191707
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.3414315672847839,
+      "sparse_minus_all_recovery_ms": 23.86711200233549,
+      "sparse_minus_all_normal_ms": -10.637850034981966,
+      "sparse_over_all_journal_payload_ratio": 0.10344827586206896,
+      "saved_journal_payload_bytes": 119808,
+      "extra_layer_steps": 28,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 23.86711200233549,
+          "q25": 23.86711200233549,
+          "median": 23.86711200233549,
+          "q75": 23.86711200233549,
+          "max": 23.86711200233549,
+          "mean": 23.86711200233549
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -18.939804984256625,
+          "q25": -14.788827509619296,
+          "median": -10.637850034981966,
+          "q75": -6.486872560344636,
+          "max": -2.335895085707307,
+          "mean": -10.637850034981966
+        },
+        "observed_ranges_overlap": true,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "slotonly": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 1.275924229699451,
+        "recovery_saving_ms": 25.873463018797338,
+        "signed_normal_cost_ms": -7.777035003527999,
+        "nonnegative_normal_cost_ms": 0.0,
+        "normal_overhead_fraction": -0.060061284045514585,
+        "layer_steps": 92,
+        "layer_step_fraction": 0.7666666666666667,
+        "cut": 7,
+        "journal_payload_bytes": 13824,
+        "journal_over_checkpoint_fraction": 0.01875,
+        "nonnegative_cost_sensitivity_ratio": 0.0,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 1.7115650391823651,
+        "recovery_saving_ms": 49.74057502113283,
+        "signed_normal_cost_ms": 2.860815031453967,
+        "nonnegative_normal_cost_ms": 2.860815031453967,
+        "normal_overhead_fraction": 0.022093795916809933,
+        "layer_steps": 64,
+        "layer_step_fraction": 0.5333333333333333,
+        "cut": 14,
+        "journal_payload_bytes": 133632,
+        "journal_over_checkpoint_fraction": 0.18125,
+        "nonnegative_cost_sensitivity_ratio": 0.057514715707217265,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "debug-0",
+    "case": {
+      "id": "debug-0",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.0,
+      "kind": "V",
+      "fault": "scalar",
+      "window": 1,
+      "seed": 11000
+    },
+    "num_layers": 24,
+    "layer": 0,
+    "population": "injected_fault",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 1,
+    "checkpoint_payload_bytes": 393216,
+    "recovery_seconds": {
+      "full": 0.026835183962248266,
+      "sparse": 0.02595050900708884,
+      "all": 0.02590503601823002
+    },
+    "normal_seconds": {
+      "none": 0.025191927037667483,
+      "sparse": 0.026134097017347813,
+      "all": 0.026069461542647332
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.026835183962248266
+      },
+      "sparse": {
+        "0": 0.02595050900708884
+      },
+      "all": {
+        "0": 0.02590503601823002
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.025017127976752818,
+        "1": 0.02536672609858215
+      },
+      "sparse": {
+        "0": 0.026374306064099073,
+        "1": 0.025893887970596552
+      },
+      "all": {
+        "0": 0.026206365088000894,
+        "1": 0.02593255799729377
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 26.835183962248266,
+        "q25": 26.835183962248266,
+        "median": 26.835183962248266,
+        "q75": 26.835183962248266,
+        "max": 26.835183962248266,
+        "mean": 26.835183962248266
+      },
+      "sparse": {
+        "n": 1,
+        "min": 25.95050900708884,
+        "q25": 25.95050900708884,
+        "median": 25.95050900708884,
+        "q75": 25.95050900708884,
+        "max": 25.95050900708884,
+        "mean": 25.95050900708884
+      },
+      "all": {
+        "n": 1,
+        "min": 25.90503601823002,
+        "q25": 25.90503601823002,
+        "median": 25.90503601823002,
+        "q75": 25.90503601823002,
+        "max": 25.90503601823002,
+        "mean": 25.90503601823002
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 25.017127976752818,
+        "q25": 25.10452750721015,
+        "median": 25.191927037667483,
+        "q75": 25.279326568124816,
+        "max": 25.36672609858215,
+        "mean": 25.191927037667483
+      },
+      "sparse": {
+        "n": 2,
+        "min": 25.893887970596552,
+        "q25": 26.013992493972182,
+        "median": 26.134097017347813,
+        "q75": 26.254201540723443,
+        "max": 26.374306064099073,
+        "mean": 26.134097017347813
+      },
+      "all": {
+        "n": 2,
+        "min": 25.93255799729377,
+        "q25": 26.00100976997055,
+        "median": 26.069461542647332,
+        "q75": 26.137913315324113,
+        "max": 26.206365088000894,
+        "mean": 26.069461542647332
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.0017553725394097,
+      "sparse_minus_all_recovery_ms": 0.04547298885881901,
+      "sparse_minus_all_normal_ms": 0.0646354747004807,
+      "sparse_over_all_journal_payload_ratio": 0.13043478260869565,
+      "saved_journal_payload_bytes": 35840,
+      "extra_layer_steps": 0,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 0.04547298885881901,
+          "q25": 0.04547298885881901,
+          "median": 0.04547298885881901,
+          "q75": 0.04547298885881901,
+          "max": 0.04547298885881901,
+          "mean": 0.04547298885881901
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 1,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -0.03867002669721842,
+          "q25": 0.01298272400163114,
+          "median": 0.0646354747004807,
+          "q75": 0.11628822539933026,
+          "max": 0.16794097609817982,
+          "mean": 0.0646354747004807
+        },
+        "observed_ranges_overlap": true,
+        "all_pairs_same_strict_sign": false
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 1.0340908517408178,
+        "recovery_saving_ms": 0.8846749551594257,
+        "signed_normal_cost_ms": 0.9421699796803296,
+        "nonnegative_normal_cost_ms": 0.9421699796803296,
+        "normal_overhead_fraction": 0.03739967880470507,
+        "layer_steps": 24,
+        "layer_step_fraction": 1.0,
+        "cut": 0,
+        "journal_payload_bytes": 5376,
+        "journal_over_checkpoint_fraction": 0.013671875,
+        "nonnegative_cost_sensitivity_ratio": 1.0649899990788625,
+        "break_even_status": "above_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 1.0359060664252184,
+        "recovery_saving_ms": 0.9301479440182447,
+        "signed_normal_cost_ms": 0.8775345049798489,
+        "nonnegative_normal_cost_ms": 0.8775345049798489,
+        "normal_overhead_fraction": 0.03483395707155479,
+        "layer_steps": 24,
+        "layer_step_fraction": 1.0,
+        "cut": 0,
+        "journal_payload_bytes": 41216,
+        "journal_over_checkpoint_fraction": 0.10481770833333333,
+        "nonnegative_cost_sensitivity_ratio": 0.9434354079082242,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "debug-1",
+    "case": {
+      "id": "debug-1",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11001
+    },
+    "num_layers": 24,
+    "layer": 11,
+    "population": "injected_fault",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 64,
+    "checkpoint_payload_bytes": 393216,
+    "recovery_seconds": {
+      "full": 0.1005019509466365,
+      "sparse": 0.07725857989862561,
+      "all": 0.057396374992094934
+    },
+    "normal_seconds": {
+      "none": 0.10195562796434388,
+      "sparse": 0.10316307801986113,
+      "all": 0.1058824629872106
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.1005019509466365
+      },
+      "sparse": {
+        "0": 0.07725857989862561
+      },
+      "all": {
+        "0": 0.057396374992094934
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.1023442120058462,
+        "1": 0.10156704392284155
+      },
+      "sparse": {
+        "0": 0.10245578002650291,
+        "1": 0.10387037601321936
+      },
+      "all": {
+        "0": 0.10547383700031787,
+        "1": 0.10629108897410333
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 100.5019509466365,
+        "q25": 100.5019509466365,
+        "median": 100.5019509466365,
+        "q75": 100.5019509466365,
+        "max": 100.5019509466365,
+        "mean": 100.5019509466365
+      },
+      "sparse": {
+        "n": 1,
+        "min": 77.25857989862561,
+        "q25": 77.25857989862561,
+        "median": 77.25857989862561,
+        "q75": 77.25857989862561,
+        "max": 77.25857989862561,
+        "mean": 77.25857989862561
+      },
+      "all": {
+        "n": 1,
+        "min": 57.396374992094934,
+        "q25": 57.396374992094934,
+        "median": 57.396374992094934,
+        "q75": 57.396374992094934,
+        "max": 57.396374992094934,
+        "mean": 57.396374992094934
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 101.56704392284155,
+        "q25": 101.76133594359271,
+        "median": 101.95562796434388,
+        "q75": 102.14991998509504,
+        "max": 102.3442120058462,
+        "mean": 101.95562796434388
+      },
+      "sparse": {
+        "n": 2,
+        "min": 102.45578002650291,
+        "q25": 102.80942902318202,
+        "median": 103.16307801986113,
+        "q75": 103.51672701654024,
+        "max": 103.87037601321936,
+        "mean": 103.16307801986113
+      },
+      "all": {
+        "n": 2,
+        "min": 105.47383700031787,
+        "q25": 105.67814999376424,
+        "median": 105.8824629872106,
+        "q75": 106.08677598065697,
+        "max": 106.29108897410333,
+        "mean": 105.8824629872106
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.3460532988235974,
+      "sparse_minus_all_recovery_ms": 19.86220490653068,
+      "sparse_minus_all_normal_ms": -2.7193849673494697,
+      "sparse_over_all_journal_payload_ratio": 0.13043478260869565,
+      "saved_journal_payload_bytes": 143360,
+      "extra_layer_steps": 20,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 19.86220490653068,
+          "q25": 19.86220490653068,
+          "median": 19.86220490653068,
+          "q75": 19.86220490653068,
+          "max": 19.86220490653068,
+          "mean": 19.86220490653068
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -3.0180569738149643,
+          "q25": -2.868720970582217,
+          "median": -2.7193849673494697,
+          "q75": -2.5700489641167223,
+          "max": -2.420712960883975,
+          "mean": -2.7193849673494697
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 1.300851647525874,
+        "recovery_saving_ms": 23.243371048010886,
+        "signed_normal_cost_ms": 1.2074500555172563,
+        "nonnegative_normal_cost_ms": 1.2074500555172563,
+        "normal_overhead_fraction": 0.011842897539109165,
+        "layer_steps": 72,
+        "layer_step_fraction": 0.75,
+        "cut": 6,
+        "journal_payload_bytes": 21504,
+        "journal_over_checkpoint_fraction": 0.0546875,
+        "nonnegative_cost_sensitivity_ratio": 0.05194814698019404,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 1.751015651432314,
+        "recovery_saving_ms": 43.105575954541564,
+        "signed_normal_cost_ms": 3.926835022866726,
+        "nonnegative_normal_cost_ms": 3.926835022866726,
+        "normal_overhead_fraction": 0.03851513743056967,
+        "layer_steps": 52,
+        "layer_step_fraction": 0.5416666666666666,
+        "cut": 11,
+        "journal_payload_bytes": 164864,
+        "journal_over_checkpoint_fraction": 0.4192708333333333,
+        "nonnegative_cost_sensitivity_ratio": 0.09109807573405125,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "debug-2",
+    "case": {
+      "id": "debug-2",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 1.0,
+      "kind": "V",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11002
+    },
+    "num_layers": 24,
+    "layer": 23,
+    "population": "injected_fault",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 64,
+    "checkpoint_payload_bytes": 393216,
+    "recovery_seconds": {
+      "full": 0.100630052969791,
+      "sparse": 0.029925292008556426,
+      "all": 0.010162426973693073
+    },
+    "normal_seconds": {
+      "none": 0.10026803897926584,
+      "sparse": 0.10026778100291267,
+      "all": 0.10828767297789454
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.100630052969791
+      },
+      "sparse": {
+        "0": 0.029925292008556426
+      },
+      "all": {
+        "0": 0.010162426973693073
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.10060555895324796,
+        "1": 0.09993051900528371
+      },
+      "sparse": {
+        "0": 0.10025469202082604,
+        "1": 0.1002808699849993
+      },
+      "all": {
+        "0": 0.10896959493402392,
+        "1": 0.10760575102176517
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 100.630052969791,
+        "q25": 100.630052969791,
+        "median": 100.630052969791,
+        "q75": 100.630052969791,
+        "max": 100.630052969791,
+        "mean": 100.630052969791
+      },
+      "sparse": {
+        "n": 1,
+        "min": 29.925292008556426,
+        "q25": 29.925292008556426,
+        "median": 29.925292008556426,
+        "q75": 29.925292008556426,
+        "max": 29.925292008556426,
+        "mean": 29.925292008556426
+      },
+      "all": {
+        "n": 1,
+        "min": 10.162426973693073,
+        "q25": 10.162426973693073,
+        "median": 10.162426973693073,
+        "q75": 10.162426973693073,
+        "max": 10.162426973693073,
+        "mean": 10.162426973693073
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 99.93051900528371,
+        "q25": 100.09927899227478,
+        "median": 100.26803897926584,
+        "q75": 100.4367989662569,
+        "max": 100.60555895324796,
+        "mean": 100.26803897926584
+      },
+      "sparse": {
+        "n": 2,
+        "min": 100.25469202082604,
+        "q25": 100.26123651186936,
+        "median": 100.26778100291267,
+        "q75": 100.27432549395598,
+        "max": 100.2808699849993,
+        "mean": 100.26778100291267
+      },
+      "all": {
+        "n": 2,
+        "min": 107.60575102176517,
+        "q25": 107.94671199982986,
+        "median": 108.28767297789454,
+        "q75": 108.62863395595923,
+        "max": 108.96959493402392,
+        "mean": 108.28767297789454
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 2.9446993406223156,
+      "sparse_minus_all_recovery_ms": 19.762865034863353,
+      "sparse_minus_all_normal_ms": -8.019891974981874,
+      "sparse_over_all_journal_payload_ratio": 0.13043478260869565,
+      "saved_journal_payload_bytes": 143360,
+      "extra_layer_steps": 20,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 19.762865034863353,
+          "q25": 19.762865034863353,
+          "median": 19.762865034863353,
+          "q75": 19.762865034863353,
+          "max": 19.762865034863353,
+          "mean": 19.762865034863353
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -8.714902913197875,
+          "q25": -8.367397444089875,
+          "median": -8.019891974981874,
+          "q75": -7.672386505873874,
+          "max": -7.324881036765873,
+          "mean": -8.019891974981874
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": false,
+        "logits_equal": false
+      },
+      "slotonly": {
+        "all_equal": false,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": false
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 3.3627091405162637,
+        "recovery_saving_ms": 70.70476096123457,
+        "signed_normal_cost_ms": -0.00025797635316848755,
+        "nonnegative_normal_cost_ms": 0.0,
+        "normal_overhead_fraction": -2.5728672445879397e-06,
+        "layer_steps": 24,
+        "layer_step_fraction": 0.25,
+        "cut": 18,
+        "journal_payload_bytes": 21504,
+        "journal_over_checkpoint_fraction": 0.0546875,
+        "nonnegative_cost_sensitivity_ratio": 0.0,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 9.902167388782875,
+        "recovery_saving_ms": 90.46762599609792,
+        "signed_normal_cost_ms": 8.019633998628706,
+        "nonnegative_normal_cost_ms": 8.019633998628706,
+        "normal_overhead_fraction": 0.07998195716470602,
+        "layer_steps": 4,
+        "layer_step_fraction": 0.041666666666666664,
+        "cut": 23,
+        "journal_payload_bytes": 164864,
+        "journal_over_checkpoint_fraction": 0.4192708333333333,
+        "nonnegative_cost_sensitivity_ratio": 0.08864645126174318,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "debug-3",
+    "case": {
+      "id": "debug-3",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "noop",
+      "window": 4,
+      "seed": 11003
+    },
+    "num_layers": 24,
+    "layer": 11,
+    "population": "noop_control",
+    "first_divergence": null,
+    "divergence_class": "none",
+    "changed_elements": 0,
+    "checkpoint_payload_bytes": 393216,
+    "recovery_seconds": {
+      "full": 0.10231318010482937,
+      "sparse": 0.07667853694874793,
+      "all": 0.05887375900056213
+    },
+    "normal_seconds": {
+      "none": 0.10264686599839479,
+      "sparse": 0.10294842696748674,
+      "all": 0.10382909601321444
+    },
+    "recovery_samples_seconds": {
+      "full": {
+        "0": 0.10231318010482937
+      },
+      "sparse": {
+        "0": 0.07667853694874793
+      },
+      "all": {
+        "0": 0.05887375900056213
+      }
+    },
+    "normal_samples_seconds": {
+      "none": {
+        "0": 0.10373667103704065,
+        "1": 0.10155706095974892
+      },
+      "sparse": {
+        "0": 0.10393609793391079,
+        "1": 0.10196075600106269
+      },
+      "all": {
+        "0": 0.10550879302900285,
+        "1": 0.10214939899742603
+      }
+    },
+    "recovery_sample_spread_ms": {
+      "full": {
+        "n": 1,
+        "min": 102.31318010482937,
+        "q25": 102.31318010482937,
+        "median": 102.31318010482937,
+        "q75": 102.31318010482937,
+        "max": 102.31318010482937,
+        "mean": 102.31318010482937
+      },
+      "sparse": {
+        "n": 1,
+        "min": 76.67853694874793,
+        "q25": 76.67853694874793,
+        "median": 76.67853694874793,
+        "q75": 76.67853694874793,
+        "max": 76.67853694874793,
+        "mean": 76.67853694874793
+      },
+      "all": {
+        "n": 1,
+        "min": 58.87375900056213,
+        "q25": 58.87375900056213,
+        "median": 58.87375900056213,
+        "q75": 58.87375900056213,
+        "max": 58.87375900056213,
+        "mean": 58.87375900056213
+      }
+    },
+    "normal_sample_spread_ms": {
+      "none": {
+        "n": 2,
+        "min": 101.55706095974892,
+        "q25": 102.10196347907186,
+        "median": 102.64686599839479,
+        "q75": 103.19176851771772,
+        "max": 103.73667103704065,
+        "mean": 102.64686599839479
+      },
+      "sparse": {
+        "n": 2,
+        "min": 101.96075600106269,
+        "q25": 102.45459148427472,
+        "median": 102.94842696748674,
+        "q75": 103.44226245069876,
+        "max": 103.93609793391079,
+        "mean": 102.94842696748674
+      },
+      "all": {
+        "n": 2,
+        "min": 102.14939899742603,
+        "q25": 102.98924750532024,
+        "median": 103.82909601321444,
+        "q75": 104.66894452110864,
+        "max": 105.50879302900285,
+        "mean": 103.82909601321444
+      }
+    },
+    "sparse_vs_all": {
+      "sparse_over_all_recovery_ratio": 1.3024229852219187,
+      "sparse_minus_all_recovery_ms": 17.8047779481858,
+      "sparse_minus_all_normal_ms": -0.8806690457277,
+      "sparse_over_all_journal_payload_ratio": 0.13043478260869565,
+      "saved_journal_payload_bytes": 143360,
+      "extra_layer_steps": 20,
+      "repair_repetitions": {
+        "n_pairs": 1,
+        "left_lower": 0,
+        "exactly_equal": 0,
+        "left_higher": 1,
+        "left_minus_right_ms": {
+          "n": 1,
+          "min": 17.8047779481858,
+          "q25": 17.8047779481858,
+          "median": 17.8047779481858,
+          "q75": 17.8047779481858,
+          "max": 17.8047779481858,
+          "mean": 17.8047779481858
+        },
+        "observed_ranges_overlap": false,
+        "all_pairs_same_strict_sign": true
+      },
+      "normal_repetitions": {
+        "n_pairs": 2,
+        "left_lower": 2,
+        "exactly_equal": 0,
+        "left_higher": 0,
+        "left_minus_right_ms": {
+          "n": 2,
+          "min": -1.5726950950920582,
+          "q25": -1.226682070409879,
+          "median": -0.8806690457277,
+          "q75": -0.5346560210455209,
+          "max": -0.1886429963633418,
+          "mean": -0.8806690457277
+        },
+        "observed_ranges_overlap": true,
+        "all_pairs_same_strict_sign": true
+      }
+    },
+    "correctness": {
+      "none": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "slotonly": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "full": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "sparse": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      },
+      "all": {
+        "all_equal": true,
+        "tokens_equal": true,
+        "continuation_tokens_equal": true,
+        "cache_equal": true,
+        "logits_equal": true
+      }
+    },
+    "methods": {
+      "sparse": {
+        "full_over_method_recovery_ratio": 1.3343131491047577,
+        "recovery_saving_ms": 25.634643156081438,
+        "signed_normal_cost_ms": 0.30156096909195185,
+        "nonnegative_normal_cost_ms": 0.30156096909195185,
+        "normal_overhead_fraction": 0.002937848770723006,
+        "layer_steps": 72,
+        "layer_step_fraction": 0.75,
+        "cut": 6,
+        "journal_payload_bytes": 21504,
+        "journal_over_checkpoint_fraction": 0.0546875,
+        "nonnegative_cost_sensitivity_ratio": 0.011763806004859911,
+        "break_even_status": "within_zero_one"
+      },
+      "all": {
+        "full_over_method_recovery_ratio": 1.7378401148778775,
+        "recovery_saving_ms": 43.43942110426724,
+        "signed_normal_cost_ms": 1.1822300148196518,
+        "nonnegative_normal_cost_ms": 1.1822300148196518,
+        "normal_overhead_fraction": 0.011517448714295275,
+        "layer_steps": 52,
+        "layer_step_fraction": 0.5416666666666666,
+        "cut": 11,
+        "journal_payload_bytes": 164864,
+        "journal_over_checkpoint_fraction": 0.4192708333333333,
+        "nonnegative_cost_sensitivity_ratio": 0.027215602435906226,
+        "break_even_status": "within_zero_one"
+      }
+    }
+  }
+]

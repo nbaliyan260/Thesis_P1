@@ -1,0 +1,6 @@
+{
+  "summary_sha256": "0012b26b6b372b06b1f42af375ebcac9f13edc32f9e6a6bc6526769f2c38b39e",
+  "builder_sha256": "7f72f67f45134612def059b76a0652228b6624d946651bb20de5f59adf4205c1",
+  "image_sha256": "1112c0ac1a5124d28247d43c2b942b4114d34e591dd57999a8d0c18aed6e3926",
+  "statistic": "Across-case median and IQR of paired ratios of per-case median times; not confidence intervals"
+}

@@ -1,0 +1,1089 @@
+{
+  "protocol": "RECUT-v0.1-frozen-primary",
+  "cases": [
+    {
+      "id": "primary-000",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22000
+    },
+    {
+      "id": "primary-001",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22001
+    },
+    {
+      "id": "primary-002",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22002
+    },
+    {
+      "id": "primary-003",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22003
+    },
+    {
+      "id": "primary-004",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22004
+    },
+    {
+      "id": "primary-005",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22005
+    },
+    {
+      "id": "primary-006",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22006
+    },
+    {
+      "id": "primary-007",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22007
+    },
+    {
+      "id": "primary-008",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22008
+    },
+    {
+      "id": "primary-009",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22009
+    },
+    {
+      "id": "primary-010",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22010
+    },
+    {
+      "id": "primary-011",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22011
+    },
+    {
+      "id": "primary-012",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22012
+    },
+    {
+      "id": "primary-013",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22013
+    },
+    {
+      "id": "primary-014",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22014
+    },
+    {
+      "id": "primary-015",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22015
+    },
+    {
+      "id": "primary-016",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22016
+    },
+    {
+      "id": "primary-017",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22017
+    },
+    {
+      "id": "primary-018",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22018
+    },
+    {
+      "id": "primary-019",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22019
+    },
+    {
+      "id": "primary-020",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22020
+    },
+    {
+      "id": "primary-021",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22021
+    },
+    {
+      "id": "primary-022",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22022
+    },
+    {
+      "id": "primary-023",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22023
+    },
+    {
+      "id": "primary-024",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22024
+    },
+    {
+      "id": "primary-025",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22025
+    },
+    {
+      "id": "primary-026",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22026
+    },
+    {
+      "id": "primary-027",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22027
+    },
+    {
+      "id": "primary-028",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22028
+    },
+    {
+      "id": "primary-029",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22029
+    },
+    {
+      "id": "primary-030",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22030
+    },
+    {
+      "id": "primary-031",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22031
+    },
+    {
+      "id": "primary-032",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22032
+    },
+    {
+      "id": "primary-033",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22033
+    },
+    {
+      "id": "primary-034",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22034
+    },
+    {
+      "id": "primary-035",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22035
+    },
+    {
+      "id": "primary-036",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22036
+    },
+    {
+      "id": "primary-037",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22037
+    },
+    {
+      "id": "primary-038",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22038
+    },
+    {
+      "id": "primary-039",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22039
+    },
+    {
+      "id": "primary-040",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22040
+    },
+    {
+      "id": "primary-041",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22041
+    },
+    {
+      "id": "primary-042",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22042
+    },
+    {
+      "id": "primary-043",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22043
+    },
+    {
+      "id": "primary-044",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22044
+    },
+    {
+      "id": "primary-045",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22045
+    },
+    {
+      "id": "primary-046",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22046
+    },
+    {
+      "id": "primary-047",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22047
+    },
+    {
+      "id": "primary-048",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22048
+    },
+    {
+      "id": "primary-049",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22049
+    },
+    {
+      "id": "primary-050",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22050
+    },
+    {
+      "id": "primary-051",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22051
+    },
+    {
+      "id": "primary-052",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22052
+    },
+    {
+      "id": "primary-053",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22053
+    },
+    {
+      "id": "primary-054",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22054
+    },
+    {
+      "id": "primary-055",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22055
+    },
+    {
+      "id": "primary-056",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22056
+    },
+    {
+      "id": "primary-057",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22057
+    },
+    {
+      "id": "primary-058",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22058
+    },
+    {
+      "id": "primary-059",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22059
+    },
+    {
+      "id": "primary-060",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22060
+    },
+    {
+      "id": "primary-061",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22061
+    },
+    {
+      "id": "primary-062",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22062
+    },
+    {
+      "id": "primary-063",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22063
+    },
+    {
+      "id": "primary-064",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22064
+    },
+    {
+      "id": "primary-065",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22065
+    },
+    {
+      "id": "primary-066",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22066
+    },
+    {
+      "id": "primary-067",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22067
+    },
+    {
+      "id": "primary-068",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22068
+    },
+    {
+      "id": "primary-069",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22069
+    },
+    {
+      "id": "primary-070",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22070
+    },
+    {
+      "id": "primary-071",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22071
+    },
+    {
+      "id": "primary-072",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22072
+    },
+    {
+      "id": "primary-073",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22073
+    },
+    {
+      "id": "primary-074",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22074
+    },
+    {
+      "id": "primary-075",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22075
+    },
+    {
+      "id": "primary-076",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22076
+    },
+    {
+      "id": "primary-077",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22077
+    },
+    {
+      "id": "primary-078",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22078
+    },
+    {
+      "id": "primary-079",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22079
+    },
+    {
+      "id": "primary-080",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22080
+    },
+    {
+      "id": "primary-081",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22081
+    },
+    {
+      "id": "primary-082",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22082
+    },
+    {
+      "id": "primary-083",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22083
+    },
+    {
+      "id": "primary-084",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22084
+    },
+    {
+      "id": "primary-085",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22085
+    },
+    {
+      "id": "primary-086",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22086
+    },
+    {
+      "id": "primary-087",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22087
+    },
+    {
+      "id": "primary-088",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22088
+    },
+    {
+      "id": "primary-089",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22089
+    },
+    {
+      "id": "primary-090",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22090
+    },
+    {
+      "id": "primary-091",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22091
+    },
+    {
+      "id": "primary-092",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "scalar",
+      "seed": 22092
+    },
+    {
+      "id": "primary-093",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "vector",
+      "seed": 22093
+    },
+    {
+      "id": "primary-094",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "scalar",
+      "seed": 22094
+    },
+    {
+      "id": "primary-095",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "V",
+      "fault": "vector",
+      "seed": 22095
+    },
+    {
+      "id": "primary-096",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22096
+    },
+    {
+      "id": "primary-097",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22097
+    },
+    {
+      "id": "primary-098",
+      "prompt": "A science museum keeps a record of the weather. On Monday the wind came from the north and the temperature was mild. The guide explained that careful measurements help people compare changes over time. In summary,",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22098
+    },
+    {
+      "id": "primary-099",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22099
+    },
+    {
+      "id": "primary-100",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22100
+    },
+    {
+      "id": "primary-101",
+      "prompt": "The store has three boxes of pencils and four notebooks. Each box contains twelve pencils. A student buys one box and two notebooks. The inventory after the purchase is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22101
+    },
+    {
+      "id": "primary-102",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22102
+    },
+    {
+      "id": "primary-103",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 0.5,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22103
+    },
+    {
+      "id": "primary-104",
+      "prompt": "Record A: city=Abu Dhabi; category=library; opening=09:00. Record B: city=Al Ain; category=museum; opening=10:00. The records should be described in clear English. Record A describes",
+      "prefix_tokens": 64,
+      "layer_fraction": 1.0,
+      "window": 4,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22104
+    },
+    {
+      "id": "primary-105",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22105
+    },
+    {
+      "id": "primary-106",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 0.5,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22106
+    },
+    {
+      "id": "primary-107",
+      "prompt": "def total(values):\n    result = 0\n    for value in values:\n        result += value\n    return result\n\nThis function adds a sequence of numbers. For the input [2, 3, 4], the result is",
+      "prefix_tokens": 128,
+      "layer_fraction": 1.0,
+      "window": 12,
+      "kind": "K",
+      "fault": "noop",
+      "seed": 22107
+    }
+  ],
+  "repetitions": 3,
+  "overhead_repetitions": 5,
+  "audit_max_bytes": 52428800,
+  "description": "Constructed mechanism workloads; not a task-quality or field-error benchmark."
+}

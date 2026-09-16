@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "groups": {
+    "model_config": {
+      "passed": 1,
+      "failed": 0
+    },
+    "numeric_binding": {
+      "passed": 1,
+      "failed": 0
+    },
+    "native_parity": {
+      "passed": 164,
+      "failed": 0
+    },
+    "primary_reconstruction": {
+      "passed": 9,
+      "failed": 0
+    },
+    "amended_boundary": {
+      "passed": 4,
+      "failed": 0
+    },
+    "case_config": {
+      "passed": 1,
+      "failed": 0
+    },
+    "model_revision": {
+      "passed": 1,
+      "failed": 0
+    },
+    "model_layers": {
+      "passed": 1,
+      "failed": 0
+    },
+    "layer_selection": {
+      "passed": 3,
+      "failed": 0
+    },
+    "token_lengths": {
+      "passed": 8,
+      "failed": 0
+    },
+    "token_values": {
+      "passed": 1,
+      "failed": 0
+    },
+    "divergence": {
+      "passed": 7,
+      "failed": 0
+    },
+    "injection_metadata": {
+      "passed": 4,
+      "failed": 0
+    },
+    "injection_shape": {
+      "passed": 3,
+      "failed": 0
+    },
+    "injection_finite": {
+      "passed": 4,
+      "failed": 0
+    },
+    "injection_changed_count": {
+      "passed": 1,
+      "failed": 0
+    },
+    "injection_seed_coordinates": {
+      "passed": 3,
+      "failed": 0
+    },
+    "injection_rounding": {
+      "passed": 1,
+      "failed": 0
+    },
+    "method_coverage": {
+      "passed": 1,
+      "failed": 0
+    },
+    "verification_schema": {
+      "passed": 88,
+      "failed": 0
+    },
+    "exactness_flags": {
+      "passed": 84,
+      "failed": 0
+    },
+    "token_verification": {
+      "passed": 10,
+      "failed": 0
+    },
+    "valid_recovery_exact": {
+      "passed": 7,
+      "failed": 0
+    },
+    "recovery_cut": {
+      "passed": 12,
+      "failed": 0
+    },
+    "irreversible_replay_trace": {
+      "passed": 6,
+      "failed": 0
+    },
+    "layer_work": {
+      "passed": 12,
+      "failed": 0
+    },
+    "negative_control": {
+      "passed": 3,
+      "failed": 0
+    },
+    "run_completion": {
+      "passed": 1,
+      "failed": 0
+    },
+    "timing_repetitions": {
+      "passed": 1,
+      "failed": 0
+    },
+    "timing_schedule": {
+      "passed": 3,
+      "failed": 0
+    },
+    "timing_values": {
+      "passed": 6,
+      "failed": 0
+    },
+    "timing_repeated_checks": {
+      "passed": 3,
+      "failed": 0
+    },
+    "memory_accounting": {
+      "passed": 12,
+      "failed": 0
+    },
+    "overhead_repetitions": {
+      "passed": 1,
+      "failed": 0
+    },
+    "overhead_schedule": {
+      "passed": 3,
+      "failed": 0
+    },
+    "overhead_exactness": {
+      "passed": 3,
+      "failed": 0
+    },
+    "payload_bytes": {
+      "passed": 6,
+      "failed": 0
+    },
+    "checkpoint_timing": {
+      "passed": 2,
+      "failed": 0
+    },
+    "snapshot_metadata": {
+      "passed": 5,
+      "failed": 0
+    },
+    "snapshot_tokens": {
+      "passed": 6,
+      "failed": 0
+    },
+    "snapshot_cache_length": {
+      "passed": 6,
+      "failed": 0
+    },
+    "snapshot_layout": {
+      "passed": 306,
+      "failed": 0
+    },
+    "snapshot_logits_decision": {
+      "passed": 6,
+      "failed": 0
+    },
+    "snapshot_replay_trace": {
+      "passed": 9,
+      "failed": 0
+    },
+    "snapshot_reference_finite": {
+      "passed": 2,
+      "failed": 0
+    },
+    "snapshot_vs_row": {
+      "passed": 30,
+      "failed": 0
+    },
+    "snapshot_recovery_exact": {
+      "passed": 3,
+      "failed": 0
+    },
+    "snapshot_checkpoint": {
+      "passed": 50,
+      "failed": 0
+    },
+    "snapshot_prefix_preserved": {
+      "passed": 240,
+      "failed": 0
+    },
+    "snapshot_injection": {
+      "passed": 49,
+      "failed": 0
+    },
+    "snapshot_payload": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failures": [],
+  "warnings": [],
+  "snapshot": {
+    "file": "boundary_snapshot.pt",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "primary-063",
+    "sha256": "a5e3f8e6fdc09b822c0a7bccb038485dbd313298c9ea08f6802e32604530bcdd",
+    "bytes": 8474502,
+    "states_checked": [
+      "reference",
+      "none",
+      "slotonly",
+      "full",
+      "sparse",
+      "all"
+    ],
+    "continuation_tensors_present": false
+  },
+  "diagnostic_metadata_sha256": "7c28d8c6441defef137fd71050fa4be2b8543f9b79e244db064fa2be86d9bc62",
+  "auditor_sha256": "417a4c1bc92b8542868e31f5f785668baefcd9c4869575e6ee1b9b926db08d44",
+  "independent_helper_sha256": "44206b82596ff57d84c2153e3f516901b54846e0616e1d568278733098a032ac",
+  "scope": "CPU saved KV/logit/tokens and trace audit; no independent model execution or archived continuation tensors"
+}

@@ -1,0 +1,8 @@
+{
+  "summary_sha256": "0012b26b6b372b06b1f42af375ebcac9f13edc32f9e6a6bc6526769f2c38b39e",
+  "builder_sha256": "ab9f2eae70855da450c475cb4417e0ffa7ad2d0d1bc5735fc9641f82eca3d806",
+  "outputs": {
+    "supplement_results.md": "5e904bde61e4f4e68460bd72edcf9747cb16327e82ea23ec49876c1b2733709f",
+    "detector_results.md": "a2c1f7a3eeb8a3de7a0f18a0c16a7c529b089e064e397ebb0ff734f45d3cd268"
+  }
+}

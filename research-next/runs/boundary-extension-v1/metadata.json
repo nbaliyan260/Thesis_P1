@@ -1,0 +1,1376 @@
+{
+  "status": "complete",
+  "study": "posthoc_observed_boundary_extension",
+  "performance_evidence": false,
+  "new_fault_samples": false,
+  "snapshot_max_bytes": 20971520,
+  "selection": "Explicit post-hoc primary-063/Qwen W12-to-W14 amendment, not a search",
+  "primary_raw_sha256": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+  "primary_metadata_sha256": "eac1c4fadb579a1cb580a93243ed79d4e5124fa7638b32bd52fcbcfd41eb88aa",
+  "config_sha256": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+  "manifest_sha256": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+  "source_sha256": {
+    "capture_boundary_case.py": "23735533bdac94f7f4ea1ae134e6bb2142dac7e279b1850f451821d1287611ef",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9",
+    "audit_results.py": "44206b82596ff57d84c2153e3f516901b54846e0616e1d568278733098a032ac",
+    "audit_boundary_snapshot.py": "417a4c1bc92b8542868e31f5f785668baefcd9c4869575e6ee1b9b926db08d44"
+  },
+  "observed_divergences": [
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "case_id": "primary-052",
+      "first_divergence": 12,
+      "selected_sparse_cut": 0,
+      "window": 12
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "case_id": "primary-063",
+      "first_divergence": 12,
+      "selected_sparse_cut": 6,
+      "window": 12
+    }
+  ],
+  "diagnostic_overrides": {
+    "repetitions": 1,
+    "overhead_repetitions": 1
+  },
+  "timings": "Diagnostic only: ignored for all performance claims; frozen config is not modified",
+  "amendment": {
+    "study": "posthoc_observed_boundary_extension",
+    "primary_raw_sha256": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "primary-063",
+    "original_window": 12,
+    "diagnostic_window": 14,
+    "expected_first_divergence": 12,
+    "expected_sparse_cut": 6,
+    "expected_fault_layer": 11,
+    "new_fault_samples": false,
+    "performance_evidence": false,
+    "rationale": "The frozen primary has only final-output divergences, so its measured replay windows contain no post-divergence full-layer step. Reuse exactly this observed fault and extend the window by two transitions to check the already-specified fallback boundary. This is a selected diagnostic, not additional primary evidence or a new fault sweep."
+  },
+  "amendment_sha256": "eaeefc0f9e2ac4e8b37019c3e18d2a216664d34f7836b2d09d5208215b646a32",
+  "numeric": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3",
+    "cuda": "12.4",
+    "gpu": "NVIDIA RTX 5000 Ada Generation",
+    "deterministic_algorithms": true,
+    "tf32": false,
+    "attention": "eager",
+    "dtype": "bfloat16",
+    "allow_bf16_reduced_precision_reduction": true,
+    "float32_matmul_precision": "highest",
+    "cublas_workspace_config": ":4096:8"
+  },
+  "model": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"
+  },
+  "case_id": "primary-063",
+  "model_config": {
+    "vocab_size": 151936,
+    "max_position_embeddings": 32768,
+    "hidden_size": 896,
+    "intermediate_size": 4864,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 14,
+    "use_sliding_window": false,
+    "sliding_window": 32768,
+    "max_window_layers": 24,
+    "num_key_value_heads": 2,
+    "hidden_act": "silu",
+    "initializer_range": 0.02,
+    "rms_norm_eps": 1e-06,
+    "use_cache": true,
+    "rope_theta": 1000000.0,
+    "rope_scaling": null,
+    "attention_dropout": 0.0,
+    "return_dict": true,
+    "output_hidden_states": false,
+    "output_attentions": false,
+    "torchscript": false,
+    "torch_dtype": "bfloat16",
+    "use_bfloat16": false,
+    "tf_legacy_loss": false,
+    "pruned_heads": {},
+    "tie_word_embeddings": true,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "is_decoder": false,
+    "cross_attention_hidden_size": null,
+    "add_cross_attention": false,
+    "tie_encoder_decoder": false,
+    "max_length": 20,
+    "min_length": 0,
+    "do_sample": false,
+    "early_stopping": false,
+    "num_beams": 1,
+    "num_beam_groups": 1,
+    "diversity_penalty": 0.0,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "typical_p": 1.0,
+    "repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "encoder_no_repeat_ngram_size": 0,
+    "bad_words_ids": null,
+    "num_return_sequences": 1,
+    "output_scores": false,
+    "return_dict_in_generate": false,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": false,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "architectures": [
+      "Qwen2ForCausalLM"
+    ],
+    "finetuning_task": null,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "tokenizer_class": null,
+    "prefix": null,
+    "bos_token_id": 151643,
+    "pad_token_id": null,
+    "eos_token_id": 151643,
+    "sep_token_id": null,
+    "decoder_start_token_id": null,
+    "task_specific_params": null,
+    "problem_type": null,
+    "_name_or_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "_attn_implementation_autoset": true,
+    "transformers_version": "4.51.3",
+    "model_type": "qwen2",
+    "use_mrope": false
+  },
+  "native_parity": {
+    "passed": true,
+    "prefix_tokens": 64,
+    "decode_steps": 16,
+    "trace": [
+      {
+        "position": 0,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 1,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 2,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 3,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 4,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 5,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 6,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 7,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 8,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 9,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 10,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 11,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 12,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 13,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 14,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 15,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 16,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 17,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 18,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 19,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 20,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 21,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 22,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 23,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 24,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 25,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 26,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 27,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 28,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 29,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 30,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 31,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 32,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 33,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 34,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 35,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 36,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 37,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 38,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 39,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 40,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 41,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 42,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 43,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 44,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 45,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 46,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 47,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 48,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 49,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 50,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 51,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 52,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 53,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 54,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 55,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 56,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 57,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 58,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 59,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 60,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 61,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 62,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 63,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 64,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 65,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 66,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 67,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 68,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 69,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 70,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 71,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 72,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 73,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 74,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 75,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 76,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 77,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 78,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      },
+      {
+        "position": 79,
+        "logits": {
+          "equal": true,
+          "finite": true,
+          "max_abs_error": 0.0
+        },
+        "cache": {
+          "equal": true,
+          "eq": true,
+          "max_abs_error": 0.0,
+          "finite": true,
+          "mismatches": []
+        }
+      }
+    ]
+  },
+  "diagnostic_row_sha256": "8863815b998ce602679c6ff590be897e047cad1da629e6a8f67d3f2b9647ef1d",
+  "archive": {
+    "file": "boundary_snapshot.pt",
+    "bytes": 8474502,
+    "sha256": "a5e3f8e6fdc09b822c0a7bccb038485dbd313298c9ea08f6802e32604530bcdd",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "case_id": "primary-063"
+  },
+  "reconstruction_matches_primary": true,
+  "independent_cpu_audit": "pending"
+}

@@ -1,0 +1,48 @@
+{
+  "protocol": "RECUT-v0.1-debug",
+  "repetitions": 1,
+  "overhead_repetitions": 2,
+  "audit_max_bytes": 10485760,
+  "cases": [
+    {
+      "id": "debug-0",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.0,
+      "kind": "V",
+      "fault": "scalar",
+      "window": 1,
+      "seed": 11000
+    },
+    {
+      "id": "debug-1",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11001
+    },
+    {
+      "id": "debug-2",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 1.0,
+      "kind": "V",
+      "fault": "vector",
+      "window": 4,
+      "seed": 11002
+    },
+    {
+      "id": "debug-3",
+      "prompt": "A blue bird sat beside a quiet river. The bird looked at the water and",
+      "prefix_tokens": 32,
+      "layer_fraction": 0.5,
+      "kind": "K",
+      "fault": "noop",
+      "window": 4,
+      "seed": 11003
+    }
+  ]
+}

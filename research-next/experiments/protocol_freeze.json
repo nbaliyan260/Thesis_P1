@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-15T23:07:16.263159+00:00",
+  "files": {
+    "config_primary.json": {
+      "sha256": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+      "cases_per_model": 108
+    },
+    "config_debug.json": {
+      "sha256": "faa64d9862d94203324010359bc13b0357663d74247937c3a718a5e7a7fc2694",
+      "cases_per_model": 4
+    }
+  },
+  "notes": "Frozen before pretrained-model experiments. Any revisions require a new filename and deviation note."
+}

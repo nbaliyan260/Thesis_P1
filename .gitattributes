@@ -1,0 +1,11 @@
+# Preserve hash-bound research artifacts byte for byte across platforms.
+* -text
+*.pdf binary
+*.png binary
+*.pt binary
+
+# New repository presentation/helper files use ordinary LF text.
+/README.md text eol=lf
+/.gitignore text eol=lf
+/.gitattributes text eol=lf
+/scripts/*.py text eol=lf

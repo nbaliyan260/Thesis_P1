@@ -1,0 +1,40 @@
+{
+  "status": "skipped",
+  "study": "posthoc_observed_boundary_snapshot",
+  "performance_evidence": false,
+  "new_fault_samples": false,
+  "snapshot_max_bytes": 20971520,
+  "selection": "first lexicographic (case_id, model) with divergence, sparse cut>0 and W>j",
+  "primary_raw_sha256": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+  "primary_metadata_sha256": "eac1c4fadb579a1cb580a93243ed79d4e5124fa7638b32bd52fcbcfd41eb88aa",
+  "config_sha256": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+  "manifest_sha256": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+  "source_sha256": {
+    "capture_boundary_case.py": "e6c3e4f061931131e2630218145748adaa558175959403fd60da0c9004c49e07",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9",
+    "audit_results.py": "44206b82596ff57d84c2153e3f516901b54846e0616e1d568278733098a032ac"
+  },
+  "observed_divergences": [
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "case_id": "primary-052",
+      "first_divergence": 12,
+      "selected_sparse_cut": 0,
+      "window": 12
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "case_id": "primary-063",
+      "first_divergence": 12,
+      "selected_sparse_cut": 6,
+      "window": 12
+    }
+  ],
+  "diagnostic_overrides": {
+    "repetitions": 1,
+    "overhead_repetitions": 1
+  },
+  "timings": "Diagnostic only: ignored for all performance claims; frozen config is not modified",
+  "reason": "No primary case meets the declared actual-fallback criterion"
+}

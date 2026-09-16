@@ -1,0 +1,305 @@
+2026-09-16T04:00:36+04:00
+ws-l1-005
+Wed Sep 16 04:00:36 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX 5000 Ada Gene...    On  |   00000000:55:00.0 Off |                  Off |
+| 30%   56C    P8             21W /  250W |     184MiB /  32760MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            4869      G   /usr/lib/xorg/Xorg                      175MiB |
++-----------------------------------------------------------------------------------------+
+........................................................................ [ 94%]
+....                                                                     [100%]
+76 passed in 13.54s
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-000", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-001", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-002", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-003", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-004", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-005", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-006", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-007", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-008", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-009", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-010", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-011", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-012", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-013", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-014", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-015", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-016", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-017", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-018", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-019", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-020", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-021", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-022", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-023", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-024", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-025", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-026", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-027", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-028", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-029", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-030", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-031", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-032", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-033", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-034", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-035", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-036", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-037", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-038", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-039", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-040", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-041", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-042", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-043", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-044", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-045", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-046", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-047", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-048", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-049", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-050", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-051", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-052", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-053", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-054", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-055", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-056", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-057", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-058", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-059", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-060", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-061", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-062", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-063", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-064", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-065", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-066", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-067", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-068", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-069", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-070", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-071", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-072", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-073", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-074", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-075", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-076", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-077", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-078", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-079", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-080", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-081", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-082", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-083", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-084", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-085", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-086", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-087", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-088", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-089", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-090", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-091", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-092", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-093", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-094", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-095", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-096", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-097", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-098", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-099", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-100", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-101", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-102", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-103", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-104", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-105", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-106", "valid": true}
+{"model": "HuggingFaceTB/SmolLM2-135M", "case": "primary-107", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-000", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-001", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-002", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-003", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-004", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-005", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-006", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-007", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-008", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-009", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-010", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-011", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-012", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-013", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-014", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-015", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-016", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-017", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-018", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-019", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-020", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-021", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-022", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-023", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-024", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-025", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-026", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-027", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-028", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-029", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-030", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-031", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-032", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-033", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-034", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-035", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-036", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-037", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-038", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-039", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-040", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-041", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-042", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-043", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-044", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-045", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-046", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-047", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-048", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-049", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-050", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-051", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-052", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-053", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-054", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-055", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-056", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-057", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-058", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-059", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-060", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-061", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-062", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-063", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-064", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-065", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-066", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-067", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-068", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-069", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-070", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-071", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-072", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-073", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-074", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-075", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-076", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-077", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-078", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-079", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-080", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-081", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-082", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-083", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-084", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-085", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-086", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-087", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-088", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-089", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-090", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-091", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-092", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-093", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-094", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-095", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-096", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-097", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-098", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-099", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-100", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-101", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-102", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-103", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-104", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-105", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-106", "valid": true}
+{"model": "Qwen/Qwen2.5-0.5B", "case": "primary-107", "valid": true}
+{
+  "status": "passed",
+  "version": "RECUT-supplement-audit-v1",
+  "audited_utc": "2026-09-16T00:37:29.503463+00:00",
+  "run": "/l/users/nazish.baliyan/recut-20260916/runs/sensitivity-v1",
+  "limitations": [
+    "Supplemental correctness and immutability checks are recorded runner assertions. No supplemental tensor snapshots were saved or independently loaded; no model inference was rerun by this auditor.",
+    "Native parity flags and coordinate/vector reconstruction are checked and bound to primary records; this is not independent hardware/model replication or authentication of every model-weight byte.",
+    "The single warmup per method is declared in metadata/source and excluded from recorded trials. Its actual execution cannot be independently reconstructed from the saved timing rows.",
+    "Five repeated timings per policy are not independent fault trials; paired case medians describe these constructed cases, not an IID population, field fault rates, or statistically proven dominance.",
+    "No new normal-decoding overhead measurements were made. Detector comparison time is measured separately, outside recovery timing. No end-to-end break-even, commit-delay, protected-memory cost or serving-system performance claim follows.",
+    "Checkpoint-alias full replay assumes an immutable trusted resident GPU checkpoint and ordinary DynamicCache out-of-place append. Prefix views retain backing allocations until replaced.",
+    "The common working-cache clone is excluded even when unused by checkpoint-alias replay. Policy-specific restoration and replay are timed; correctness diagnostics are excluded.",
+    "Sparse/all retain their original conservative restoration, not their optimized attainable frontier. This post-hoc baseline sensitivity does not replace or pool primary timing measurements.",
+    "c0 controls are perturbed cases with zero selected sparse cut or fault layer, not no-op injections.",
+    "The naive prefix detector covers persistent post-checkpoint changes in the old K/V prefix only. Suffix-only changes, transient/reverted faults, pre-checkpoint errors, and dirty/corrupt trusted checkpoints are not covered. It is a bounded feasibility mechanism, not a production detector.",
+    "Detector bytes are logical reads of current and trusted old-prefix tensor payload, not measured physical memory traffic. One consolidated decision transfer is supported by source inspection, not independently profiled here. No-alarm forces conservative full replay; multiple layers fail closed."
+  ],
+  "input_sha256": {
+    "episodes": "21fce35699c89381dcb44957874ba7cf32842917f9b77e0c2bfdb21457f5eafe",
+    "metadata": "58a16cda18ee08fb7653ecf943e77eedebbfd7c55090911a24753de39e507c21",
+    "detection": "0a4688934acbe0886450f53b09aa0ad441b7536bd41c75f44e328fd43e1e30ba",
+    "primary_episodes": "6c2d4a577eb57bd7de523c21d67f97d223d034521105e31f7f3fad1404799159",
+    "primary_metadata": "eac1c4fadb579a1cb580a93243ed79d4e5124fa7638b32bd52fcbcfd41eb88aa",
+    "config": "bd9673777665c48806ca53b7650137e96605db53af0a3d5e0916b166c4bf402a",
+    "manifest": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+    "auditor": "c29ba1ebbf1f8e757fa3da1545bef122e6e6f98af316599d3fd1e256be42beaf",
+    "run_optimized_replay.py": "6081ddd9c7d8572e0e0e9ac67b8a2017e2865034115cc75207642a0995076ac1",
+    "prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "summary_sha256": "0012b26b6b372b06b1f42af375ebcac9f13edc32f9e6a6bc6526769f2c38b39e",
+  "source_sha256": {
+    "run_optimized_replay.py": "6081ddd9c7d8572e0e0e9ac67b8a2017e2865034115cc75207642a0995076ac1",
+    "prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "checks": 98997,
+  "counts": {
+    "rows": 192,
+    "models": 2,
+    "per_model": {
+      "HuggingFaceTB/SmolLM2-135M": 96,
+      "Qwen/Qwen2.5-0.5B": 96
+    },
+    "perturbed_cases": 192,
+    "noop_cases": 0,
+    "trials": 4800,
+    "methods": 5,
+    "repetitions_per_method": 5,
+    "recorded_warmups": 0,
+    "declared_excluded_warmups_per_method": 1,
+    "native_parity_positions_per_model": 142,
+    "independently_loaded_tensor_snapshots": 0,
+    "detection_cases": 216,
+    "detection_perturbed_cases": 192,
+    "detection_noops": 24,
+    "detection_timing_samples": 1080
+  },
+  "failures": []
+}
+2026-09-16T04:37:29+04:00

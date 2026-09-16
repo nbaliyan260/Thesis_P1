@@ -1,0 +1,201 @@
+{
+  "date": "2026-09-16",
+  "scope": "First 11 user-supplied program websites, inspected for research agendas and concrete projects, not application deadlines or endorsement of a thesis idea.",
+  "method": "Official program/project pages opened. Access status distinguishes page availability from whether specific project details could be verified. No inference of fit from program name alone.",
+  "programs": [
+    {
+      "id": 1,
+      "name": "Apart Research",
+      "requested_url": "https://apartresearch.com/fellowships",
+      "accessed_url": "https://apartresearch.com/fellowships",
+      "access_status": "Accessible; fellowship and research pages read.",
+      "agenda": "Technical AI-safety projects spanning evaluations, interpretability, multi-agent systems, and technical governance; fellows can develop their own ideas or partner agendas.",
+      "projects": [
+        {
+          "title": "Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/aa95d031f5e151bf8fb402f44bd97054-Paper-Conference.pdf",
+          "status": "NeurIPS 2025 conference PDF; title/abstract inspected, not full paper.",
+          "relevance": "Shows that numerical perturbation response as a behavioral diagnostic is not itself a new research principle. No attack reproduction was performed."
+        }
+      ],
+      "other_sources": [
+        "https://apartresearch.com/research"
+      ],
+      "fit_assessment": "Potential fit for a sharply measured numerical reliability project; fellowship breadth is not evidence that a generic safety wrapper is novel."
+    },
+    {
+      "id": 2,
+      "name": "Pivotal Research",
+      "requested_url": "https://pivotal-research.org/2026-q3-ais",
+      "accessed_url": "https://www.pivotal-research.org/2026-q3-ais",
+      "access_status": "Non-www initial open failed; www page returned mostly navigation. The specific Q3 roster was not verified. Official library projects were accessible.",
+      "agenda": "Verified library includes technical governance and post-deployment evaluation integrity; do not treat accessible library projects as the Q3 2026 roster.",
+      "projects": [
+        {
+          "title": "Silent Updates: Measuring and Closing the Post-Deployment Disclosure Gap",
+          "url": "https://www.pivotal-research.org/library/silent-updates",
+          "status": "Official project page read.",
+          "relevance": "Studies changes to fine-tuning, classifiers, prompts, retrieval, and routing after evaluation, with disclosure/behavior triggers. Closest program-level connection to ensuring that deployed behavior still matches the evaluated artifact; not a hardware fault-recovery mechanism."
+        },
+        {
+          "title": "Privacy-Preserving AI Verification",
+          "url": "https://www.pivotal-research.org/library/privacy-preserving-ai-verification",
+          "status": "Official page opened; not relied on for technical mechanism.",
+          "relevance": "Adjacent verification agenda only; no mechanism claim inferred."
+        }
+      ],
+      "fit_assessment": "Relevant to evaluation-to-deployment contracts if a precise technical boundary is defined."
+    },
+    {
+      "id": 3,
+      "name": "ERA Fellowship",
+      "requested_url": "https://erafellowship.org",
+      "accessed_url": "https://erafellowship.org",
+      "access_status": "Program, AI-risks, and research-project listing pages accessible and read.",
+      "agenda": "Technical safety: robustness/control, objectives and misalignment, interpretability. Technical governance: hardware-use monitoring, evaluations/standards, compute governance, structured access, safety cases.",
+      "projects": [
+        {
+          "title": "Verifiable Semiconductor Manufacturing",
+          "url": "https://aigi.ox.ac.uk/publications/verifiable-semiconductor-manufacturing/",
+          "status": "Official Oxford AIGI publication page read; April 2026.",
+          "relevance": "Fabrication-chain threat model and tiered assurance make hardware trust a measurable governance problem; not silent-data-corruption recovery."
+        },
+        {
+          "title": "Towards Reliable Evaluation of Behavior Steering Interventions in LLMs",
+          "url": "https://erafellowship.org/research-projects",
+          "status": "Title verified on official listing; linked PDF fetch failed.",
+          "relevance": "Evaluation reliability is adjacent, but full mechanism was not verified."
+        }
+      ],
+      "other_sources": [
+        "https://erafellowship.org/ai-risks",
+        "https://erafellowship.org/research-projects"
+      ],
+      "fit_assessment": "Strong explicit bridge between hardware assurance and technical safety, but system guarantees must connect to a concrete risk."
+    },
+    {
+      "id": 4,
+      "name": "LASR Labs",
+      "requested_url": "https://lasrlabs.org",
+      "accessed_url": "https://www.lasrlabs.org/",
+      "access_status": "Non-www initial open failed; www homepage and past-project pages accessible.",
+      "agenda": "Technical AI-safety research grounded in concrete loss-of-control threat models; past work includes probe generalization, fine-tuning fragility, interpretability, and evaluation awareness.",
+      "projects": [
+        {
+          "title": "The Impact of Off-Policy Training Data on Probe Generalisation",
+          "url": "https://arxiv.org/abs/2511.17408",
+          "status": "Primary arXiv abstract page opened; preprint.",
+          "relevance": "Probe portability across distributions is already an explicit research target; any runtime-transformation monitor project must distinguish itself."
+        },
+        {
+          "title": "A loss curvature account of fine-tuning fragility",
+          "url": "https://www.lasrlabs.org/past-projects",
+          "status": "Official listing states ICML 2026 workshops; linked paper fetch failed. Not represented as main-conference acceptance.",
+          "relevance": "Mechanistic numerical accounts of behavioral fragility are adjacent."
+        }
+      ],
+      "fit_assessment": "Fit requires a causal threat-model argument; ordinary latency improvement alone is insufficient."
+    },
+    {
+      "id": 5,
+      "name": "AI Safety Camp",
+      "requested_url": "https://aisafety.camp",
+      "accessed_url": "https://www.aisafety.camp/",
+      "access_status": "Accessible redirect to current Google-Sites-backed Research Incubator page; project catalog not established from inspected page.",
+      "agenda": "Research incubation from conceptual confusion to testable research directions; no specific hardware project verified.",
+      "projects": [],
+      "fit_assessment": "Useful research-development format, not evidence for a particular systems thesis or its novelty."
+    },
+    {
+      "id": 6,
+      "name": "Principles of Intelligence / PIBBSS",
+      "requested_url": "https://princint.ai/programs/fellowship",
+      "accessed_url": "https://princint.ai/programs/fellowship/",
+      "access_status": "Fellowship and PIRAMID project pages accessible and read.",
+      "agenda": "Foundational alignment-oriented inquiry; tracks include AIXI, gradual disempowerment, safe Pareto improvements, and corrigibility.",
+      "projects": [
+        {
+          "title": "PIRAMID",
+          "url": "https://princint.ai/piramid/",
+          "status": "Official project page read.",
+          "relevance": "Theory-informed interpretability connects formal/toy models to real behaviors, synthetic data, and rare/worst-case prediction. Supports a formal-model-plus-falsification method, not a direct KV-recovery endorsement."
+        }
+      ],
+      "fit_assessment": "A mechanistic theory of error propagation with testable predictions would be a closer fit than an engineering wrapper."
+    },
+    {
+      "id": 7,
+      "name": "Anthropic Fellows Program",
+      "requested_url": "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026",
+      "accessed_url": "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/",
+      "access_status": "Official program page accessible and read.",
+      "agenda": "Oversight, robustness/control, model organisms, interpretability, security, and model welfare.",
+      "projects": [
+        {
+          "title": "Open-sourcing circuit-tracing tools",
+          "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
+          "status": "Official research page read; May 2025.",
+          "relevance": "Fellow-led tooling constructs attribution graphs for open-weight models and tests hypotheses through interventions. Relevant standard: identify and test a causal mechanism, not simply correlate output quality with perturbations."
+        }
+      ],
+      "fit_assessment": "Numerical systems work needs a credible connection to safety-relevant causal behavior. Program presence does not prove a project is novel or supported."
+    },
+    {
+      "id": 8,
+      "name": "OpenAI Safety Fellowship",
+      "requested_url": "https://openai.com/index/introducing-openai-safety-fellowship",
+      "accessed_url": "https://openai.com/index/introducing-openai-safety-fellowship/",
+      "access_status": "Official announcement accessible and read; OpenAI Docs skill consulted before official-source lookup.",
+      "agenda": "Pilot announcement lists safety evaluations, ethics, robustness, scalable mitigations, privacy-preserving safety, and agent oversight.",
+      "projects": [],
+      "fit_assessment": "Broad robustness/evaluation fit; no concrete project roster or hardware-specific agenda verified. Do not infer acceptance likelihood or institutional endorsement."
+    },
+    {
+      "id": 9,
+      "name": "Iliad Fellowship",
+      "requested_url": "https://iliad.ac/fellowship",
+      "accessed_url": "https://www.iliad.ac/fellowship",
+      "access_status": "Non-www initial open failed; www official fellowship page accessible and read.",
+      "agenda": "Three-month applied-mathematics alignment research fellowship with mentored independent work.",
+      "projects": [],
+      "fit_assessment": "A theory-led reliability contract might fit the method; no specific hardware/KV project catalog verified."
+    },
+    {
+      "id": 10,
+      "name": "GovAI",
+      "requested_url": "https://governance.ai/opportunities",
+      "accessed_url": "https://www.governance.ai/opportunities",
+      "access_status": "Non-www initial open failed; www opportunities and concrete research page accessible.",
+      "agenda": "AI governance, including technical governance and risk management.",
+      "projects": [
+        {
+          "title": "Open Problems in Technical AI Governance",
+          "url": "https://www.governance.ai/research-paper/open-problems-in-technical-ai-governance",
+          "status": "Official research overview read; July 2024. Full linked paper not read.",
+          "relevance": "Technical tools can support assessment, enforcement, incentives, and compliance. A runtime reliability contract needs a clear decision or assurance claim it enables."
+        }
+      ],
+      "fit_assessment": "Governance relevance is a separate argument from hardware-system novelty; do not relabel a systems optimization as governance without a user and decision."
+    },
+    {
+      "id": 11,
+      "name": "IAPS Fellowship",
+      "requested_url": "https://iaps.ai/fellowship",
+      "accessed_url": "https://www.iaps.ai/fellowship/",
+      "access_status": "Non-www initial open failed; www fellowship, research listing, and concrete research page accessible.",
+      "agenda": "Policy-oriented AI-risk research; the inspected research includes preserving oversight under efficiency pressures.",
+      "projects": [
+        {
+          "title": "Policy Options for Preserving Chain of Thought Monitorability",
+          "url": "https://www.iaps.ai/research/policy-options-for-preserving-cot-monitorability",
+          "status": "Official research page opened and official listing read.",
+          "relevance": "Efficiency pressures can remove readable chain-of-thought, threatening oversight. This motivates studying observability loss, but is policy work rather than evidence for a novel cache-repair mechanism."
+        }
+      ],
+      "other_sources": [
+        "https://www.iaps.ai/ourresearch"
+      ],
+      "fit_assessment": "Potential impact argument about preserving monitorability; weak direct fit for a hardware performance thesis absent a policy-relevant measurement."
+    }
+  ]
+}

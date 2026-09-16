@@ -1,0 +1,3842 @@
+[
+  {
+    "case_id": "primary-000",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12174961494747549,
+      "sparse": 0.12434442201629281,
+      "all": 0.11828402895480394
+    },
+    "normal": {
+      "none": 0.11986627895385027,
+      "sparse": 0.12210927705746144,
+      "all": 0.12374552898108959
+    },
+    "sparse_speedup": 0.979132099158599,
+    "all_speedup": 1.029298849754228,
+    "sparse_overhead": 0.018712502992394908,
+    "all_overhead": 0.03236314717613675
+  },
+  {
+    "case_id": "primary-001",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11998998501803726,
+      "sparse": 0.12056025105994195,
+      "all": 0.12189256795682013
+    },
+    "normal": {
+      "none": 0.11908331303857267,
+      "sparse": 0.12178554700221866,
+      "all": 0.12284596392419189
+    },
+    "sparse_speedup": 0.9952698668351216,
+    "all_speedup": 0.9843913130170754,
+    "sparse_overhead": 0.022691961574588637,
+    "all_overhead": 0.03159679378755986
+  },
+  {
+    "case_id": "primary-002",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11944329005200416,
+      "sparse": 0.12070793798193336,
+      "all": 0.11970303195994347
+    },
+    "normal": {
+      "none": 0.11808821803424507,
+      "sparse": 0.12096400698646903,
+      "all": 0.12319098797161132
+    },
+    "sparse_speedup": 0.9895230756893678,
+    "all_speedup": 0.99783011421109,
+    "sparse_overhead": 0.024352886342903224,
+    "all_overhead": 0.043211507653426295
+  },
+  {
+    "case_id": "primary-003",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12000762997195125,
+      "sparse": 0.12332809891086072,
+      "all": 0.12125000893138349
+    },
+    "normal": {
+      "none": 0.11940241395495832,
+      "sparse": 0.11851787101477385,
+      "all": 0.12197066098451614
+    },
+    "sparse_speedup": 0.9730761361909143,
+    "all_speedup": 0.9897535763470722,
+    "sparse_overhead": -0.007408082557846307,
+    "all_overhead": 0.021509171753651746
+  },
+  {
+    "case_id": "primary-004",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35946721804793924,
+      "sparse": 0.35907425195910037,
+      "all": 0.36147470702417195
+    },
+    "normal": {
+      "none": 0.36272742901928723,
+      "sparse": 0.36129203101154417,
+      "all": 0.3638838289771229
+    },
+    "sparse_speedup": 1.0010943867088629,
+    "all_speedup": 0.994446391580868,
+    "sparse_overhead": -0.003957235910237,
+    "all_overhead": 0.003188068685520351
+  },
+  {
+    "case_id": "primary-005",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3598032349254936,
+      "sparse": 0.3585883309133351,
+      "all": 0.35814850800670683
+    },
+    "normal": {
+      "none": 0.3593228149693459,
+      "sparse": 0.36101922404486686,
+      "all": 0.3695031339302659
+    },
+    "sparse_speedup": 1.003388018815515,
+    "all_speedup": 1.0046202256376726,
+    "sparse_overhead": 0.0047211282024095524,
+    "all_overhead": 0.028331958163548387
+  },
+  {
+    "case_id": "primary-006",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3610255450475961,
+      "sparse": 0.36535148799885064,
+      "all": 0.35964497504755855
+    },
+    "normal": {
+      "none": 0.3612396050011739,
+      "sparse": 0.3641853720182553,
+      "all": 0.3670170810073614
+    },
+    "sparse_speedup": 0.9881595036742586,
+    "all_speedup": 1.0038387023198503,
+    "sparse_overhead": 0.008154607015119053,
+    "all_overhead": 0.0159934733794449
+  },
+  {
+    "case_id": "primary-007",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3657616439741105,
+      "sparse": 0.36027436901349574,
+      "all": 0.36124144203495234
+    },
+    "normal": {
+      "none": 0.3613219369435683,
+      "sparse": 0.3622883619973436,
+      "all": 0.3675235160626471
+    },
+    "sparse_speedup": 1.0152308224857627,
+    "all_speedup": 1.0125129661582981,
+    "sparse_overhead": 0.0026746924417331286,
+    "all_overhead": 0.017163583178863018
+  },
+  {
+    "case_id": "primary-008",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11911425599828362,
+      "sparse": 0.09274804696906358,
+      "all": 0.06558236107230186
+    },
+    "normal": {
+      "none": 0.12006962904706597,
+      "sparse": 0.11956554104108363,
+      "all": 0.12350828689523041
+    },
+    "sparse_speedup": 1.284277781482715,
+    "all_speedup": 1.8162544631012147,
+    "sparse_overhead": -0.004198297354485403,
+    "all_overhead": 0.028638864594280777
+  },
+  {
+    "case_id": "primary-009",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11903045501094311,
+      "sparse": 0.09469467308372259,
+      "all": 0.06513761903624982
+    },
+    "normal": {
+      "none": 0.11936462996527553,
+      "sparse": 0.11958884599152952,
+      "all": 0.12137971702031791
+    },
+    "sparse_speedup": 1.256992089784232,
+    "all_speedup": 1.827368834969257,
+    "sparse_overhead": 0.0018784126111666133,
+    "all_overhead": 0.01688177691857784
+  },
+  {
+    "case_id": "primary-010",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12289955792948604,
+      "sparse": 0.09229495096951723,
+      "all": 0.06708829896524549
+    },
+    "normal": {
+      "none": 0.11958651093300432,
+      "sparse": 0.1204223029781133,
+      "all": 0.12242132797837257
+    },
+    "sparse_speedup": 1.3315956792704378,
+    "all_speedup": 1.8319074984022636,
+    "sparse_overhead": 0.00698901605697988,
+    "all_overhead": 0.023705157239317654
+  },
+  {
+    "case_id": "primary-011",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1191707809921354,
+      "sparse": 0.09261184197384864,
+      "all": 0.06548932497389615
+    },
+    "normal": {
+      "none": 0.11958010506350547,
+      "sparse": 0.1212120340205729,
+      "all": 0.12303020292893052
+    },
+    "sparse_speedup": 1.2867769223916998,
+    "all_speedup": 1.81969780631632,
+    "sparse_overhead": 0.013647161090891924,
+    "all_overhead": 0.028851771484836863
+  },
+  {
+    "case_id": "primary-012",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3556670519756153,
+      "sparse": 0.27818822697736323,
+      "all": 0.19672409095801413
+    },
+    "normal": {
+      "none": 0.36232404003385454,
+      "sparse": 0.36080817005131394,
+      "all": 0.3641347889788449
+    },
+    "sparse_speedup": 1.2785122355467498,
+    "all_speedup": 1.8079486363036423,
+    "sparse_overhead": -0.004183741113062633,
+    "all_overhead": 0.004997595370213714
+  },
+  {
+    "case_id": "primary-013",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3601955020567402,
+      "sparse": 0.2760250719729811,
+      "all": 0.19593391101807356
+    },
+    "normal": {
+      "none": 0.3593703219667077,
+      "sparse": 0.36259877297561616,
+      "all": 0.3704857589909807
+    },
+    "sparse_speedup": 1.3049376257095884,
+    "all_speedup": 1.838352024849413,
+    "sparse_overhead": 0.008983632792046503,
+    "all_overhead": 0.03093031434382798
+  },
+  {
+    "case_id": "primary-014",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35986027610488236,
+      "sparse": 0.27876720495987684,
+      "all": 0.19973861007019877
+    },
+    "normal": {
+      "none": 0.36129775003064424,
+      "sparse": 0.36580435500945896,
+      "all": 0.36522081098519266
+    },
+    "sparse_speedup": 1.2908988923452358,
+    "all_speedup": 1.8016560542721727,
+    "sparse_overhead": 0.012473382351350093,
+    "all_overhead": 0.010858249059717773
+  },
+  {
+    "case_id": "primary-015",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36090312397573143,
+      "sparse": 0.2762654219986871,
+      "all": 0.19397308502811939
+    },
+    "normal": {
+      "none": 0.36069208395201713,
+      "sparse": 0.3608290000120178,
+      "all": 0.3691737960325554
+    },
+    "sparse_speedup": 1.3063637185020085,
+    "all_speedup": 1.8605835130343622,
+    "sparse_overhead": 0.0003795926389635884,
+    "all_overhead": 0.023515104594495684
+  },
+  {
+    "case_id": "primary-016",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12029940297361463,
+      "sparse": 0.03351678105536848,
+      "all": 0.006703480030409992
+    },
+    "normal": {
+      "none": 0.11797800508793443,
+      "sparse": 0.12018938397523016,
+      "all": 0.12119182001333684
+    },
+    "sparse_speedup": 3.589229012621602,
+    "all_speedup": 17.945813581584876,
+    "sparse_overhead": 0.018743992879414195,
+    "all_overhead": 0.02724079732495044
+  },
+  {
+    "case_id": "primary-017",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.13104965607635677,
+      "sparse": 0.03975819097831845,
+      "all": 0.007650447078049183
+    },
+    "normal": {
+      "none": 0.11952222802210599,
+      "sparse": 0.12007486203219742,
+      "all": 0.121517573017627
+    },
+    "sparse_speedup": 3.296167477736167,
+    "all_speedup": 17.12967291184421,
+    "sparse_overhead": 0.00462369233937987,
+    "all_overhead": 0.016694342370792814
+  },
+  {
+    "case_id": "primary-018",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11922592693008482,
+      "sparse": 0.03421139996498823,
+      "all": 0.007088643033057451
+    },
+    "normal": {
+      "none": 0.12114528205711395,
+      "sparse": 0.12041261699050665,
+      "all": 0.121467151097022
+    },
+    "sparse_speedup": 3.484976559044646,
+    "all_speedup": 16.819287750008293,
+    "sparse_overhead": -0.006047821707673928,
+    "all_overhead": 0.0026568846466203944
+  },
+  {
+    "case_id": "primary-019",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11968479899223894,
+      "sparse": 0.034005208988673985,
+      "all": 0.006784228957258165
+    },
+    "normal": {
+      "none": 0.1188197520095855,
+      "sparse": 0.12092985899653286,
+      "all": 0.12197412096429616
+    },
+    "sparse_speedup": 3.519601924284659,
+    "all_speedup": 17.641621434989034,
+    "sparse_overhead": 0.01775889068323533,
+    "all_overhead": 0.026547513366769193
+  },
+  {
+    "case_id": "primary-020",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3605373039608821,
+      "sparse": 0.1016060789115727,
+      "all": 0.020156414015218616
+    },
+    "normal": {
+      "none": 0.361572279012762,
+      "sparse": 0.36283789796289057,
+      "all": 0.36586544197052717
+    },
+    "sparse_speedup": 3.548383205247553,
+    "all_speedup": 17.886976507263004,
+    "sparse_overhead": 0.0035003207479959997,
+    "all_overhead": 0.011873595424647165
+  },
+  {
+    "case_id": "primary-021",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35954197007231414,
+      "sparse": 0.10227192693855613,
+      "all": 0.019790136022493243
+    },
+    "normal": {
+      "none": 0.3611955619417131,
+      "sparse": 0.361062558949925,
+      "all": 0.36885849095415324
+    },
+    "sparse_speedup": 3.5155489960438806,
+    "all_speedup": 18.167736172387237,
+    "sparse_overhead": -0.00036822986161044735,
+    "all_overhead": 0.021215457275404637
+  },
+  {
+    "case_id": "primary-022",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3580311449477449,
+      "sparse": 0.10258261591661721,
+      "all": 0.019753371947444975
+    },
+    "normal": {
+      "none": 0.3582083450164646,
+      "sparse": 0.36474622099194676,
+      "all": 0.3636767789721489
+    },
+    "sparse_speedup": 3.490173668789703,
+    "all_speedup": 18.125064718079937,
+    "sparse_overhead": 0.018251601523079142,
+    "all_overhead": 0.015266070798638065
+  },
+  {
+    "case_id": "primary-023",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3562778109917417,
+      "sparse": 0.10397363605443388,
+      "all": 0.019251886988058686
+    },
+    "normal": {
+      "none": 0.36047946801409125,
+      "sparse": 0.3624645130475983,
+      "all": 0.363839797093533
+    },
+    "sparse_speedup": 3.4266168281853457,
+    "all_speedup": 18.50612416397048,
+    "sparse_overhead": 0.005506679879558218,
+    "all_overhead": 0.00932183210864701
+  },
+  {
+    "case_id": "primary-024",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1205408750101924,
+      "sparse": 0.12362495192792267,
+      "all": 0.12198164698202163
+    },
+    "normal": {
+      "none": 0.11861968203447759,
+      "sparse": 0.11956127197481692,
+      "all": 0.12170913792215288
+    },
+    "sparse_speedup": 0.9750529575976832,
+    "all_speedup": 0.9881886168331406,
+    "sparse_overhead": 0.007937889599684222,
+    "all_overhead": 0.02604505285031289
+  },
+  {
+    "case_id": "primary-025",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12126503698527813,
+      "sparse": 0.12047339091077447,
+      "all": 0.1205971980234608
+    },
+    "normal": {
+      "none": 0.12010605004616082,
+      "sparse": 0.12059029401279986,
+      "all": 0.12244674994144589
+    },
+    "sparse_speedup": 1.0065711280185512,
+    "all_speedup": 1.0055377651617363,
+    "sparse_overhead": 0.004031803280958313,
+    "all_overhead": 0.019488609394659573
+  },
+  {
+    "case_id": "primary-026",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11954476800747216,
+      "sparse": 0.12045537296216935,
+      "all": 0.1194580759620294
+    },
+    "normal": {
+      "none": 0.11898221296723932,
+      "sparse": 0.12150646501686424,
+      "all": 0.12161963095422834
+    },
+    "sparse_speedup": 0.9924403126875613,
+    "all_speedup": 1.0007257110475336,
+    "sparse_overhead": 0.021215373177837504,
+    "all_overhead": 0.022166489605595086
+  },
+  {
+    "case_id": "primary-027",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12032337801065296,
+      "sparse": 0.11940261302515864,
+      "all": 0.11989810899831355
+    },
+    "normal": {
+      "none": 0.12503773090429604,
+      "sparse": 0.1226281690178439,
+      "all": 0.12407557701226324
+    },
+    "sparse_speedup": 1.0077114307816724,
+    "all_speedup": 1.003546920096508,
+    "sparse_overhead": -0.01927067829067064,
+    "all_overhead": -0.007694908449428217
+  },
+  {
+    "case_id": "primary-028",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.368366003036499,
+      "sparse": 0.36202908807899803,
+      "all": 0.36067733995150775
+    },
+    "normal": {
+      "none": 0.3614753088913858,
+      "sparse": 0.36207149899564683,
+      "all": 0.3669395330362022
+    },
+    "sparse_speedup": 1.017503883434135,
+    "all_speedup": 1.021317288981961,
+    "sparse_overhead": 0.0016493245585418315,
+    "all_overhead": 0.01511645196894551
+  },
+  {
+    "case_id": "primary-029",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35867690900340676,
+      "sparse": 0.3600715099601075,
+      "all": 0.3701741410186514
+    },
+    "normal": {
+      "none": 0.35910194902680814,
+      "sparse": 0.3626320849871263,
+      "all": 0.3681814089650288
+    },
+    "sparse_speedup": 0.9961268778058691,
+    "all_speedup": 0.9689410179122551,
+    "sparse_overhead": 0.009830456141731059,
+    "all_overhead": 0.025283794651704605
+  },
+  {
+    "case_id": "primary-030",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3569553740089759,
+      "sparse": 0.3641217079712078,
+      "all": 0.35952632094267756
+    },
+    "normal": {
+      "none": 0.3589868670096621,
+      "sparse": 0.3625175190391019,
+      "all": 0.3728126810165122
+    },
+    "sparse_speedup": 0.9803188499742,
+    "all_speedup": 0.9928490717259292,
+    "sparse_overhead": 0.009835045105827778,
+    "all_overhead": 0.038513425635924525
+  },
+  {
+    "case_id": "primary-031",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3612977179000154,
+      "sparse": 0.36114352894946933,
+      "all": 0.3615366310114041
+    },
+    "normal": {
+      "none": 0.3612566909287125,
+      "sparse": 0.3612326900474727,
+      "all": 0.37064320500940084
+    },
+    "sparse_speedup": 1.0004269464580873,
+    "all_speedup": 0.9993391731545422,
+    "sparse_overhead": -6.643719505394774e-05,
+    "all_overhead": 0.025982948735309597
+  },
+  {
+    "case_id": "primary-032",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11985498596914113,
+      "sparse": 0.09319115290418267,
+      "all": 0.06612998410128057
+    },
+    "normal": {
+      "none": 0.12152541801333427,
+      "sparse": 0.1338143580360338,
+      "all": 0.12576696905307472
+    },
+    "sparse_speedup": 1.2861197896368306,
+    "all_speedup": 1.8124151638321686,
+    "sparse_overhead": 0.1011223843011273,
+    "all_overhead": 0.03490258341900976
+  },
+  {
+    "case_id": "primary-033",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11992659699171782,
+      "sparse": 0.09469938499387354,
+      "all": 0.06742601003497839
+    },
+    "normal": {
+      "none": 0.11879452597349882,
+      "sparse": 0.12010098900645971,
+      "all": 0.12207426701206714
+    },
+    "sparse_speedup": 1.2663925642122842,
+    "all_speedup": 1.7786399777994257,
+    "sparse_overhead": 0.010997670324071507,
+    "all_overhead": 0.027608519935505837
+  },
+  {
+    "case_id": "primary-034",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11956843500956893,
+      "sparse": 0.09142776008229703,
+      "all": 0.06426682602614164
+    },
+    "normal": {
+      "none": 0.12093605904374272,
+      "sparse": 0.12068436504341662,
+      "all": 0.12210758600849658
+    },
+    "sparse_speedup": 1.3077913633883362,
+    "all_speedup": 1.860500080724889,
+    "sparse_overhead": -0.002081215497811595,
+    "all_overhead": 0.009687160091186087
+  },
+  {
+    "case_id": "primary-035",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12042708904482424,
+      "sparse": 0.09254294307902455,
+      "all": 0.06649536010809243
+    },
+    "normal": {
+      "none": 0.13221752201206982,
+      "sparse": 0.12052722100634128,
+      "all": 0.12535316694993526
+    },
+    "sparse_speedup": 1.3013103434800941,
+    "all_speedup": 1.8110600325956934,
+    "sparse_overhead": -0.0884171842568745,
+    "all_overhead": -0.05191713592626501
+  },
+  {
+    "case_id": "primary-036",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36137522000353783,
+      "sparse": 0.27829493407625705,
+      "all": 0.20067837298847735
+    },
+    "normal": {
+      "none": 0.36166167398914695,
+      "sparse": 0.3607747320784256,
+      "all": 0.3638144930591807
+    },
+    "sparse_speedup": 1.2985332313110505,
+    "all_speedup": 1.8007681377020506,
+    "sparse_overhead": -0.002452407801297629,
+    "all_overhead": 0.0059525772976938285
+  },
+  {
+    "case_id": "primary-037",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35873747302684933,
+      "sparse": 0.28477171703707427,
+      "all": 0.19951536098960787
+    },
+    "normal": {
+      "none": 0.3605651259422302,
+      "sparse": 0.36007607204373926,
+      "all": 0.3679561560275033
+    },
+    "sparse_speedup": 1.2597370158783905,
+    "all_speedup": 1.798044377372702,
+    "sparse_overhead": -0.001356353854835457,
+    "all_overhead": 0.020498460759228454
+  },
+  {
+    "case_id": "primary-038",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35856149496976286,
+      "sparse": 0.27664837206248194,
+      "all": 0.19757513201329857
+    },
+    "normal": {
+      "none": 0.36117080005351454,
+      "sparse": 0.3622325590113178,
+      "all": 0.36548141296952963
+    },
+    "sparse_speedup": 1.2960911076273407,
+    "all_speedup": 1.8148108586136664,
+    "sparse_overhead": 0.0029397696537094564,
+    "all_overhead": 0.01193510913777196
+  },
+  {
+    "case_id": "primary-039",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3591774560045451,
+      "sparse": 0.2852538749575615,
+      "all": 0.19954368704929948
+    },
+    "normal": {
+      "none": 0.35970998101402074,
+      "sparse": 0.36272144806571305,
+      "all": 0.37150368897709996
+    },
+    "sparse_speedup": 1.2591501379533636,
+    "all_speedup": 1.7999940830791923,
+    "sparse_overhead": 0.008371930751554402,
+    "all_overhead": 0.03278671314549797
+  },
+  {
+    "case_id": "primary-040",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12189827708061785,
+      "sparse": 0.03468123998027295,
+      "all": 0.00707250100094825
+    },
+    "normal": {
+      "none": 0.1191696299938485,
+      "sparse": 0.1214033419964835,
+      "all": 0.12113029602915049
+    },
+    "sparse_speedup": 3.5148188804654867,
+    "all_speedup": 17.235526310179985,
+    "sparse_overhead": 0.01874397027791641,
+    "all_overhead": 0.016452732423547722
+  },
+  {
+    "case_id": "primary-041",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11948054598178715,
+      "sparse": 0.03441011696122587,
+      "all": 0.007331200991757214
+    },
+    "normal": {
+      "none": 0.12042321497574449,
+      "sparse": 0.12179434590507299,
+      "all": 0.1218577609397471
+    },
+    "sparse_speedup": 3.472250504594932,
+    "all_speedup": 16.297540623442774,
+    "sparse_overhead": 0.011385935258452218,
+    "all_overhead": 0.011912536667382234
+  },
+  {
+    "case_id": "primary-042",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12069265905302018,
+      "sparse": 0.035018963972106576,
+      "all": 0.006529529928229749
+    },
+    "normal": {
+      "none": 0.12027156597469002,
+      "sparse": 0.12058996001724154,
+      "all": 0.1244645930128172
+    },
+    "sparse_speedup": 3.4464942809031904,
+    "all_speedup": 18.48412678701692,
+    "sparse_overhead": 0.00264729273266906,
+    "all_overhead": 0.03486299529025483
+  },
+  {
+    "case_id": "primary-043",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12358376604970545,
+      "sparse": 0.0345695021096617,
+      "all": 0.006847284035757184
+    },
+    "normal": {
+      "none": 0.12075352296233177,
+      "sparse": 0.12153375602792948,
+      "all": 0.12354840408079326
+    },
+    "sparse_speedup": 3.5749362446028834,
+    "all_speedup": 18.04858180328711,
+    "sparse_overhead": 0.006461368964291836,
+    "all_overhead": 0.023145338122626313
+  },
+  {
+    "case_id": "primary-044",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3594972389983013,
+      "sparse": 0.10535439907107502,
+      "all": 0.01973865693435073
+    },
+    "normal": {
+      "none": 0.36091171600855887,
+      "sparse": 0.3614424009574577,
+      "all": 0.36727426399011165
+    },
+    "sparse_speedup": 3.412266048385644,
+    "all_speedup": 18.21285207975202,
+    "sparse_overhead": 0.001470401002128252,
+    "all_overhead": 0.017629097918788306
+  },
+  {
+    "case_id": "primary-045",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36153780692256987,
+      "sparse": 0.1032506600022316,
+      "all": 0.020223572035320103
+    },
+    "normal": {
+      "none": 0.35866076697129756,
+      "sparse": 0.36201721301767975,
+      "all": 0.3659428240498528
+    },
+    "sparse_speedup": 3.5015544396012173,
+    "all_speedup": 17.87704992427404,
+    "sparse_overhead": 0.009358274881096085,
+    "all_overhead": 0.020303467089663574
+  },
+  {
+    "case_id": "primary-046",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3616717510158196,
+      "sparse": 0.10564391105435789,
+      "all": 0.019646466011181474
+    },
+    "normal": {
+      "none": 0.36052926105912775,
+      "sparse": 0.3612734660273418,
+      "all": 0.3674069120315835
+    },
+    "sparse_speedup": 3.4234983105625982,
+    "all_speedup": 18.408997873204264,
+    "sparse_overhead": 0.002064201296803958,
+    "all_overhead": 0.019076540284833632
+  },
+  {
+    "case_id": "primary-047",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3663731940323487,
+      "sparse": 0.10290775203611702,
+      "all": 0.019606327055953443
+    },
+    "normal": {
+      "none": 0.36356547102332115,
+      "sparse": 0.3615248800488189,
+      "all": 0.3647912150481716
+    },
+    "sparse_speedup": 3.560209865470237,
+    "all_speedup": 18.686477736843617,
+    "sparse_overhead": -0.005612719405829858,
+    "all_overhead": 0.0033714533489672682
+  },
+  {
+    "case_id": "primary-048",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12075193889904767,
+      "sparse": 0.12287926499266177,
+      "all": 0.12135306093841791
+    },
+    "normal": {
+      "none": 0.12152942991815507,
+      "sparse": 0.11906215804629028,
+      "all": 0.12090741796419024
+    },
+    "sparse_speedup": 0.9826876723771001,
+    "all_speedup": 0.9950465028675685,
+    "sparse_overhead": -0.020301846832708748,
+    "all_overhead": -0.005118200211946422
+  },
+  {
+    "case_id": "primary-049",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12225114007014781,
+      "sparse": 0.12180751108098775,
+      "all": 0.12304494006093591
+    },
+    "normal": {
+      "none": 0.11996611405629665,
+      "sparse": 0.11921235301997513,
+      "all": 0.12268026790115982
+    },
+    "sparse_speedup": 1.0036420495355587,
+    "all_speedup": 0.9935486986267377,
+    "sparse_overhead": -0.006283116213698481,
+    "all_overhead": 0.02262433743239778
+  },
+  {
+    "case_id": "primary-050",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11991456092800945,
+      "sparse": 0.12051346700172871,
+      "all": 0.11923970503266901
+    },
+    "normal": {
+      "none": 0.11930859799031168,
+      "sparse": 0.11992743297014385,
+      "all": 0.12212467298377305
+    },
+    "sparse_speedup": 0.9950303805158085,
+    "all_speedup": 1.0056596575373575,
+    "sparse_overhead": 0.005186843113204942,
+    "all_overhead": 0.023603286275227564
+  },
+  {
+    "case_id": "primary-051",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.120307951932773,
+      "sparse": 0.11782676796428859,
+      "all": 0.11910743697080761
+    },
+    "normal": {
+      "none": 0.12018696498125792,
+      "sparse": 0.1202637170208618,
+      "all": 0.1220714560477063
+    },
+    "sparse_speedup": 1.0210578972108988,
+    "all_speedup": 1.010079261148568,
+    "sparse_overhead": 0.0006386053563782745,
+    "all_overhead": 0.01567966265511611
+  },
+  {
+    "case_id": "primary-052",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36249016295187175,
+      "sparse": 0.3617907608859241,
+      "all": 0.3585976909380406
+    },
+    "normal": {
+      "none": 0.36124102491885424,
+      "sparse": 0.3606699729571119,
+      "all": 0.36705393996089697
+    },
+    "sparse_speedup": 1.001933167293258,
+    "all_speedup": 1.0108547046235825,
+    "sparse_overhead": -0.0015808059504609506,
+    "all_overhead": 0.016091514089100256
+  },
+  {
+    "case_id": "primary-053",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3633342640241608,
+      "sparse": 0.36229505599476397,
+      "all": 0.3612526709912345
+    },
+    "normal": {
+      "none": 0.36429153103381395,
+      "sparse": 0.36461462697479874,
+      "all": 0.3726015370339155
+    },
+    "sparse_speedup": 1.0028684024587182,
+    "all_speedup": 1.0057621526429539,
+    "sparse_overhead": 0.0008869158722077941,
+    "all_overhead": 0.022811416934450213
+  },
+  {
+    "case_id": "primary-054",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3557090749964118,
+      "sparse": 0.3562874229392037,
+      "all": 0.362619356950745
+    },
+    "normal": {
+      "none": 0.36460842192173004,
+      "sparse": 0.36363897705450654,
+      "all": 0.3722770829917863
+    },
+    "sparse_speedup": 0.9983767376967146,
+    "all_speedup": 0.9809434278069391,
+    "sparse_overhead": -0.002658865810377775,
+    "all_overhead": 0.021032594446494857
+  },
+  {
+    "case_id": "primary-055",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35875763604417443,
+      "sparse": 0.35902762704063207,
+      "all": 0.3635266770143062
+    },
+    "normal": {
+      "none": 0.3617641689488664,
+      "sparse": 0.35978560301009566,
+      "all": 0.3640318471007049
+    },
+    "sparse_speedup": 0.9992479938140608,
+    "all_speedup": 0.9868811801948056,
+    "sparse_overhead": -0.005469214777460207,
+    "all_overhead": 0.006268387934679653
+  },
+  {
+    "case_id": "primary-056",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11928566300775856,
+      "sparse": 0.09267727890983224,
+      "all": 0.06572255201172084
+    },
+    "normal": {
+      "none": 0.11934498499613255,
+      "sparse": 0.11853550898376852,
+      "all": 0.121471042977646
+    },
+    "sparse_speedup": 1.2871079558109837,
+    "all_speedup": 1.8149883009181593,
+    "sparse_overhead": -0.006782656283297217,
+    "all_overhead": 0.017814388946316706
+  },
+  {
+    "case_id": "primary-057",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.13143571699038148,
+      "sparse": 0.09128325199708343,
+      "all": 0.06686008302494884
+    },
+    "normal": {
+      "none": 0.11836014501750469,
+      "sparse": 0.11775563808623701,
+      "all": 0.11857936100568622
+    },
+    "sparse_speedup": 1.439866723794864,
+    "all_speedup": 1.9658323927198273,
+    "sparse_overhead": -0.005107352066679893,
+    "all_overhead": 0.0018521098309665085
+  },
+  {
+    "case_id": "primary-058",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11980431096162647,
+      "sparse": 0.0920822030166164,
+      "all": 0.06432377500459552
+    },
+    "normal": {
+      "none": 0.11821901693474501,
+      "sparse": 0.12047630199231207,
+      "all": 0.12127688399050385
+    },
+    "sparse_speedup": 1.3010582613885504,
+    "all_speedup": 1.8625198995716161,
+    "sparse_overhead": 0.019094094301368214,
+    "all_overhead": 0.02586611811741535
+  },
+  {
+    "case_id": "primary-059",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1186266120057553,
+      "sparse": 0.09150395705364645,
+      "all": 0.06525601400062442
+    },
+    "normal": {
+      "none": 0.11958996602334082,
+      "sparse": 0.1185522909509018,
+      "all": 0.12448847701307386
+    },
+    "sparse_speedup": 1.2964096398170795,
+    "all_speedup": 1.817864817863687,
+    "sparse_overhead": -0.00867694094198912,
+    "all_overhead": 0.040960886206598435
+  },
+  {
+    "case_id": "primary-060",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35990187991410494,
+      "sparse": 0.27684210101142526,
+      "all": 0.19439576694276184
+    },
+    "normal": {
+      "none": 0.36053173802793026,
+      "sparse": 0.363248817040585,
+      "all": 0.3647691790247336
+    },
+    "sparse_speedup": 1.3000258219368586,
+    "all_speedup": 1.8513874328347641,
+    "sparse_overhead": 0.007536310194261597,
+    "all_overhead": 0.011753309209285412
+  },
+  {
+    "case_id": "primary-061",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.365519015933387,
+      "sparse": 0.2741956120589748,
+      "all": 0.19367594609502703
+    },
+    "normal": {
+      "none": 0.3583094869973138,
+      "sparse": 0.3604074240429327,
+      "all": 0.36409666494000703
+    },
+    "sparse_speedup": 1.3330593191796596,
+    "all_speedup": 1.887271100532253,
+    "sparse_overhead": 0.00585509767882475,
+    "all_overhead": 0.016151338864037967
+  },
+  {
+    "case_id": "primary-062",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3581080089788884,
+      "sparse": 0.2780376970767975,
+      "all": 0.19345432601403445
+    },
+    "normal": {
+      "none": 0.3604896010365337,
+      "sparse": 0.36194385099224746,
+      "all": 0.36577986704651266
+    },
+    "sparse_speedup": 1.2879836538135851,
+    "all_speedup": 1.8511243266429145,
+    "sparse_overhead": 0.004034096827016054,
+    "all_overhead": 0.014675225012781512
+  },
+  {
+    "case_id": "primary-063",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36336779792327434,
+      "sparse": 0.278195432969369,
+      "all": 0.19524297898169607
+    },
+    "normal": {
+      "none": 0.3575975870480761,
+      "sparse": 0.36491243599448353,
+      "all": 0.3656118680955842
+    },
+    "sparse_speedup": 1.3061601840289137,
+    "all_speedup": 1.8611055814577582,
+    "sparse_overhead": 0.02045553217176499,
+    "all_overhead": 0.022411451692571527
+  },
+  {
+    "case_id": "primary-064",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11907822301145643,
+      "sparse": 0.034593157004565,
+      "all": 0.0072683850303292274
+    },
+    "normal": {
+      "none": 0.12080204603262246,
+      "sparse": 0.12122271698899567,
+      "all": 0.12862971203867346
+    },
+    "sparse_speedup": 3.4422479276968727,
+    "all_speedup": 16.383037292957315,
+    "sparse_overhead": 0.0034823164854311806,
+    "all_overhead": 0.06479746215504623
+  },
+  {
+    "case_id": "primary-065",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12190460902638733,
+      "sparse": 0.03343230695463717,
+      "all": 0.006098832003772259
+    },
+    "normal": {
+      "none": 0.11968731007073075,
+      "sparse": 0.11928972997702658,
+      "all": 0.12147489900235087
+    },
+    "sparse_speedup": 3.6463116108557614,
+    "all_speedup": 19.988189369864052,
+    "sparse_overhead": -0.003321823286605796,
+    "all_overhead": 0.014935492581157783
+  },
+  {
+    "case_id": "primary-066",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11885495996102691,
+      "sparse": 0.03412391908932477,
+      "all": 0.006628339062444866
+    },
+    "normal": {
+      "none": 0.11960986698977649,
+      "sparse": 0.11943939805496484,
+      "all": 0.12156884605064988
+    },
+    "sparse_speedup": 3.483039555037778,
+    "all_speedup": 17.93133375364585,
+    "sparse_overhead": -0.0014252079623683356,
+    "all_overhead": 0.01637807239632516
+  },
+  {
+    "case_id": "primary-067",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12153214705176651,
+      "sparse": 0.034188654040917754,
+      "all": 0.0062813779804855585
+    },
+    "normal": {
+      "none": 0.11903276690281928,
+      "sparse": 0.11873045901302248,
+      "all": 0.12066041398793459
+    },
+    "sparse_speedup": 3.554750851154131,
+    "all_speedup": 19.348007304978633,
+    "sparse_overhead": -0.0025397031226166433,
+    "all_overhead": 0.013673941448778981
+  },
+  {
+    "case_id": "primary-068",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36059863201808184,
+      "sparse": 0.10235313896555454,
+      "all": 0.019653175957500935
+    },
+    "normal": {
+      "none": 0.36286115495022386,
+      "sparse": 0.3630805991124362,
+      "all": 0.3661224259994924
+    },
+    "sparse_speedup": 3.5230832748513565,
+    "all_speedup": 18.348109882995978,
+    "sparse_overhead": 0.000604760689367323,
+    "all_overhead": 0.008987655484136603
+  },
+  {
+    "case_id": "primary-069",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.360557668027468,
+      "sparse": 0.10217919899150729,
+      "all": 0.019762929994612932
+    },
+    "normal": {
+      "none": 0.35770480800420046,
+      "sparse": 0.36072142503689975,
+      "all": 0.36553284293040633
+    },
+    "sparse_speedup": 3.5286797272450343,
+    "all_speedup": 18.244140323613475,
+    "sparse_overhead": 0.00843325827665109,
+    "all_overhead": 0.02188406404119103
+  },
+  {
+    "case_id": "primary-070",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3572070050286129,
+      "sparse": 0.10134532407391816,
+      "all": 0.019594358978793025
+    },
+    "normal": {
+      "none": 0.3571935100480914,
+      "sparse": 0.3618960459716618,
+      "all": 0.3650310429511592
+    },
+    "sparse_speedup": 3.524652057632941,
+    "all_speedup": 18.23009394771312,
+    "sparse_overhead": 0.013165233385503683,
+    "all_overhead": 0.021941980138476147
+  },
+  {
+    "case_id": "primary-071",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3561317059211433,
+      "sparse": 0.10134639404714108,
+      "all": 0.01937774196267128
+    },
+    "normal": {
+      "none": 0.3596901709679514,
+      "sparse": 0.35961205104831606,
+      "all": 0.3638445680262521
+    },
+    "sparse_speedup": 3.51400470899329,
+    "all_speedup": 18.378390351527287,
+    "sparse_overhead": -0.00021718669549719571,
+    "all_overhead": 0.011549932118303019
+  },
+  {
+    "case_id": "primary-072",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12165011803153902,
+      "sparse": 0.12090118497144431,
+      "all": 0.11955690907780081
+    },
+    "normal": {
+      "none": 0.13933298899792135,
+      "sparse": 0.1202963360119611,
+      "all": 0.12160301802214235
+    },
+    "sparse_speedup": 1.0061945882521466,
+    "all_speedup": 1.0175080551168822,
+    "sparse_overhead": -0.13662703371880036,
+    "all_overhead": -0.12724890999103955
+  },
+  {
+    "case_id": "primary-073",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.120001787901856,
+      "sparse": 0.12297595897689462,
+      "all": 0.12013603502418846
+    },
+    "normal": {
+      "none": 0.11918649403378367,
+      "sparse": 0.11823012807872146,
+      "all": 0.12203807395417243
+    },
+    "sparse_speedup": 0.9758150202707717,
+    "all_speedup": 0.9988825407605185,
+    "sparse_overhead": -0.008024113493858898,
+    "all_overhead": 0.023925361203933626
+  },
+  {
+    "case_id": "primary-074",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11995936906896532,
+      "sparse": 0.12002788693644106,
+      "all": 0.11927919602021575
+    },
+    "normal": {
+      "none": 0.11987237096764147,
+      "sparse": 0.12180281803011894,
+      "all": 0.12298834801185876
+    },
+    "sparse_speedup": 0.9994291504314158,
+    "all_speedup": 1.0057023611111051,
+    "sparse_overhead": 0.016104186868870496,
+    "all_overhead": 0.02599412207387153
+  },
+  {
+    "case_id": "primary-075",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11904211807996035,
+      "sparse": 0.12012089800555259,
+      "all": 0.11879436403978616
+    },
+    "normal": {
+      "none": 0.12009311001747847,
+      "sparse": 0.12348001706413925,
+      "all": 0.12376846198458225
+    },
+    "sparse_speedup": 0.9910192152780745,
+    "all_speedup": 1.0020855706596588,
+    "sparse_overhead": 0.028202342716978857,
+    "all_overhead": 0.030604186756166607
+  },
+  {
+    "case_id": "primary-076",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3588077239692211,
+      "sparse": 0.35761083103716373,
+      "all": 0.3601409390103072
+    },
+    "normal": {
+      "none": 0.3617244160268456,
+      "sparse": 0.3631540220230818,
+      "all": 0.36682026309426874
+    },
+    "sparse_speedup": 1.0033469146574394,
+    "all_speedup": 0.9962980741796535,
+    "sparse_overhead": 0.0039521965698054995,
+    "all_overhead": 0.014087650270876217
+  },
+  {
+    "case_id": "primary-077",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3606689419830218,
+      "sparse": 0.35721119795925915,
+      "all": 0.3604380249744281
+    },
+    "normal": {
+      "none": 0.36528236500453204,
+      "sparse": 0.36056154896505177,
+      "all": 0.36553993890993297
+    },
+    "sparse_speedup": 1.0096798309893886,
+    "all_speedup": 1.0006406566249775,
+    "sparse_overhead": -0.012923744729427922,
+    "all_overhead": 0.0007051364371168933
+  },
+  {
+    "case_id": "primary-078",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36541715706698596,
+      "sparse": 0.3581304419785738,
+      "all": 0.3574920860119164
+    },
+    "normal": {
+      "none": 0.35846713092178106,
+      "sparse": 0.35998368193395436,
+      "all": 0.36919050104916096
+    },
+    "sparse_speedup": 1.0203465392334565,
+    "all_speedup": 1.022168521668492,
+    "sparse_overhead": 0.004230655704118735,
+    "all_overhead": 0.029914514337214815
+  },
+  {
+    "case_id": "primary-079",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.35866309597622603,
+      "sparse": 0.361969853984192,
+      "all": 0.36621086800005287
+    },
+    "normal": {
+      "none": 0.3604881800711155,
+      "sparse": 0.36311928799841553,
+      "all": 0.3687562790000811
+    },
+    "sparse_speedup": 0.9908645486037896,
+    "all_speedup": 0.9793895466154605,
+    "sparse_overhead": 0.007298735638935572,
+    "all_overhead": 0.022935839192659513
+  },
+  {
+    "case_id": "primary-080",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11979841394349933,
+      "sparse": 0.09056768100708723,
+      "all": 0.06586339802015573
+    },
+    "normal": {
+      "none": 0.12182417802978307,
+      "sparse": 0.12157049204688519,
+      "all": 0.12226829305291176
+    },
+    "sparse_speedup": 1.3227501533811459,
+    "all_speedup": 1.8188920940100635,
+    "sparse_overhead": -0.0020823943736016925,
+    "all_overhead": 0.0036455408959961133
+  },
+  {
+    "case_id": "primary-081",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12016423302702606,
+      "sparse": 0.09208044002298266,
+      "all": 0.06541883398313075
+    },
+    "normal": {
+      "none": 0.12082469998858869,
+      "sparse": 0.12056565703824162,
+      "all": 0.12281983904540539
+    },
+    "sparse_speedup": 1.3049919504840972,
+    "all_speedup": 1.8368446166131949,
+    "sparse_overhead": -0.00214395690923741,
+    "all_overhead": 0.016512675446370917
+  },
+  {
+    "case_id": "primary-082",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12215382792055607,
+      "sparse": 0.09095921402331442,
+      "all": 0.07100634591188282
+    },
+    "normal": {
+      "none": 0.12024289008695632,
+      "sparse": 0.12007999001070857,
+      "all": 0.12147785199340433
+    },
+    "sparse_speedup": 1.3429516650093958,
+    "all_speedup": 1.7203226887938448,
+    "sparse_overhead": -0.0013547584903352838,
+    "all_overhead": 0.010270560742135393
+  },
+  {
+    "case_id": "primary-083",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1233706590719521,
+      "sparse": 0.0938665420981124,
+      "all": 0.06461428804323077
+    },
+    "normal": {
+      "none": 0.12031720392405987,
+      "sparse": 0.12109591893386096,
+      "all": 0.12307096004951745
+    },
+    "sparse_speedup": 1.3143198451158564,
+    "all_speedup": 1.9093402219244426,
+    "sparse_overhead": 0.00647218339858191,
+    "all_overhead": 0.02288746775727657
+  },
+  {
+    "case_id": "primary-084",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3593445470323786,
+      "sparse": 0.2831249019363895,
+      "all": 0.19693455600645393
+    },
+    "normal": {
+      "none": 0.35876324702985585,
+      "sparse": 0.3635957579826936,
+      "all": 0.3654482429847121
+    },
+    "sparse_speedup": 1.2692085527436707,
+    "all_speedup": 1.8246901626579044,
+    "sparse_overhead": 0.013469916422167882,
+    "all_overhead": 0.018633447016104032
+  },
+  {
+    "case_id": "primary-085",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36153720098081976,
+      "sparse": 0.2747652550460771,
+      "all": 0.19625493499916047
+    },
+    "normal": {
+      "none": 0.3600106310332194,
+      "sparse": 0.358920494094491,
+      "all": 0.3650319839362055
+    },
+    "sparse_speedup": 1.3158039247727715,
+    "all_speedup": 1.842181451296327,
+    "sparse_overhead": -0.0030280687423027697,
+    "all_overhead": 0.013947790621001932
+  },
+  {
+    "case_id": "primary-086",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3598055050242692,
+      "sparse": 0.2776062530465424,
+      "all": 0.19973102398216724
+    },
+    "normal": {
+      "none": 0.35888518299907446,
+      "sparse": 0.3616114999167621,
+      "all": 0.36657702701631933
+    },
+    "sparse_speedup": 1.2961001457123,
+    "all_speedup": 1.8014502597072453,
+    "sparse_overhead": 0.007596627129893729,
+    "all_overhead": 0.021432604023846613
+  },
+  {
+    "case_id": "primary-087",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 14,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36065220599994063,
+      "sparse": 0.27896069607231766,
+      "all": 0.19624395295977592
+    },
+    "normal": {
+      "none": 0.3567976349731907,
+      "sparse": 0.3589804810471833,
+      "all": 0.3649328500032425
+    },
+    "sparse_speedup": 1.2928423648127307,
+    "all_speedup": 1.837774874387408,
+    "sparse_overhead": 0.006117882687637577,
+    "all_overhead": 0.022800641687725998
+  },
+  {
+    "case_id": "primary-088",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12190457002725452,
+      "sparse": 0.03472612297628075,
+      "all": 0.006762722972780466
+    },
+    "normal": {
+      "none": 0.12020521704107523,
+      "sparse": 0.11956175009254366,
+      "all": 0.12146495701745152
+    },
+    "sparse_speedup": 3.510457245990862,
+    "all_speedup": 18.025959442359643,
+    "sparse_overhead": -0.005353070061107967,
+    "all_overhead": 0.01047991100041723
+  },
+  {
+    "case_id": "primary-089",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11976265895646065,
+      "sparse": 0.033715139026753604,
+      "all": 0.007115974090993404
+    },
+    "normal": {
+      "none": 0.12070295598823577,
+      "sparse": 0.12247607007157058,
+      "all": 0.12287091498728842
+    },
+    "sparse_speedup": 3.5521923507842192,
+    "all_speedup": 16.83011453176069,
+    "sparse_overhead": 0.01468989776445584,
+    "all_overhead": 0.01796110941362472
+  },
+  {
+    "case_id": "primary-090",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.12257949204649776,
+      "sparse": 0.033584140008315444,
+      "all": 0.006257457076571882
+    },
+    "normal": {
+      "none": 0.11971556802745908,
+      "sparse": 0.12002759601455182,
+      "all": 0.12168322294019163
+    },
+    "sparse_speedup": 3.649922017242277,
+    "all_speedup": 19.58934604688529,
+    "sparse_overhead": 0.002606411114560947,
+    "all_overhead": 0.01643608216670045
+  },
+  {
+    "case_id": "primary-091",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11970967601519078,
+      "sparse": 0.034644486964680254,
+      "all": 0.0066037040669471025
+    },
+    "normal": {
+      "none": 0.12132699601352215,
+      "sparse": 0.12044033606071025,
+      "all": 0.12315810297150165
+    },
+    "sparse_speedup": 3.4553744766731205,
+    "all_speedup": 18.127656055086167,
+    "sparse_overhead": -0.007308018676347006,
+    "all_overhead": 0.015092329144747119
+  },
+  {
+    "case_id": "primary-092",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3635764280334115,
+      "sparse": 0.10489912703633308,
+      "all": 0.019763319985941052
+    },
+    "normal": {
+      "none": 0.3612448050407693,
+      "sparse": 0.36201430100481957,
+      "all": 0.3681483529508114
+    },
+    "sparse_speedup": 3.4659623802920914,
+    "all_speedup": 18.39652590212815,
+    "sparse_overhead": 0.002130123266308237,
+    "all_overhead": 0.019110442042932663
+  },
+  {
+    "case_id": "primary-093",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36302715295460075,
+      "sparse": 0.11911336600314826,
+      "all": 0.02020676399115473
+    },
+    "normal": {
+      "none": 0.3606117340968922,
+      "sparse": 0.3630443940637633,
+      "all": 0.3684193139197305
+    },
+    "sparse_speedup": 3.047744893255772,
+    "all_speedup": 17.965625426887332,
+    "sparse_overhead": 0.006745925705838207,
+    "all_overhead": 0.021650931138975427
+  },
+  {
+    "case_id": "primary-094",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3582434400450438,
+      "sparse": 0.10194487997796386,
+      "all": 0.019663840997964144
+    },
+    "normal": {
+      "none": 0.35791064193472266,
+      "sparse": 0.3634228380396962,
+      "all": 0.3717953769955784
+    },
+    "sparse_speedup": 3.5140895758814055,
+    "all_speedup": 18.218385720375476,
+    "sparse_overhead": 0.01540103997795872,
+    "all_overhead": 0.03879385923201495
+  },
+  {
+    "case_id": "primary-095",
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "layer": 29,
+    "divergence": null,
+    "recovery": {
+      "full": 0.36097322194837034,
+      "sparse": 0.10241874703206122,
+      "all": 0.01978592004161328
+    },
+    "normal": {
+      "none": 0.36090624204371125,
+      "sparse": 0.3657516000093892,
+      "all": 0.3681051980238408
+    },
+    "sparse_speedup": 3.524483870471205,
+    "all_speedup": 18.243944238588853,
+    "sparse_overhead": 0.013425531069343855,
+    "all_overhead": 0.01994688686835633
+  },
+  {
+    "case_id": "primary-000",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10094931395724416,
+      "sparse": 0.10131257097236812,
+      "all": 0.09971334901638329
+    },
+    "normal": {
+      "none": 0.10013695096131414,
+      "sparse": 0.10016726597677916,
+      "all": 0.10194193094503134
+    },
+    "sparse_speedup": 0.9964144921835708,
+    "all_speedup": 1.0123951803149025,
+    "sparse_overhead": 0.00030273555539683805,
+    "all_overhead": 0.0180251142699015
+  },
+  {
+    "case_id": "primary-001",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1008085950743407,
+      "sparse": 0.10094646702054888,
+      "all": 0.10077740403357893
+    },
+    "normal": {
+      "none": 0.10131783003453165,
+      "sparse": 0.1003372740233317,
+      "all": 0.10263030999340117
+    },
+    "sparse_speedup": 0.9986342073152484,
+    "all_speedup": 1.0003095043086383,
+    "sparse_overhead": -0.009678020254339725,
+    "all_overhead": 0.012954086742897886
+  },
+  {
+    "case_id": "primary-002",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10176841192878783,
+      "sparse": 0.10301605996210128,
+      "all": 0.1016164009924978
+    },
+    "normal": {
+      "none": 0.10130877594929188,
+      "sparse": 0.10098675999324769,
+      "all": 0.10295955603942275
+    },
+    "sparse_speedup": 0.9878888006998865,
+    "all_speedup": 1.0014959291492842,
+    "sparse_overhead": -0.0031785593402626766,
+    "all_overhead": 0.01629454185644419
+  },
+  {
+    "case_id": "primary-003",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10019369190558791,
+      "sparse": 0.09964107605628669,
+      "all": 0.10119314410258085
+    },
+    "normal": {
+      "none": 0.09957847790792584,
+      "sparse": 0.10156604694202542,
+      "all": 0.10345841699745506
+    },
+    "sparse_speedup": 1.005546064646964,
+    "all_speedup": 0.9901233210425819,
+    "sparse_overhead": 0.019959825414658017,
+    "all_overhead": 0.03896363120871116
+  },
+  {
+    "case_id": "primary-004",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3079694180050865,
+      "sparse": 0.2999751939205453,
+      "all": 0.30394577397964895
+    },
+    "normal": {
+      "none": 0.3042500789742917,
+      "sparse": 0.30373805190902203,
+      "all": 0.3065642280271277
+    },
+    "sparse_speedup": 1.0266496171902089,
+    "all_speedup": 1.013238032471236,
+    "sparse_overhead": -0.001682915143344621,
+    "all_overhead": 0.007606075438460369
+  },
+  {
+    "case_id": "primary-005",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3041464480338618,
+      "sparse": 0.2999725400004536,
+      "all": 0.2982224579900503
+    },
+    "normal": {
+      "none": 0.29894363100174814,
+      "sparse": 0.31005046295467764,
+      "all": 0.30769877997227013
+    },
+    "sparse_speedup": 1.013914300400303,
+    "all_speedup": 1.0198643324306889,
+    "sparse_overhead": 0.03715359954554298,
+    "all_overhead": 0.029286956009679344
+  },
+  {
+    "case_id": "primary-006",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30085774895269424,
+      "sparse": 0.305324784014374,
+      "all": 0.3060602779733017
+    },
+    "normal": {
+      "none": 0.30748524609953165,
+      "sparse": 0.3051596670411527,
+      "all": 0.30734528694301844
+    },
+    "sparse_speedup": 0.9853695628538642,
+    "all_speedup": 0.9830016196317338,
+    "sparse_overhead": -0.00756322161104972,
+    "all_overhead": -0.0004551735678007818
+  },
+  {
+    "case_id": "primary-007",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30148916400503367,
+      "sparse": 0.3040308830095455,
+      "all": 0.31287442496977746
+    },
+    "normal": {
+      "none": 0.3003885359503329,
+      "sparse": 0.304457462974824,
+      "all": 0.30818528798408806
+    },
+    "sparse_speedup": 0.9916399315117207,
+    "all_speedup": 0.9636107650350662,
+    "sparse_overhead": 0.013545546975081368,
+    "all_overhead": 0.025955557888015734
+  },
+  {
+    "case_id": "primary-008",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09847618592903018,
+      "sparse": 0.07559857692103833,
+      "all": 0.056181260966695845
+    },
+    "normal": {
+      "none": 0.10086725105065852,
+      "sparse": 0.10118814301677048,
+      "all": 0.101782604935579
+    },
+    "sparse_speedup": 1.3026195722161171,
+    "all_speedup": 1.7528297555906887,
+    "sparse_overhead": 0.003181329547196521,
+    "all_overhead": 0.0090748372279994
+  },
+  {
+    "case_id": "primary-009",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10059323802124709,
+      "sparse": 0.08886195195373148,
+      "all": 0.06559133098926395
+    },
+    "normal": {
+      "none": 0.09924943000078201,
+      "sparse": 0.1012371419928968,
+      "all": 0.10333251999691129
+    },
+    "sparse_speedup": 1.1320169747522972,
+    "all_speedup": 1.5336361757579258,
+    "sparse_overhead": 0.020027439876472153,
+    "all_overhead": 0.04113968207270413
+  },
+  {
+    "case_id": "primary-010",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10307115805335343,
+      "sparse": 0.0766664759721607,
+      "all": 0.05707880493719131
+    },
+    "normal": {
+      "none": 0.10020992695353925,
+      "sparse": 0.10062418994493783,
+      "all": 0.1021432529669255
+    },
+    "sparse_speedup": 1.3444097533683543,
+    "all_speedup": 1.805769377385729,
+    "sparse_overhead": 0.004133951635256983,
+    "all_overhead": 0.019292759431733808
+  },
+  {
+    "case_id": "primary-011",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10210987192112952,
+      "sparse": 0.07565532100852579,
+      "all": 0.056854076916351914
+    },
+    "normal": {
+      "none": 0.09938524500466883,
+      "sparse": 0.10035576391965151,
+      "all": 0.10504976101219654
+    },
+    "sparse_speedup": 1.3496720463273497,
+    "all_speedup": 1.7959991166748062,
+    "sparse_overhead": 0.009765221335793717,
+    "all_overhead": 0.056995543023127926
+  },
+  {
+    "case_id": "primary-012",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3013478888897225,
+      "sparse": 0.22926975099835545,
+      "all": 0.17184629698749632
+    },
+    "normal": {
+      "none": 0.30592983798123896,
+      "sparse": 0.30273630807641894,
+      "all": 0.310042432975024
+    },
+    "sparse_speedup": 1.3143813677011587,
+    "all_speedup": 1.7535896564105122,
+    "sparse_overhead": -0.010438765717961318,
+    "all_overhead": 0.01344293521979778
+  },
+  {
+    "case_id": "primary-013",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3056918550282717,
+      "sparse": 0.22847192490007728,
+      "all": 0.17047673801425844
+    },
+    "normal": {
+      "none": 0.30564270401373506,
+      "sparse": 0.30295261496212333,
+      "all": 0.3068421420175582
+    },
+    "sparse_speedup": 1.3379843285426283,
+    "all_speedup": 1.793158753440625,
+    "sparse_overhead": -0.008801417525382327,
+    "all_overhead": 0.003924314201098289
+  },
+  {
+    "case_id": "primary-014",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30070591904222965,
+      "sparse": 0.22830652201082557,
+      "all": 0.1693360849749297
+    },
+    "normal": {
+      "none": 0.3048310320591554,
+      "sparse": 0.3040003050118685,
+      "all": 0.3101203190162778
+    },
+    "sparse_speedup": 1.3171148874493,
+    "all_speedup": 1.775793500167134,
+    "sparse_overhead": -0.0027252049821676616,
+    "all_overhead": 0.017351537083980073
+  },
+  {
+    "case_id": "primary-015",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30386914301197976,
+      "sparse": 0.22807583294343203,
+      "all": 0.16895647800993174
+    },
+    "normal": {
+      "none": 0.30005701596383005,
+      "sparse": 0.3034747069468722,
+      "all": 0.3096261239843443
+    },
+    "sparse_speedup": 1.3323162699458218,
+    "all_speedup": 1.7985054292746174,
+    "sparse_overhead": 0.011390138544382866,
+    "all_overhead": 0.03189096575454764
+  },
+  {
+    "case_id": "primary-016",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10053110506851226,
+      "sparse": 0.028575045056641102,
+      "all": 0.008522456977516413
+    },
+    "normal": {
+      "none": 0.10076664097141474,
+      "sparse": 0.10102431604173034,
+      "all": 0.10260608303360641
+    },
+    "sparse_speedup": 3.5181433614274535,
+    "all_speedup": 11.796023767996623,
+    "sparse_overhead": 0.0025571465698523976,
+    "all_overhead": 0.018254474342490834
+  },
+  {
+    "case_id": "primary-017",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10028896201401949,
+      "sparse": 0.028325955965556204,
+      "all": 0.008495443034917116
+    },
+    "normal": {
+      "none": 0.10660027107223868,
+      "sparse": 0.10527134092990309,
+      "all": 0.10252921597566456
+    },
+    "sparse_speedup": 3.5405322996324946,
+    "all_speedup": 11.805030249961288,
+    "sparse_overhead": -0.012466479953273546,
+    "all_overhead": -0.03818991317400444
+  },
+  {
+    "case_id": "primary-018",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10136824997607619,
+      "sparse": 0.02800411602947861,
+      "all": 0.008794824010692537
+    },
+    "normal": {
+      "none": 0.10068610799498856,
+      "sparse": 0.10235533898230642,
+      "all": 0.10202243097592145
+    },
+    "sparse_speedup": 3.619762533099442,
+    "all_speedup": 11.52589862546824,
+    "sparse_overhead": 0.01657856302679761,
+    "all_overhead": 0.01327216840082257
+  },
+  {
+    "case_id": "primary-019",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1006471550790593,
+      "sparse": 0.030750595033168793,
+      "all": 0.007752569974400103
+    },
+    "normal": {
+      "none": 0.10134786297567189,
+      "sparse": 0.10247894807253033,
+      "all": 0.10302613698877394
+    },
+    "sparse_speedup": 3.273014878915265,
+    "all_speedup": 12.982424590994732,
+    "sparse_overhead": 0.011160423748944215,
+    "all_overhead": 0.016559540219460933
+  },
+  {
+    "case_id": "primary-020",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.299782627960667,
+      "sparse": 0.08627303608227521,
+      "all": 0.02544696698896587
+    },
+    "normal": {
+      "none": 0.3000533049926162,
+      "sparse": 0.3065969659946859,
+      "all": 0.3067441099556163
+    },
+    "sparse_speedup": 3.474812543687185,
+    "all_speedup": 11.78068207856192,
+    "sparse_overhead": 0.02180832836429092,
+    "all_overhead": 0.022298721099455188
+  },
+  {
+    "case_id": "primary-021",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30139813595451415,
+      "sparse": 0.08481651300098747,
+      "all": 0.025409510009922087
+    },
+    "normal": {
+      "none": 0.3011912410147488,
+      "sparse": 0.30207624996546656,
+      "all": 0.3159470329992473
+    },
+    "sparse_speedup": 3.5535313265119157,
+    "all_speedup": 11.861627234717318,
+    "sparse_overhead": 0.0029383621772534063,
+    "all_overhead": 0.0489914379142784
+  },
+  {
+    "case_id": "primary-022",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30361719196662307,
+      "sparse": 0.0856255020480603,
+      "all": 0.024861086974851787
+    },
+    "normal": {
+      "none": 0.3036914699478075,
+      "sparse": 0.30597314005717635,
+      "all": 0.3084187359781936
+    },
+    "sparse_speedup": 3.545873422105103,
+    "all_speedup": 12.212546952341496,
+    "sparse_overhead": 0.0075131188563215545,
+    "all_overhead": 0.015566015177174819
+  },
+  {
+    "case_id": "primary-023",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30128950206562877,
+      "sparse": 0.0856031000148505,
+      "all": 0.02532925398554653
+    },
+    "normal": {
+      "none": 0.30136710591614246,
+      "sparse": 0.3063300419598818,
+      "all": 0.306835460010916
+    },
+    "sparse_speedup": 3.5196097105520807,
+    "all_speedup": 11.894922062748144,
+    "sparse_overhead": 0.016468074804157018,
+    "all_overhead": 0.018145159134570932
+  },
+  {
+    "case_id": "primary-024",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10038760805036873,
+      "sparse": 0.10208652005530894,
+      "all": 0.10018241906072944
+    },
+    "normal": {
+      "none": 0.1003456610487774,
+      "sparse": 0.09998381196055561,
+      "all": 0.10326837899629027
+    },
+    "sparse_speedup": 0.9833581161937955,
+    "all_speedup": 1.002048153673699,
+    "sparse_overhead": -0.003606026254048933,
+    "all_overhead": 0.029126500508000586
+  },
+  {
+    "case_id": "primary-025",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09948051499668509,
+      "sparse": 0.10021401895210147,
+      "all": 0.09951218101195991
+    },
+    "normal": {
+      "none": 0.09974198800045997,
+      "sparse": 0.09987844596616924,
+      "all": 0.10217302502132952
+    },
+    "sparse_speedup": 0.9926806252948804,
+    "all_speedup": 0.9996817875464812,
+    "sparse_overhead": 0.0013681095438826674,
+    "all_overhead": 0.024373256134200494
+  },
+  {
+    "case_id": "primary-026",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10007359099108726,
+      "sparse": 0.10066747397650033,
+      "all": 0.09944384708069265
+    },
+    "normal": {
+      "none": 0.10464777401648462,
+      "sparse": 0.10397436399944127,
+      "all": 0.11903224291745573
+    },
+    "sparse_speedup": 0.9941005474563541,
+    "all_speedup": 1.0063326583683314,
+    "sparse_overhead": -0.006435015205744077,
+    "all_overhead": 0.13745604276976975
+  },
+  {
+    "case_id": "primary-027",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10238529194612056,
+      "sparse": 0.10184777795802802,
+      "all": 0.09941796201746911
+    },
+    "normal": {
+      "none": 0.10139638802502304,
+      "sparse": 0.09988635592162609,
+      "all": 0.10198613908141851
+    },
+    "sparse_speedup": 1.005277621160415,
+    "all_speedup": 1.029847020281205,
+    "sparse_overhead": -0.014892365821002396,
+    "all_overhead": 0.005816292551268587
+  },
+  {
+    "case_id": "primary-028",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3034407839877531,
+      "sparse": 0.30686803301796317,
+      "all": 0.30483720707707107
+    },
+    "normal": {
+      "none": 0.3082255859626457,
+      "sparse": 0.30335094896145165,
+      "all": 0.30884372000582516
+    },
+    "sparse_speedup": 0.9888315214963774,
+    "all_speedup": 0.9954191186085597,
+    "sparse_overhead": -0.015815160139836082,
+    "all_overhead": 0.0020054598687806457
+  },
+  {
+    "case_id": "primary-029",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3025544099509716,
+      "sparse": 0.30247802392113954,
+      "all": 0.3093871030723676
+    },
+    "normal": {
+      "none": 0.3002708730055019,
+      "sparse": 0.30388482997659594,
+      "all": 0.3066469250479713
+    },
+    "sparse_speedup": 1.0002525341472477,
+    "all_speedup": 0.9779153912572827,
+    "sparse_overhead": 0.01203565612248969,
+    "all_overhead": 0.021234334115225906
+  },
+  {
+    "case_id": "primary-030",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3019817869644612,
+      "sparse": 0.30184998793993145,
+      "all": 0.30041053995955735
+    },
+    "normal": {
+      "none": 0.3039722730172798,
+      "sparse": 0.3014644989743829,
+      "all": 0.3160126939183101
+    },
+    "sparse_speedup": 1.0004366375013936,
+    "all_speedup": 1.005230332481395,
+    "sparse_overhead": -0.00825000918012797,
+    "all_overhead": 0.03961026044091143
+  },
+  {
+    "case_id": "primary-031",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30238247802481055,
+      "sparse": 0.3062364320503548,
+      "all": 0.3022126209689304
+    },
+    "normal": {
+      "none": 0.30103413201868534,
+      "sparse": 0.3027080550091341,
+      "all": 0.30727351794485
+    },
+    "sparse_speedup": 0.9874151027696453,
+    "all_speedup": 1.0005620448786539,
+    "sparse_overhead": 0.005560575404601975,
+    "all_overhead": 0.020726506606823625
+  },
+  {
+    "case_id": "primary-032",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10222885699477047,
+      "sparse": 0.07865392102394253,
+      "all": 0.056747921044006944
+    },
+    "normal": {
+      "none": 0.10033444198779762,
+      "sparse": 0.1021972349844873,
+      "all": 0.10348974901717156
+    },
+    "sparse_speedup": 1.2997299519708831,
+    "all_speedup": 1.8014555443448566,
+    "sparse_overhead": 0.018565838009207525,
+    "all_overhead": 0.03144789532748571
+  },
+  {
+    "case_id": "primary-033",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10027984902262688,
+      "sparse": 0.07670597999822348,
+      "all": 0.05563910596538335
+    },
+    "normal": {
+      "none": 0.10059294197708368,
+      "sparse": 0.10213670309167355,
+      "all": 0.10217016492970288
+    },
+    "sparse_speedup": 1.3073276558744098,
+    "all_speedup": 1.8023267499125055,
+    "sparse_overhead": 0.01534661462572151,
+    "all_overhead": 0.015679260608348677
+  },
+  {
+    "case_id": "primary-034",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10086578200571239,
+      "sparse": 0.07673260406590998,
+      "all": 0.056876154034398496
+    },
+    "normal": {
+      "none": 0.10102127899881452,
+      "sparse": 0.10207391995936632,
+      "all": 0.10252837894950062
+    },
+    "sparse_speedup": 1.3145100864695412,
+    "all_speedup": 1.7734283148735606,
+    "sparse_overhead": 0.010419992411342838,
+    "all_overhead": 0.014918638584092703
+  },
+  {
+    "case_id": "primary-035",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.0999964049551636,
+      "sparse": 0.0775841340655461,
+      "all": 0.05676133499946445
+    },
+    "normal": {
+      "none": 0.10158834792673588,
+      "sparse": 0.10010512894950807,
+      "all": 0.10161756700836122
+    },
+    "sparse_speedup": 1.2888769870226655,
+    "all_speedup": 1.7616993144383772,
+    "sparse_overhead": -0.014600286425540454,
+    "all_overhead": 0.00028762237226676035
+  },
+  {
+    "case_id": "primary-036",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30416494596283883,
+      "sparse": 0.23579492303542793,
+      "all": 0.17460501904133707
+    },
+    "normal": {
+      "none": 0.30472203996032476,
+      "sparse": 0.3022276209667325,
+      "all": 0.3135913349688053
+    },
+    "sparse_speedup": 1.2899554496223753,
+    "all_speedup": 1.74201719763181,
+    "sparse_overhead": -0.008185883088460022,
+    "all_overhead": 0.02910618152082245
+  },
+  {
+    "case_id": "primary-037",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30183666408993304,
+      "sparse": 0.22879692097194493,
+      "all": 0.17124012508429587
+    },
+    "normal": {
+      "none": 0.3027422080049291,
+      "sparse": 0.3065089910523966,
+      "all": 0.30657467106357217
+    },
+    "sparse_speedup": 1.3192339425185895,
+    "all_speedup": 1.7626515043792965,
+    "sparse_overhead": 0.01244221303758919,
+    "all_overhead": 0.012659163332060519
+  },
+  {
+    "case_id": "primary-038",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3039381840499118,
+      "sparse": 0.23275546194054186,
+      "all": 0.1701162380632013
+    },
+    "normal": {
+      "none": 0.3029413690092042,
+      "sparse": 0.30320090404711664,
+      "all": 0.3081059749238193
+    },
+    "sparse_speedup": 1.305826215702529,
+    "all_speedup": 1.7866500429958554,
+    "sparse_overhead": 0.000856717056377132,
+    "all_overhead": 0.017048202863499284
+  },
+  {
+    "case_id": "primary-039",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3013957410585135,
+      "sparse": 0.23201743804384023,
+      "all": 0.1698920119088143
+    },
+    "normal": {
+      "none": 0.300623239018023,
+      "sparse": 0.30067057092674077,
+      "all": 0.3091505339834839
+    },
+    "sparse_speedup": 1.29902193386673,
+    "all_speedup": 1.7740430387055564,
+    "sparse_overhead": 0.00015744594088062946,
+    "all_overhead": 0.02836538849529746
+  },
+  {
+    "case_id": "primary-040",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11699372308794409,
+      "sparse": 0.03326043509878218,
+      "all": 0.009578771074302495
+    },
+    "normal": {
+      "none": 0.09992974600754678,
+      "sparse": 0.10079675598535687,
+      "all": 0.10245903895702213
+    },
+    "sparse_speedup": 3.517504288217437,
+    "all_speedup": 12.213855220092867,
+    "sparse_overhead": 0.008676195151587907,
+    "all_overhead": 0.025310711279945997
+  },
+  {
+    "case_id": "primary-041",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10041655297391117,
+      "sparse": 0.029151591006666422,
+      "all": 0.008955600904300809
+    },
+    "normal": {
+      "none": 0.10004101600497961,
+      "sparse": 0.099913609912619,
+      "all": 0.10176082595717162
+    },
+    "sparse_speedup": 3.4446337063026093,
+    "all_speedup": 11.212709682684435,
+    "sparse_overhead": -0.0012735385689632839,
+    "all_overhead": 0.01719104844063568
+  },
+  {
+    "case_id": "primary-042",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10143438505474478,
+      "sparse": 0.029083483037538826,
+      "all": 0.008789394982159138
+    },
+    "normal": {
+      "none": 0.10047822596970946,
+      "sparse": 0.10090211394708604,
+      "all": 0.10344901494681835
+    },
+    "sparse_speedup": 3.4876972927836984,
+    "all_speedup": 11.540542353670304,
+    "sparse_overhead": 0.004218704831675302,
+    "all_overhead": 0.029566495113125146
+  },
+  {
+    "case_id": "primary-043",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10259359097108245,
+      "sparse": 0.02967187005560845,
+      "all": 0.008609596057794988
+    },
+    "normal": {
+      "none": 0.09859688393771648,
+      "sparse": 0.10153171303682029,
+      "all": 0.10122147400397807
+    },
+    "sparse_speedup": 3.4576044846115335,
+    "all_speedup": 11.916190989958917,
+    "sparse_overhead": 0.029765941700122367,
+    "all_overhead": 0.026619401764456763
+  },
+  {
+    "case_id": "primary-044",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30663092399481684,
+      "sparse": 0.08773331006523222,
+      "all": 0.02509078208822757
+    },
+    "normal": {
+      "none": 0.30357955407816917,
+      "sparse": 0.30457947799004614,
+      "all": 0.30986706994008273
+    },
+    "sparse_speedup": 3.4950342551401286,
+    "all_speedup": 12.22085955378354,
+    "sparse_overhead": 0.00329377884130988,
+    "all_overhead": 0.020711262591467383
+  },
+  {
+    "case_id": "primary-045",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30460910592228174,
+      "sparse": 0.08558046200778335,
+      "all": 0.024889449938200414
+    },
+    "normal": {
+      "none": 0.30062572099268436,
+      "sparse": 0.3078196180285886,
+      "all": 0.30860023596324027
+    },
+    "sparse_speedup": 3.559330000982914,
+    "all_speedup": 12.238482838255361,
+    "sparse_overhead": 0.023929745639027722,
+    "all_overhead": 0.026526389505939774
+  },
+  {
+    "case_id": "primary-046",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30112484202254564,
+      "sparse": 0.08452427689917386,
+      "all": 0.025047790026292205
+    },
+    "normal": {
+      "none": 0.30302332108840346,
+      "sparse": 0.30371274903882295,
+      "all": 0.3074191469931975
+    },
+    "sparse_speedup": 3.562584065424745,
+    "all_speedup": 12.022012389374888,
+    "sparse_overhead": 0.002275164657106865,
+    "all_overhead": 0.014506559722878842
+  },
+  {
+    "case_id": "primary-047",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3038270319812,
+      "sparse": 0.08539063297212124,
+      "all": 0.025183277088217437
+    },
+    "normal": {
+      "none": 0.3014617620501667,
+      "sparse": 0.30375522596295923,
+      "all": 0.30945335899014026
+    },
+    "sparse_speedup": 3.558083848381765,
+    "all_speedup": 12.064634436451176,
+    "sparse_overhead": 0.0076078103478041115,
+    "all_overhead": 0.02650948792186658
+  },
+  {
+    "case_id": "primary-048",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09858747397083789,
+      "sparse": 0.10172442090697587,
+      "all": 0.09825438389088959
+    },
+    "normal": {
+      "none": 0.10031125706154853,
+      "sparse": 0.10032960504759103,
+      "all": 0.10389267990831286
+    },
+    "sparse_speedup": 0.9691623023442264,
+    "all_speedup": 1.0033900785568834,
+    "sparse_overhead": 0.00018291053845764793,
+    "all_overhead": 0.035703100047553615
+  },
+  {
+    "case_id": "primary-049",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10066012607421726,
+      "sparse": 0.100455924984999,
+      "all": 0.10078128892928362
+    },
+    "normal": {
+      "none": 0.1013436719076708,
+      "sparse": 0.10055945999920368,
+      "all": 0.10319356701802462
+    },
+    "sparse_speedup": 1.0020327431084701,
+    "all_speedup": 0.9987977643831151,
+    "sparse_overhead": -0.007738143819986831,
+    "all_overhead": 0.018253681512933273
+  },
+  {
+    "case_id": "primary-050",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09873254003468901,
+      "sparse": 0.09887813800014555,
+      "all": 0.09881346498150378
+    },
+    "normal": {
+      "none": 0.09931878501083702,
+      "sparse": 0.09976223891135305,
+      "all": 0.10212689102627337
+    },
+    "sparse_speedup": 0.9985275009380099,
+    "all_speedup": 0.9991810332040282,
+    "sparse_overhead": 0.004464954947522193,
+    "all_overhead": 0.02827366459557412
+  },
+  {
+    "case_id": "primary-051",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10008214903064072,
+      "sparse": 0.1039179969811812,
+      "all": 0.10066537500824779
+    },
+    "normal": {
+      "none": 0.1027000229805708,
+      "sparse": 0.10112511704210192,
+      "all": 0.10195907298475504
+    },
+    "sparse_speedup": 0.9630877416619652,
+    "all_speedup": 0.9942062901215112,
+    "sparse_overhead": -0.015335010575088348,
+    "all_overhead": -0.007214701363367104
+  },
+  {
+    "case_id": "primary-052",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": 12,
+    "recovery": {
+      "full": 0.3145723630441353,
+      "sparse": 0.3011246030218899,
+      "all": 0.32378794997930527
+    },
+    "normal": {
+      "none": 0.30444157391320914,
+      "sparse": 0.30312567099463195,
+      "all": 0.30956952495034784
+    },
+    "sparse_speedup": 1.0446584566232464,
+    "all_speedup": 0.9715382029017479,
+    "sparse_overhead": -0.004322349611003973,
+    "all_overhead": 0.016843793609477853
+  },
+  {
+    "case_id": "primary-053",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3006425090134144,
+      "sparse": 0.3011152900289744,
+      "all": 0.30344845505896956
+    },
+    "normal": {
+      "none": 0.29964408301748335,
+      "sparse": 0.30085386300925165,
+      "all": 0.3102536150254309
+    },
+    "sparse_speedup": 0.9984299003364641,
+    "all_speedup": 0.990753137810473,
+    "sparse_overhead": 0.004037389891318854,
+    "all_overhead": 0.0354071133362861
+  },
+  {
+    "case_id": "primary-054",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3001543760765344,
+      "sparse": 0.3101969320559874,
+      "all": 0.3234069370664656
+    },
+    "normal": {
+      "none": 0.30157088697887957,
+      "sparse": 0.3031899069901556,
+      "all": 0.30488113907631487
+    },
+    "sparse_speedup": 0.9676252246826205,
+    "all_speedup": 0.9281012299833493,
+    "sparse_overhead": 0.005368621711118182,
+    "all_overhead": 0.010976696492812188
+  },
+  {
+    "case_id": "primary-055",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3003754650708288,
+      "sparse": 0.2979849500115961,
+      "all": 0.30330525001045316
+    },
+    "normal": {
+      "none": 0.2982525769621134,
+      "sparse": 0.30096783000044525,
+      "all": 0.30256512900814414
+    },
+    "sparse_speedup": 1.0080222677660053,
+    "all_speedup": 0.9903404740289744,
+    "sparse_overhead": 0.00910387117519118,
+    "all_overhead": 0.01445939575763866
+  },
+  {
+    "case_id": "primary-056",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09995185199659318,
+      "sparse": 0.07722773100249469,
+      "all": 0.05523376795463264
+    },
+    "normal": {
+      "none": 0.10137171600945294,
+      "sparse": 0.10025546990800649,
+      "all": 0.10217988304793835
+    },
+    "sparse_speedup": 1.2942482020268655,
+    "all_speedup": 1.8096149456740056,
+    "sparse_overhead": -0.011011415662948387,
+    "all_overhead": 0.007972312892582822
+  },
+  {
+    "case_id": "primary-057",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09822619799524546,
+      "sparse": 0.07851054891943932,
+      "all": 0.05608230398502201
+    },
+    "normal": {
+      "none": 0.10187754896469414,
+      "sparse": 0.10037268605083227,
+      "all": 0.10245063807815313
+    },
+    "sparse_speedup": 1.251121019368195,
+    "all_speedup": 1.7514650971094,
+    "sparse_overhead": -0.01477129091889895,
+    "all_overhead": 0.005625273863406388
+  },
+  {
+    "case_id": "primary-058",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10066907701548189,
+      "sparse": 0.0766023020260036,
+      "all": 0.05602517502848059
+    },
+    "normal": {
+      "none": 0.0995512600056827,
+      "sparse": 0.1014570250408724,
+      "all": 0.10225948202423751
+    },
+    "sparse_speedup": 1.3141782211885555,
+    "all_speedup": 1.7968543063775602,
+    "sparse_overhead": 0.019143555140144874,
+    "all_overhead": 0.027204296745216627
+  },
+  {
+    "case_id": "primary-059",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10066400398500264,
+      "sparse": 0.07827182894106954,
+      "all": 0.056834387010894716
+    },
+    "normal": {
+      "none": 0.10018953494727612,
+      "sparse": 0.10019675700459629,
+      "all": 0.10095858504064381
+    },
+    "sparse_speedup": 1.2860821747348212,
+    "all_speedup": 1.771181309049856,
+    "sparse_overhead": 7.208394892721515e-05,
+    "all_overhead": 0.0076759523214915415
+  },
+  {
+    "case_id": "primary-060",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3011233169818297,
+      "sparse": 0.22849292098544538,
+      "all": 0.17372001893818378
+    },
+    "normal": {
+      "none": 0.3013938299845904,
+      "sparse": 0.30619152693543583,
+      "all": 0.3067479779710993
+    },
+    "sparse_speedup": 1.3178671605367185,
+    "all_speedup": 1.7333829389517905,
+    "sparse_overhead": 0.015918364855348033,
+    "all_overhead": 0.01776462373759502
+  },
+  {
+    "case_id": "primary-061",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.29985304397996515,
+      "sparse": 0.23100069700740278,
+      "all": 0.17177505104336888
+    },
+    "normal": {
+      "none": 0.30562897596973926,
+      "sparse": 0.30243071797303855,
+      "all": 0.3078139170538634
+    },
+    "sparse_speedup": 1.2980612087519194,
+    "all_speedup": 1.7456146405350788,
+    "sparse_overhead": -0.010464511705910229,
+    "all_overhead": 0.0071489984782742155
+  },
+  {
+    "case_id": "primary-062",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3025372719857842,
+      "sparse": 0.22744243498891592,
+      "all": 0.1687370860017836
+    },
+    "normal": {
+      "none": 0.30214647098910064,
+      "sparse": 0.30387056001927704,
+      "all": 0.31027312704827636
+    },
+    "sparse_speedup": 1.3301707396886069,
+    "all_speedup": 1.792950673467161,
+    "sparse_overhead": 0.0057061365785027185,
+    "all_overhead": 0.026896412301532058
+  },
+  {
+    "case_id": "primary-063",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": 12,
+    "recovery": {
+      "full": 0.3000735759269446,
+      "sparse": 0.23293919197749346,
+      "all": 0.16839510505087674
+    },
+    "normal": {
+      "none": 0.29992366896476597,
+      "sparse": 0.3066723619122058,
+      "all": 0.3068334209965542
+    },
+    "sparse_speedup": 1.2882056187261852,
+    "all_speedup": 1.7819613927393212,
+    "sparse_overhead": 0.022501368333929905,
+    "all_overhead": 0.02303836858104047
+  },
+  {
+    "case_id": "primary-064",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10124551097396761,
+      "sparse": 0.028721365961246192,
+      "all": 0.00855732592754066
+    },
+    "normal": {
+      "none": 0.09997779596596956,
+      "sparse": 0.10088586003985256,
+      "all": 0.10235248098615557
+    },
+    "sparse_speedup": 3.525093866029158,
+    "all_speedup": 11.831442652911218,
+    "sparse_overhead": 0.009082657455182108,
+    "all_overhead": 0.02375212413158523
+  },
+  {
+    "case_id": "primary-065",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.11716818402055651,
+      "sparse": 0.03315321996342391,
+      "all": 0.009654202964156866
+    },
+    "normal": {
+      "none": 0.10088235302828252,
+      "sparse": 0.10047338798176497,
+      "all": 0.10232720605563372
+    },
+    "sparse_speedup": 3.5341419068742526,
+    "all_speedup": 12.136494794605678,
+    "sparse_overhead": -0.004053880924078879,
+    "all_overhead": 0.014322158276246055
+  },
+  {
+    "case_id": "primary-066",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09863955597393215,
+      "sparse": 0.029023175011388958,
+      "all": 0.00853046402335167
+    },
+    "normal": {
+      "none": 0.10070857591927052,
+      "sparse": 0.09973858506418765,
+      "all": 0.10120545199606568
+    },
+    "sparse_speedup": 3.3986480092279736,
+    "all_speedup": 11.563211063772366,
+    "sparse_overhead": -0.009631660920917273,
+    "all_overhead": 0.00493380104186425
+  },
+  {
+    "case_id": "primary-067",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10289825592190027,
+      "sparse": 0.02812611497938633,
+      "all": 0.008540972019545734
+    },
+    "normal": {
+      "none": 0.09968932706397027,
+      "sparse": 0.10007294791284949,
+      "all": 0.10174728208221495
+    },
+    "sparse_speedup": 3.6584596200831347,
+    "all_speedup": 12.047604849473924,
+    "sparse_overhead": 0.0038481636919169837,
+    "all_overhead": 0.020643684523260042
+  },
+  {
+    "case_id": "primary-068",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.301163541036658,
+      "sparse": 0.08755086606834084,
+      "all": 0.025863941991701722
+    },
+    "normal": {
+      "none": 0.3044145569438115,
+      "sparse": 0.3033112669363618,
+      "all": 0.3097163939382881
+    },
+    "sparse_speedup": 3.439869353223467,
+    "all_speedup": 11.644146941455574,
+    "sparse_overhead": -0.0036243010798374664,
+    "all_overhead": 0.017416502836476555
+  },
+  {
+    "case_id": "primary-069",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30370431498158723,
+      "sparse": 0.08588728005997837,
+      "all": 0.025393580086529255
+    },
+    "normal": {
+      "none": 0.3055214510532096,
+      "sparse": 0.30235939007252455,
+      "all": 0.3126120149390772
+    },
+    "sparse_speedup": 3.5360802527393917,
+    "all_speedup": 11.95988568554364,
+    "sparse_overhead": -0.010349718390589735,
+    "all_overhead": 0.023208072171118088
+  },
+  {
+    "case_id": "primary-070",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.29999079392291605,
+      "sparse": 0.08552186703309417,
+      "all": 0.025297190062701702
+    },
+    "normal": {
+      "none": 0.3018893530825153,
+      "sparse": 0.30265922006219625,
+      "all": 0.308592897024937
+    },
+    "sparse_speedup": 3.50776712822265,
+    "all_speedup": 11.858660712093235,
+    "sparse_overhead": 0.002550162739493933,
+    "all_overhead": 0.022205300962003127
+  },
+  {
+    "case_id": "primary-071",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.2953610480763018,
+      "sparse": 0.08632200001738966,
+      "all": 0.02540795993991196
+    },
+    "normal": {
+      "none": 0.3022065330296755,
+      "sparse": 0.304997714003548,
+      "all": 0.31091452902182937
+    },
+    "sparse_speedup": 3.421619610490964,
+    "all_speedup": 11.624744716805676,
+    "sparse_overhead": 0.00923600474778108,
+    "all_overhead": 0.028814717884668495
+  },
+  {
+    "case_id": "primary-072",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1012418830068782,
+      "sparse": 0.10095373902004212,
+      "all": 0.10020287800580263
+    },
+    "normal": {
+      "none": 0.10001029702834785,
+      "sparse": 0.1031071440083906,
+      "all": 0.1022157829720527
+    },
+    "sparse_speedup": 1.0028542180768447,
+    "all_speedup": 1.010369013562818,
+    "sparse_overhead": 0.03096528129663434,
+    "all_overhead": 0.022052588675741003
+  },
+  {
+    "case_id": "primary-073",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10046567302197218,
+      "sparse": 0.10051710810512304,
+      "all": 0.10033583804033697
+    },
+    "normal": {
+      "none": 0.10178774502128363,
+      "sparse": 0.0995613889535889,
+      "all": 0.1006229689810425
+    },
+    "sparse_speedup": 0.9994882952353039,
+    "all_speedup": 1.0012940040584803,
+    "sparse_overhead": -0.02187253551229762,
+    "all_overhead": -0.011443185424704794
+  },
+  {
+    "case_id": "primary-074",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10185594705399126,
+      "sparse": 0.10124711901880801,
+      "all": 0.1019080700352788
+    },
+    "normal": {
+      "none": 0.11652265302836895,
+      "sparse": 0.10579621710348874,
+      "all": 0.1062647900544107
+    },
+    "sparse_speedup": 1.0060132874997674,
+    "all_speedup": 0.9994885294043004,
+    "sparse_overhead": -0.0920545116859699,
+    "all_overhead": -0.0880332081991031
+  },
+  {
+    "case_id": "primary-075",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10086577595211565,
+      "sparse": 0.10106425697449595,
+      "all": 0.10471776605118066
+    },
+    "normal": {
+      "none": 0.10039096791297197,
+      "sparse": 0.10034334100782871,
+      "all": 0.10242538503371179
+    },
+    "sparse_speedup": 0.9980360908166536,
+    "all_speedup": 0.9632155054073408,
+    "sparse_overhead": -0.00047441424396410525,
+    "all_overhead": 0.020264941787426993
+  },
+  {
+    "case_id": "primary-076",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30291335098445415,
+      "sparse": 0.3018826829502359,
+      "all": 0.3019031009171158
+    },
+    "normal": {
+      "none": 0.305022620013915,
+      "sparse": 0.3057892760261893,
+      "all": 0.30949432705529034
+    },
+    "sparse_speedup": 1.003414134339028,
+    "all_speedup": 1.0033462725764308,
+    "sparse_overhead": 0.0025134398630479726,
+    "all_overhead": 0.014660247299598028
+  },
+  {
+    "case_id": "primary-077",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3051704360404983,
+      "sparse": 0.3083570919698104,
+      "all": 0.30171885003801435
+    },
+    "normal": {
+      "none": 0.30389029101934284,
+      "sparse": 0.3074585689464584,
+      "all": 0.3058662860421464
+    },
+    "sparse_speedup": 0.989665695998897,
+    "all_speedup": 1.0114397426678814,
+    "sparse_overhead": 0.011741993846352994,
+    "all_overhead": 0.006502330219815278
+  },
+  {
+    "case_id": "primary-078",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.305907767964527,
+      "sparse": 0.3021068249363452,
+      "all": 0.3025899489875883
+    },
+    "normal": {
+      "none": 0.30292144301347435,
+      "sparse": 0.30335340299643576,
+      "all": 0.31435093202162534
+    },
+    "sparse_speedup": 1.0125814536926885,
+    "all_speedup": 1.0109647362314562,
+    "sparse_overhead": 0.0014259802101306285,
+    "all_overhead": 0.03773086809058479
+  },
+  {
+    "case_id": "primary-079",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 0,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3031671129865572,
+      "sparse": 0.30258692207280546,
+      "all": 0.30335348506923765
+    },
+    "normal": {
+      "none": 0.30055305908899754,
+      "sparse": 0.30296933406498283,
+      "all": 0.304000815958716
+    },
+    "sparse_speedup": 1.0019174355248972,
+    "all_speedup": 0.9993856273560269,
+    "sparse_overhead": 0.008039428989041753,
+    "all_overhead": 0.011471375071572698
+  },
+  {
+    "case_id": "primary-080",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10053727100603282,
+      "sparse": 0.0787095749983564,
+      "all": 0.056718672974966466
+    },
+    "normal": {
+      "none": 0.09966535202693194,
+      "sparse": 0.10204389307182282,
+      "all": 0.1021756399422884
+    },
+    "sparse_speedup": 1.2773194494841602,
+    "all_speedup": 1.7725603532791798,
+    "sparse_overhead": 0.023865275108325923,
+    "all_overhead": 0.02518716749907357
+  },
+  {
+    "case_id": "primary-081",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.0999175040051341,
+      "sparse": 0.07862065592780709,
+      "all": 0.05701980902813375
+    },
+    "normal": {
+      "none": 0.0983204849762842,
+      "sparse": 0.10062427597586066,
+      "all": 0.1024627290898934
+    },
+    "sparse_speedup": 1.2708810785918996,
+    "all_speedup": 1.752329685212283,
+    "sparse_overhead": 0.02343144462857505,
+    "all_overhead": 0.04213002117115616
+  },
+  {
+    "case_id": "primary-082",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10034461098257452,
+      "sparse": 0.07691047806292772,
+      "all": 0.05727689201012254
+    },
+    "normal": {
+      "none": 0.09922769595868886,
+      "sparse": 0.09972626995295286,
+      "all": 0.10160463093779981
+    },
+    "sparse_speedup": 1.3046936322574034,
+    "all_speedup": 1.7519213676056415,
+    "sparse_overhead": 0.005024544704450129,
+    "all_overhead": 0.02395435020581882
+  },
+  {
+    "case_id": "primary-083",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10058345599099994,
+      "sparse": 0.07687307300511748,
+      "all": 0.05682614305987954
+    },
+    "normal": {
+      "none": 0.09937772806733847,
+      "sparse": 0.1003456610487774,
+      "all": 0.10204413300380111
+    },
+    "sparse_speedup": 1.3084354775865934,
+    "all_speedup": 1.7700208139238292,
+    "sparse_overhead": 0.009739938719298014,
+    "all_overhead": 0.02683101121667697
+  },
+  {
+    "case_id": "primary-084",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30063198506832123,
+      "sparse": 0.22916231502313167,
+      "all": 0.16937567002605647
+    },
+    "normal": {
+      "none": 0.3004130159970373,
+      "sparse": 0.30259996198583394,
+      "all": 0.3039244409883395
+    },
+    "sparse_speedup": 1.3118735732704367,
+    "all_speedup": 1.7749419678875515,
+    "sparse_overhead": 0.007279797719610848,
+    "all_overhead": 0.011688657961933302
+  },
+  {
+    "case_id": "primary-085",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3046079369960353,
+      "sparse": 0.22909037407953292,
+      "all": 0.17127998801879585
+    },
+    "normal": {
+      "none": 0.30290729692205787,
+      "sparse": 0.30058264802210033,
+      "all": 0.30737075000070035
+    },
+    "sparse_speedup": 1.329640925420485,
+    "all_speedup": 1.7784210550190391,
+    "sparse_overhead": -0.007674456586483913,
+    "all_overhead": 0.014735376545884193
+  },
+  {
+    "case_id": "primary-086",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.29937074007466435,
+      "sparse": 0.22712261299602687,
+      "all": 0.16828718804754317
+    },
+    "normal": {
+      "none": 0.3026065800804645,
+      "sparse": 0.30063262092880905,
+      "all": 0.30628134903963655
+    },
+    "sparse_speedup": 1.3181018663249588,
+    "all_speedup": 1.7789276982279156,
+    "sparse_overhead": -0.006523186479059917,
+    "all_overhead": 0.012143717952844746
+  },
+  {
+    "case_id": "primary-087",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 11,
+    "divergence": null,
+    "recovery": {
+      "full": 0.2981780810514465,
+      "sparse": 0.22639247705228627,
+      "all": 0.16972574300598353
+    },
+    "normal": {
+      "none": 0.30177553999237716,
+      "sparse": 0.30146354995667934,
+      "all": 0.31415090791415423
+    },
+    "sparse_speedup": 1.31708475888349,
+    "all_speedup": 1.7568229531387851,
+    "sparse_overhead": -0.00103384799081363,
+    "all_overhead": 0.041008518855072396
+  },
+  {
+    "case_id": "primary-088",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10048830299638212,
+      "sparse": 0.029072833014652133,
+      "all": 0.008300259010866284
+    },
+    "normal": {
+      "none": 0.10079100297298282,
+      "sparse": 0.10163000400643796,
+      "all": 0.10484048305079341
+    },
+    "sparse_speedup": 3.4564331224871685,
+    "all_speedup": 12.106646655824578,
+    "sparse_overhead": 0.008324165934533223,
+    "all_overhead": 0.04017699951746745
+  },
+  {
+    "case_id": "primary-089",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.10053230205085129,
+      "sparse": 0.02807891194242984,
+      "all": 0.009002792066894472
+    },
+    "normal": {
+      "none": 0.09980260499287397,
+      "sparse": 0.10094193206168711,
+      "all": 0.102924644947052
+    },
+    "sparse_speedup": 3.580348920106753,
+    "all_speedup": 11.166791513549871,
+    "sparse_overhead": 0.011415804917060957,
+    "all_overhead": 0.0312821489419135
+  },
+  {
+    "case_id": "primary-090",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.09987932699732482,
+      "sparse": 0.029060321976430714,
+      "all": 0.008885522023774683
+    },
+    "normal": {
+      "none": 0.09921005205251276,
+      "sparse": 0.09962351305875927,
+      "all": 0.10131995694246143
+    },
+    "sparse_speedup": 3.4369656013560914,
+    "all_speedup": 11.240681946438393,
+    "sparse_overhead": 0.0041675313911504475,
+    "all_overhead": 0.0212670475047414
+  },
+  {
+    "case_id": "primary-091",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.1002040799940005,
+      "sparse": 0.028679872979409993,
+      "all": 0.008701467071659863
+    },
+    "normal": {
+      "none": 0.10240270395297557,
+      "sparse": 0.10096739791333675,
+      "all": 0.10443979292176664
+    },
+    "sparse_speedup": 3.4938815825976475,
+    "all_speedup": 11.515768452466935,
+    "sparse_overhead": -0.014016290432115164,
+    "all_overhead": 0.019892921672522546
+  },
+  {
+    "case_id": "primary-092",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30278831196483225,
+      "sparse": 0.08868332288693637,
+      "all": 0.02591523004230112
+    },
+    "normal": {
+      "none": 0.2996978630544618,
+      "sparse": 0.3046820609597489,
+      "all": 0.30688410496804863
+    },
+    "sparse_speedup": 3.414264397274123,
+    "all_speedup": 11.683797962456614,
+    "sparse_overhead": 0.0166307422231482,
+    "all_overhead": 0.023978288801748793
+  },
+  {
+    "case_id": "primary-093",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30101484805345535,
+      "sparse": 0.08657727309037,
+      "all": 0.025022001937031746
+    },
+    "normal": {
+      "none": 0.3020606670761481,
+      "sparse": 0.30275695107411593,
+      "all": 0.30931950896047056
+    },
+    "sparse_speedup": 3.476834477556874,
+    "all_speedup": 12.030006584243893,
+    "sparse_overhead": 0.002305113091047639,
+    "all_overhead": 0.024031072812576992
+  },
+  {
+    "case_id": "primary-094",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.3027313550701365,
+      "sparse": 0.08704742603003979,
+      "all": 0.02586843306198716
+    },
+    "normal": {
+      "none": 0.3023209209786728,
+      "sparse": 0.30252469796687365,
+      "all": 0.3087134830420837
+    },
+    "sparse_speedup": 3.4777749196818855,
+    "all_speedup": 11.702732606366892,
+    "sparse_overhead": 0.0006740419668647135,
+    "all_overhead": 0.021144954317805276
+  },
+  {
+    "case_id": "primary-095",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "layer": 23,
+    "divergence": null,
+    "recovery": {
+      "full": 0.30095395108219236,
+      "sparse": 0.08427009196020663,
+      "all": 0.02503858902491629
+    },
+    "normal": {
+      "none": 0.30037608300335705,
+      "sparse": 0.30256069998722523,
+      "all": 0.3097953039687127
+    },
+    "sparse_speedup": 3.571302037077478,
+    "all_speedup": 12.019605049737763,
+    "sparse_overhead": 0.007272939183522675,
+    "all_overhead": 0.03135809239928844
+  }
+]

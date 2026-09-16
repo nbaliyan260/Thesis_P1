@@ -1,0 +1,30 @@
+# Environments, local caches and authentication material
+.venv/
+.venv*/
+.runtime/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.cache/
+.DS_Store
+*.sock
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials*
+*token*.txt
+
+# Downloaded model weights and generated distribution/rendering intermediates
+*.safetensors
+pytorch_model*.bin
+models/
+model-cache/
+*.zip
+research-next/artifacts/qa/
+tmp/
+
+# Generated audit snapshots under research-next/runs are deliberately tracked.
