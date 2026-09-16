@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-16T13:49:57.151476+00:00",
+  "source_sha256": "b88e8d8e37c897d15053b237cf5305ea58e128c746af8a996f0f9acca55959c7",
+  "pdf_sha256": "dda932f6b1415f87ec2d59349f5e15436659c6c1d56b9c810efd412bcdfada54",
+  "builder_sha256": "e43095b9a54911d08339c9c04f13fd60408c2d3c4adc3561a3c1b1ff78cb6ade",
+  "layout_sha256": "56a3ba3046272e2388a9571bb40babcca2ceb14a38069ec5fde115120eff0bc6",
+  "pages": 12,
+  "page_text_lengths": [
+    3184,
+    3096,
+    3251,
+    2406,
+    2587,
+    3165,
+    1543,
+    2479,
+    2872,
+    2113,
+    3220,
+    3974
+  ],
+  "visual_review": "passed_all_pages",
+  "visual_review_notes": "All 12 pages rendered at 100 DPI and visually inspected. Final pages 7-11 are byte-identical PNGs to their previously inspected render; all other final pages were inspected directly. No clipping, overlap, split orphan rows, missing glyphs or unresolved placeholders. Literal p* notation and full pinned model identifiers checked after layout fixes.",
+  "output": "/Users/nazishbaliyan/Desktop/Research Work/Thesis Work/output/pdf/RECUT_04_Complete_Prototype_and_Validation.pdf"
+}

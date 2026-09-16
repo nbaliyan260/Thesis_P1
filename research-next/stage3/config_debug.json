@@ -1,0 +1,20 @@
+{
+  "study": "RECUT stage3 diagnostic preflight, excluded from main results",
+  "models": ["HuggingFaceTB/SmolLM2-135M", "Qwen/Qwen2.5-0.5B", "Qwen/Qwen2.5-7B"],
+  "prompts": [{"id": "cloud", "text": "A cloud service recovers from a failed computation using a clean checkpoint and a verified sequence of operations."}],
+  "shapes": [{"prefix_tokens": 16, "window": 4}],
+  "n_windows": 3,
+  "seeds": [7431],
+  "repetitions": 1,
+  "clean_repetitions": 1,
+  "fault_cases": ["key_early", "value_early", "key_mid", "value_mid", "key_late", "value_late", "multi_prefix", "repeated_prefix"],
+  "policies": ["full", "sparse", "allcuts"],
+  "guard_cases": ["journal_corruption", "checkpoint_corruption"],
+  "legacy_cases": ["clean", "value_late"],
+  "snapshot_cases": ["key_early", "value_late"],
+  "snapshot_prompt": "cloud",
+  "snapshot_short_prefix": 16,
+  "snapshot_long_case": "multi_prefix",
+  "profile": false,
+  "warmup": true
+}

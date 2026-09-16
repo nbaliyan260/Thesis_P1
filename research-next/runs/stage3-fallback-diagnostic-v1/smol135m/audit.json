@@ -1,0 +1,125 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "hashes": {
+    "sessions.jsonl": "415b42122dc4a1bdc22c88bbea34cc721f34ed00b15a64a7aa68bb9c74d685e9",
+    "references.jsonl": "159d1765bd7bf38c90bf03f06ba8e78ba8b8ba7593fc69884a441ec11335b5d5",
+    "warmups.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "profiles.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata": "6fbbdb56a9b1bc68d9ee5aad709aff4b1661e1827d7b0b68995067b8650f92b2",
+    "config": "50621dffa1bb1907c89f2aa24de71b8a663122b210a13710bc2b538d65271d7d",
+    "manifest": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+    "auditor": "2cdcc1ec39c68579ad7cf332df5f7bf431c95148bcad18646c262a2a0b2a75a3"
+  },
+  "counts": {
+    "workloads": 1,
+    "sessions": {
+      "sessions": 13,
+      "windows_attempted": 36,
+      "windows_committed": 33,
+      "windows_rejected": 3,
+      "recovered_windows": 3
+    },
+    "warmups": {
+      "sessions": 0,
+      "windows_attempted": 0,
+      "windows_committed": 0,
+      "windows_rejected": 0,
+      "recovered_windows": 0
+    },
+    "profiles": {
+      "sessions": 0,
+      "windows_attempted": 0,
+      "windows_committed": 0,
+      "windows_rejected": 0,
+      "recovered_windows": 0
+    },
+    "native_parity_positions": 26,
+    "snapshot_archives_declared": 3,
+    "snapshot_archives_reloaded": 3,
+    "measured_fault_targets": {
+      "working_prefix": 6,
+      "checkpoint": 3
+    },
+    "measured_fault_types": {
+      "additive_8rms": 9
+    },
+    "measured_first_divergence_histogram": {
+      "7": 3
+    }
+  },
+  "snapshot_results": [
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--code--p128--w8--multi_prefix--s7431--r0--full_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--code--p128--w8",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "multi_prefix",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "full_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 13756416,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "c159a3c9523e53262a2f1cac32e081c6785ce0e2323c2b283cadea174dc7e102",
+      "bytes": 13860818
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--code--p128--w8--multi_prefix--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--code--p128--w8",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "multi_prefix",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 13756416,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "338144435e6fedc63ee5a780eff89636dc0de13c650926e07fde1c6d64751190",
+      "bytes": 13861314
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--code--p128--w8--multi_prefix--s7431--r0--allcuts_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--code--p128--w8",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "multi_prefix",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "allcuts_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 13756416,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "930b92253cfdc7320f0ba2f99629120d4622336b0f9691c67566c5b52d3f9766",
+      "bytes": 13861562
+    }
+  ],
+  "tensor_reload_requested": true,
+  "version": "RECUT-stage3-independent-evidence-audit-v1",
+  "status": "passed",
+  "checks": 8124,
+  "failures": [],
+  "audited_utc": "2026-09-16T13:37:52.427744+00:00",
+  "limitations": [
+    "No model re-execution or external replication.",
+    "Unsaved trials rely on recorded live native-comparison and no-early-commit verdicts.",
+    "Snapshot reload checks only the prespecified subset; hashes bind saved tensors to native-reference records.",
+    "Gaussian draws and tokenizer outputs are not independently regenerated.",
+    "Fault arithmetic, placement, timing, and same-treatment pairing are checked, not physical fault realism.",
+    "Model-file hash records are checked for structure, not reloaded against remote model weights.",
+    "Prefix detector's bounded contract excludes suffix-only, reverted, computation-origin, and pre-checkpoint faults.",
+    "No production-service, field-failure-rate, throughput, external novelty, or publication-readiness guarantee."
+  ]
+}

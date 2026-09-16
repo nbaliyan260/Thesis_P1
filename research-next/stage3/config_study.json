@@ -1,0 +1,26 @@
+{
+  "study": "RECUT stage3 protection-cost and coverage study",
+  "models": ["HuggingFaceTB/SmolLM2-135M", "Qwen/Qwen2.5-0.5B", "Qwen/Qwen2.5-7B"],
+  "prompts": [
+    {"id": "cloud", "text": "A research cloud runs a web service across three availability zones. Requests enter a queue, workers validate them, and a transactional database records completed operations. During an incident, operators compare error rates, retry counts, queue lengths, and dependency logs. A safe recovery must preserve completed work while repeating only operations whose outcomes are uncertain. Explain the observations and the order of recovery steps."},
+    {"id": "code", "text": "Consider a Python program that reads a sequence of integers, stores each partial sum, and periodically writes a checkpoint. Its functions are parse_record(line), update_total(state, value), verify_checkpoint(saved), and replay_suffix(records, start). Tests include empty input, negative integers, duplicate records, malformed lines, and interruption immediately before a checkpoint is committed. Explain invariants and propose clear unit tests."},
+    {"id": "reasoning", "text": "A library has three rooms with different numbers of books. On Monday the first room sends seven books to the second, and on Tuesday the second sends four books to the third. The total number of books does not change. A researcher tracks the state after each transfer and uses conservation to check an incomplete log. Explain how to reconstruct missing information, identify inconsistent observations, and distinguish an unknown value from a contradiction."}
+  ],
+  "prompt_construction": "Tokenize repetitions of each authored passage separated by numbered Section i labels; truncate to declared prefix. Synthetic domain prompts, not an external task benchmark.",
+  "shapes": [{"prefix_tokens": 128, "window": 8}, {"prefix_tokens": 2048, "window": 16}],
+  "n_windows": 3,
+  "seeds": [7431, 9817],
+  "repetitions": 2,
+  "clean_repetitions": 3,
+  "fault_cases": ["key_early", "value_early", "key_mid", "value_mid", "key_late", "value_late", "multi_prefix", "repeated_prefix"],
+  "policies": ["full", "sparse", "allcuts"],
+  "guard_cases": ["journal_corruption", "checkpoint_corruption"],
+  "legacy_cases": ["clean", "value_late"],
+  "snapshot_cases": ["key_early", "value_late"],
+  "snapshot_prompt": "cloud",
+  "snapshot_short_prefix": 128,
+  "snapshot_long_case": "multi_prefix",
+  "profile": true,
+  "warmup": "One excluded full three-window clean and one excluded single-fault session for every workload/policy/seal-mode used; plain/native clean warmups too.",
+  "prefill": "One common native batched prefill per workload; clean native/custom equality checked at every subsequent decode position, not against alternate incremental prefill kernels."
+}

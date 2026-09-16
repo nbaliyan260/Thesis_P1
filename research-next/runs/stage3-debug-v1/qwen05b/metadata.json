@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "started_unix_seconds": 1789562885.3604636,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "config_sha256": "cb7f8f6d9037f91baddda71abb1e1133f962005fda55f92c75859304440bcbb1",
+  "manifest_sha256": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+  "source_sha256": {
+    "../experiments/prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "../experiments/recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "../experiments/run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9",
+    "analyze_study.py": "f9adabcf0c96736da2561a42f8cb7f94328de23e47535003496db83b29cb96ba",
+    "audit_study.py": "2cdcc1ec39c68579ad7cf332df5f7bf431c95148bcad18646c262a2a0b2a75a3",
+    "fetch_models.py": "63c8573f3709890f38fb1d6e69e81c47dcf8d0fc87ff936805ee89c9785e776c",
+    "freeze_study.py": "d9b01a0540143212dd28735476268c50193554122c4c7253e6cdc916a9f16afc",
+    "recut_controller.py": "4ebca316ee5c4a745cf7b7535acef499de21b0d249cd8fafe53fa1815c54b46a",
+    "run_study.py": "13f139c1451d1ea8e825e8780204d30139530803214c6fbab3d15a5b16e0e724",
+    "test_stage3_controller.py": "f4133e2652c8bb3695c59f7169e3679368304af2be1c58c8b5d639846e1f63bd"
+  },
+  "python": "3.13.9",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.51.3",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "cuda_runtime": "12.4",
+  "timing_scope": "BEGIN-to-COMMIT for protected; decode-window start-to-finish for native/bare. Includes artificial injection. Window times exclude constructor, common initial fork, prefill, native reference and verification.",
+  "initialization_timing_scope": "session_initialization_seconds measures protected constructor including initial finite/layout validation or plain baseline namespace construction, synchronized after the common initial cache fork. total_with_initialization_seconds adds that cost to summed window wall time. Common input fork and prefill remain excluded.",
+  "adjusted_timing_scope": "Wall minus separately measured injection harness, diagnostic only; not measured deployment latency.",
+  "availability_scope": "Per-step completion versus guarded window release, no client/network; plain outputs locally buffered only for checking.",
+  "memory_scope": "Allocator peak includes resident model and correctness references. Payload counters exclude Python/allocator; host peak not measured.",
+  "oracle_storage": "Live native equality for every commit; full tensor archives for prespecified subset only.",
+  "prefill_scope": "Common native batched prefill; exact custom/native parity at subsequent decode positions only.",
+  "workloads": [
+    {
+      "id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4",
+      "prompt_id": "cloud",
+      "prefix_tokens": 16,
+      "window": 4,
+      "parity_positions": 14,
+      "passed": true
+    }
+  ],
+  "config": {
+    "study": "RECUT stage3 diagnostic preflight, excluded from main results",
+    "models": [
+      "HuggingFaceTB/SmolLM2-135M",
+      "Qwen/Qwen2.5-0.5B",
+      "Qwen/Qwen2.5-7B"
+    ],
+    "prompts": [
+      {
+        "id": "cloud",
+        "text": "A cloud service recovers from a failed computation using a clean checkpoint and a verified sequence of operations."
+      }
+    ],
+    "shapes": [
+      {
+        "prefix_tokens": 16,
+        "window": 4
+      }
+    ],
+    "n_windows": 3,
+    "seeds": [
+      7431
+    ],
+    "repetitions": 1,
+    "clean_repetitions": 1,
+    "fault_cases": [
+      "key_early",
+      "value_early",
+      "key_mid",
+      "value_mid",
+      "key_late",
+      "value_late",
+      "multi_prefix",
+      "repeated_prefix"
+    ],
+    "policies": [
+      "full",
+      "sparse",
+      "allcuts"
+    ],
+    "guard_cases": [
+      "journal_corruption",
+      "checkpoint_corruption"
+    ],
+    "legacy_cases": [
+      "clean",
+      "value_late"
+    ],
+    "snapshot_cases": [
+      "key_early",
+      "value_late"
+    ],
+    "snapshot_prompt": "cloud",
+    "snapshot_short_prefix": 16,
+    "snapshot_long_case": "multi_prefix",
+    "profile": false,
+    "warmup": true
+  },
+  "manifest": [
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--HuggingFaceTB--SmolLM2-135M/snapshots/93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B",
+      "revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-7B/snapshots/d149729398750b98c0af14eb82c78cfe92750796"
+    }
+  ],
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "expected_sessions": 39,
+  "deterministic_algorithms": true,
+  "tf32": false,
+  "attention": "eager",
+  "batch_size": 1,
+  "allow_bf16_reduced_precision_reduction": true,
+  "float32_matmul_precision": "highest",
+  "cublas_workspace_config": ":4096:8",
+  "gpu": "NVIDIA RTX 5000 Ada Generation",
+  "gpu_total_bytes": 33781252096,
+  "model_files": [
+    {
+      "file": "config.json",
+      "bytes": 681,
+      "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
+    },
+    {
+      "file": "generation_config.json",
+      "bytes": 138,
+      "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+    },
+    {
+      "file": "merges.txt",
+      "bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 988097824,
+      "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "bytes": 7228,
+      "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+    },
+    {
+      "file": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "model_config": {
+    "vocab_size": 151936,
+    "max_position_embeddings": 32768,
+    "hidden_size": 896,
+    "intermediate_size": 4864,
+    "num_hidden_layers": 24,
+    "num_attention_heads": 14,
+    "use_sliding_window": false,
+    "sliding_window": 32768,
+    "max_window_layers": 24,
+    "num_key_value_heads": 2,
+    "hidden_act": "silu",
+    "initializer_range": 0.02,
+    "rms_norm_eps": 1e-06,
+    "use_cache": true,
+    "rope_theta": 1000000.0,
+    "rope_scaling": null,
+    "attention_dropout": 0.0,
+    "return_dict": true,
+    "output_hidden_states": false,
+    "output_attentions": false,
+    "torchscript": false,
+    "torch_dtype": "bfloat16",
+    "use_bfloat16": false,
+    "tf_legacy_loss": false,
+    "pruned_heads": {},
+    "tie_word_embeddings": true,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "is_decoder": false,
+    "cross_attention_hidden_size": null,
+    "add_cross_attention": false,
+    "tie_encoder_decoder": false,
+    "max_length": 20,
+    "min_length": 0,
+    "do_sample": false,
+    "early_stopping": false,
+    "num_beams": 1,
+    "num_beam_groups": 1,
+    "diversity_penalty": 0.0,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "typical_p": 1.0,
+    "repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "encoder_no_repeat_ngram_size": 0,
+    "bad_words_ids": null,
+    "num_return_sequences": 1,
+    "output_scores": false,
+    "return_dict_in_generate": false,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": false,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "architectures": [
+      "Qwen2ForCausalLM"
+    ],
+    "finetuning_task": null,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "tokenizer_class": null,
+    "prefix": null,
+    "bos_token_id": 151643,
+    "pad_token_id": null,
+    "eos_token_id": 151643,
+    "sep_token_id": null,
+    "decoder_start_token_id": null,
+    "task_specific_params": null,
+    "problem_type": null,
+    "_name_or_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "_attn_implementation_autoset": true,
+    "transformers_version": "4.51.3",
+    "model_type": "qwen2",
+    "use_mrope": false
+  },
+  "sessions_completed": 39,
+  "warmups_completed": 12,
+  "profiles_completed": 0,
+  "finished_unix_seconds": 1789562918.129867,
+  "sessions_sha256": "bd6fbbafb49bf77cdb4a0c2eab22b851d3a7845262076b4f6c2c215989a6de50",
+  "references_sha256": "8eb5526041e99a41fc8c6dec4d8f23a373049f3862f7c64a777da00533557293",
+  "warmups_sha256": "a61af2a65aa319b4cd5906faf572ae0e708903ae9735d06cf509be3c3a3be57f",
+  "profiles_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

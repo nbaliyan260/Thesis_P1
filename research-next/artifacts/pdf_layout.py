@@ -94,7 +94,9 @@ def inline(text):
                   lambda m: stash('<link href="' + html.escape(m.group(2), quote=True) + '" color="#12657A"><u>' + html.escape(m.group(1)) + '</u></link>'), text)
     text = html.escape(text)
     text = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', text)
-    text = re.sub(r'\*(.+?)\*', r'<i>\1</i>', text)
+    # Do not interpret mathematical p* or rating A* as an opening emphasis
+    # delimiter spanning the rest of a paragraph.
+    text = re.sub(r'(?<![A-Za-z0-9])\*([^*]+?)\*(?![A-Za-z0-9])', r'<i>\1</i>', text)
     for index, value in enumerate(saved):
         text = text.replace(f'ZZTOKEN{index}ZZ', value)
     return text

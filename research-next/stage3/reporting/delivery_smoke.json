@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "archive_sha256": "535241cdc8e12f1a1a850ef1efc763b004e8975c235d2624a0c3e2003457e253",
+  "scope": "Temporary extracted CPU tests and full tensor audits, not model re-execution",
+  "commands": [
+    {
+      "arguments": [
+        "stage3/freeze_study.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "output": "{\"action\": \"verify\", \"files\": 23, \"passed\": true}\n"
+    },
+    {
+      "arguments": [
+        "-m",
+        "pytest",
+        "-q",
+        "stage3/test_stage3_controller.py",
+        "stage2/test_transactional.py",
+        "experiments/test_recut_engine.py",
+        "experiments/tests_independent.py",
+        "stage3/reporting/test_reporting.py",
+        "stage3/reporting/test_report_tables.py"
+      ],
+      "exit_code": 0,
+      "output": "................................................................ss..ss.. [ 23%]\nss..ss........................................ssssssss.................. [ 46%]\n..................................s..................................... [ 69%]\n........................................................................ [ 92%]\n.........................                                                [100%]\n=============================== warnings summary ===============================\n../../../../../../../../Users/nazishbaliyan/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35\n  /Users/nazishbaliyan/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n296 passed, 17 skipped, 1 warning in 7.44s\n"
+    },
+    {
+      "arguments": [
+        "stage3/reporting/verify_fallback_diagnostic.py",
+        "--output",
+        "validation_reader.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"output\": \"validation_reader.json\",\n  \"status\": \"passed_validation_only\",\n  \"counts\": {\n    \"sessions\": 13,\n    \"windows_attempted\": 36,\n    \"committed_windows\": 33,\n    \"specified_refusals\": 3,\n    \"snapshots_reloaded\": 3,\n    \"native_parity_positions\": 26,\n    \"snapshot_tensor_pairs\": 366\n  }\n}\n"
+    },
+    {
+      "arguments": [
+        "stage3/audit_study.py",
+        "runs/stage3-main-v1/smol135m",
+        "--output",
+        "runs/stage3-main-v1/smol135m/audit_reader.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"checks\": 312645,\n  \"failures\": []\n}\n"
+    },
+    {
+      "arguments": [
+        "stage3/audit_study.py",
+        "runs/stage3-main-v1/qwen05b",
+        "--output",
+        "runs/stage3-main-v1/qwen05b/audit_reader.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"checks\": 313628,\n  \"failures\": []\n}\n"
+    },
+    {
+      "arguments": [
+        "stage3/audit_study.py",
+        "runs/stage3-main-v1/qwen7b",
+        "--output",
+        "runs/stage3-main-v1/qwen7b/audit_reader.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"checks\": 392720,\n  \"failures\": []\n}\n"
+    }
+  ]
+}

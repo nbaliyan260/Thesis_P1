@@ -4,7 +4,7 @@ import sys, json, hashlib, argparse
 from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parents[2]
 import pdf_layout as layout
-from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate
+from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Table, TableStyle
 from pypdf import PdfReader
 
 class Doc(BaseDocTemplate):
@@ -45,15 +45,30 @@ def main():
     assert raw.isascii(), 'Use ASCII typography in manuscript source'
     layout.SOURCE = source
     layout.widths = lambda headers: [layout.WIDTH*w for w in (
+        [.40, .60] if source.stem == 'RECUT_04_Complete_Prototype_and_Validation' and headers == ['Model', 'Immutable revision'] else
         ([.29,.71] if len(headers)==2 else [.24,.38,.38]) if len(headers) in (2,3)
         else [1/len(headers)]*len(headers))]
-    Doc(output, raw.splitlines()[0].lstrip('# ')).build(layout.render_story(raw))
+    if source.stem == 'RECUT_04_Complete_Prototype_and_Validation':
+        # Compact stage-3 numeric tables without changing earlier reports.
+        # Keep 10-point prose and 9-point table text; trim vertical whitespace.
+        layout.styles['body'].leading = 12.5
+    story = layout.render_story(raw)
+    if source.stem == 'RECUT_04_Complete_Prototype_and_Validation':
+        for item in story:
+            if isinstance(item, Table):
+                item.setStyle(TableStyle([
+                    ('TOPPADDING', (0, 0), (-1, -1), 4),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 4),
+                ]))
+    Doc(output, raw.splitlines()[0].lstrip('# ')).build(story)
     texts = [p.extract_text() for p in PdfReader(output).pages]
     assert all(len(t)>100 for t in texts)
     assert not any('ZZTOKEN' in t or '\ufffd' in t for t in texts)
     metadata = dict(created_utc=datetime.now(timezone.utc).isoformat(),
         source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
         pdf_sha256=hashlib.sha256(output.read_bytes()).hexdigest(),
+        builder_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        layout_sha256=hashlib.sha256(Path(layout.__file__).read_bytes()).hexdigest(),
         pages=len(texts), page_text_lengths=list(map(len,texts)),
         visual_review='pending', output=str(output))
     (qa/'build.json').write_text(json.dumps(metadata,indent=2)+'\n')

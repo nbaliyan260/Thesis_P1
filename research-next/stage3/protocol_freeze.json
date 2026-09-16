@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-16T12:43:47.784301+00:00",
+  "purpose": "Stage3 sources frozen after synthetic tests, before any pretrained measurement",
+  "files_sha256": {
+    "stage3/analyze_study.py": "f9adabcf0c96736da2561a42f8cb7f94328de23e47535003496db83b29cb96ba",
+    "stage3/audit_study.py": "2cdcc1ec39c68579ad7cf332df5f7bf431c95148bcad18646c262a2a0b2a75a3",
+    "stage3/fetch_models.py": "63c8573f3709890f38fb1d6e69e81c47dcf8d0fc87ff936805ee89c9785e776c",
+    "stage3/freeze_study.py": "d9b01a0540143212dd28735476268c50193554122c4c7253e6cdc916a9f16afc",
+    "stage3/recut_controller.py": "4ebca316ee5c4a745cf7b7535acef499de21b0d249cd8fafe53fa1815c54b46a",
+    "stage3/run_study.py": "13f139c1451d1ea8e825e8780204d30139530803214c6fbab3d15a5b16e0e724",
+    "stage3/test_stage3_controller.py": "f4133e2652c8bb3695c59f7169e3679368304af2be1c58c8b5d639846e1f63bd",
+    "stage3/config_study.json": "64f628e7577b2f53b9a19a91530fc69695a18854ad349e42ae0d36a651168d43",
+    "stage3/config_debug.json": "cb7f8f6d9037f91baddda71abb1e1133f962005fda55f92c75859304440bcbb1",
+    "stage3/model_manifest.json": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+    "stage3/PLAN.md": "fcb673cba571320ddcd731d0f9d0ec3f6ea88ed6dd2e721aeea54d3c3033c813",
+    "stage3/README.md": "3a3091fe4887c63813b490828d221a95451ea347d22975f065c1566866bcccfa",
+    "stage3/run_hpc.sbatch": "51090993ec2a22039a9c50bc05d54fab866181ac022fc23324f6f601807f3c6e",
+    "stage3/setup_hpc.sbatch": "84d2f77de7cb3d01243e136dd9cc73173ec72ead3557327cafcbfb1dcf57200c",
+    "stage3/submit_study.sh": "ff0987a361d6fa2b7e0ffcc2ebe58b349000658637ef3b32c4fe80642b3dccd5",
+    "stage2/controller.py": "87e7d2adc37f3a38f9a00c419c4044dbb20b456f153d7fc91c2fc2d1ab46b16e",
+    "stage2/test_transactional.py": "10463392c03f6cdf95a4ec5ff0e05593a11d2b7a54bc42741d0ceeb19e476787",
+    "stage2/protocol_freeze.json": "b31d24c5ceb75169cf39ef38fb7655fcfb2dc5dd7475b0b5a9d6bd3817efe1b0",
+    "experiments/recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "experiments/prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "experiments/run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9",
+    "experiments/test_recut_engine.py": "a7a72d7b1eab6ce041ae46be3800220a86ef9ae821ff6ce379bb42bd6b2a13ed",
+    "experiments/tests_independent.py": "7aecdb9d929a7b806c1031e79a4245995162e13605fac8113a45dbc0bdfa7ae3"
+  },
+  "expected_main_per_model": {
+    "sessions": 786,
+    "attempted_windows": 2340,
+    "committed_windows": 2322,
+    "expected_refusals": 18,
+    "snapshots": 7,
+    "native_post_prefill_parity_positions": 228,
+    "excluded_warmups": 72,
+    "excluded_profiles": 24
+  },
+  "expected_models": 3,
+  "scope": "Bounded software injection and protection cost; no physical faults, production throughput or publication guarantee"
+}

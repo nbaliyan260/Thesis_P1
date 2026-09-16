@@ -2,9 +2,17 @@
 
 A bounded study of exact elementwise recovery after delayed, localized finite KV-cache perturbations. This is not a completed thesis, deployed detector, physical hardware-fault study, novelty certificate or A/A*-ready paper.
 
-**Current decision:** do not commit to RECUT as an A/A*-targeted thesis on this evidence. The late LayerSkip comparison further narrows the novelty opening: history-conditioned intermediate-state reuse and rollback are not new general principles. The final results draft supersedes the earlier prospective novelty assessment; those first two PDFs remain unchanged to preserve the research chronology.
+## Latest completed stage: protection cost and broader validation
 
-## Read first
+Start with `stage3/DELIVERY.md`, `stage3/RESULTS.md`, and `../output/pdf/RECUT_04_Complete_Prototype_and_Validation.pdf`. The expanded controller and bounded HPC study cover pinned 135M, 0.5B and 7B models, longer contexts, sequential private-output windows, broader old-prefix K/V faults, integrity refusals, native/bare cost baselines, and canonical-hash-preserving batched transfers. The new portable artifact is `../output/RECUT_Stage3_Validated_Artifact.zip`.
+
+All 2,358 main sessions completed: 6,966 checked commits and 54 specified refusals. All three main HPC/local audits passed; the local audits account for 1,018,993 checks and 2,338 exact/bytewise-equal tensor pairs across 21 predeclared archives. A separately declared selected-case fallback replay is not pooled into those totals. Final local tests: 296 passed, 17 CUDA-only skipped; the allocated core/controller suite passed all 286 cases on each GPU task. See the report for denominators, reference-baseline contributions and limitations; these counts are not independent field-fault samples.
+
+**Current judgment:** this is a completed expanded prototype/evaluation artifact, not a publication-readiness certificate. Recovery benefits must be weighed against normal-operation cost, buffered-output delay, the restricted fault/trust contract and substantial overlap with earlier reuse/rollback mechanisms. Supervisor review and a stronger research contribution remain necessary for an A/A* submission. Earlier stages below retain their own chronology and are not combined with stage-3 measurements.
+
+**Earlier pilot decision (retained):** do not commit to RECUT as an A/A*-targeted thesis on the pilot evidence. The late LayerSkip comparison further narrows the novelty opening: history-conditioned intermediate-state reuse and rollback are not new general principles. The pilot results draft supersedes the earlier prospective novelty assessment; those first two PDFs remain unchanged to preserve the research chronology.
+
+## Earlier pilot reading order
 
 1. `../output/pdf/RECUT_01_Idea_and_Novelty.pdf`: pre-implementation question, professor fit and prior-art constraints.
 2. `../output/pdf/RECUT_02_Implementation_Plan.pdf`: prospective protocol and go/no-go criteria.

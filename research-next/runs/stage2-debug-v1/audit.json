@@ -1,0 +1,38 @@
+{
+  "hashes": {
+    "metadata.json": "be13de683edac67ab2ab9244cb93ae769b363aa9c60137457b4de5f280455b81",
+    "sessions.jsonl": "0f960bcdbea7cced842a10eece09c9caf3d637b76d4af696271aa27c18f1f1c6",
+    "references.jsonl": "52f753a955780226b1f97b537fe6de8075eeea8c3edb7c41548c90d679868b7e",
+    "config": "dff914b477c991f61cd9e86fea0f04229dbe631d737ae419d5b75c12970fbb97",
+    "manifest": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+    "auditor": "9ec155bc7c9291c979bce533f1dcbdb01a7bb3b339db56a1bb51b527d586624e",
+    "summary": "ca36eae910281253e6a8b181ea94778e343f4bb806d4d58526f9a56111ae888d"
+  },
+  "counts": {
+    "sessions": 24,
+    "workloads": 2,
+    "windows_attempted": 68,
+    "windows_committed": 64,
+    "windows_rejected": 4,
+    "recovered_windows": 24,
+    "native_parity_positions": 60,
+    "fault_target_counts": {
+      "working_prefix": 28,
+      "journal": 2,
+      "checkpoint": 4
+    }
+  },
+  "version": "RECUT-stage2-independent-record-audit-v1",
+  "status": "passed",
+  "checks": 15007,
+  "failures": [],
+  "audited_utc": "2026-09-16T12:14:12.639491+00:00",
+  "limitations": [
+    "Independent record/source audit, not reload of recovered or native gold tensors.",
+    "Native comparisons and no-early-output claims remain recorded live-run verdicts.",
+    "Route consistency is checked against observed layers; no-oracle API was separately code-reviewed.",
+    "Floating-point applications are checked; Gaussian draws are not independently regenerated.",
+    "Recorded model-file hashes are checked for structure, not remote model-weight reload.",
+    "No external replication, production service, hardware-fault coverage, or novelty guarantee."
+  ]
+}

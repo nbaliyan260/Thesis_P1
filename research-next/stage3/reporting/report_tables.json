@@ -1,0 +1,615 @@
+{
+  "input_recomputation_sha256": "ff14bea7a237b171e3c7db8a2b224e459378e983ef5186188abbc94b1dfe3121",
+  "generator_sha256": "32b089bf3520beb37184560ab3dbf47023aac5c1f03df7f9264d917e690858f3",
+  "input_sha256": {
+    "runs/stage3-main-v1/smol135m/analysis_corrections.json": "fc2fe950f3dda5eabd5662ef3f450b7d8cdc3e5106fe70d555357b472e916841",
+    "runs/stage3-main-v1/smol135m/audit.json": "acb41ea6666da5b57ca479299a8a4449f77470093f259581851d7f1547256622",
+    "runs/stage3-main-v1/smol135m/audit_local.json": "654b490c74072b725d8d661af2a9633f732bea6415f107023e10f8729e06b558",
+    "runs/stage3-main-v1/smol135m/metadata.json": "8a1695ba05c046af03fb7e1a6a7910c53b53efc594a94ab9cfe596f3220633e4",
+    "runs/stage3-main-v1/smol135m/profiles.jsonl": "4dd5b66d8e351006ea6b8148aad26de61324ba7e1726355908f3d67ad8e55bb2",
+    "runs/stage3-main-v1/smol135m/references.jsonl": "0f1f36d1d0ea802d49e0a32e46d6d11362e56f3818018edc2cd8086fa5a2d7f5",
+    "runs/stage3-main-v1/smol135m/sessions.jsonl": "fe8b1c0c4d785590c66d8582bfff6b8bc23f1115e35255ab55923d1fc41fd403",
+    "runs/stage3-main-v1/smol135m/summary.json": "6be9cda55723ab9a70d6d7eda8021f6d5fc8b1ec61c7312dd319d20186101d62",
+    "runs/stage3-main-v1/smol135m/summary_corrected.json": "297878d159127243259acd40e306c3585701fc64a90f92fbe8d66d6553e87295",
+    "runs/stage3-main-v1/smol135m/warmups.jsonl": "94660bcc8b0cfecce9ed6d7f871b7dcb5228c61d6ac070e76534c5a26974a73c",
+    "runs/stage3-main-v1/qwen05b/analysis_corrections.json": "2be3a76e3126812822025d1ac1aa28ed1d9492fa1b28de4da8984844e3a32373",
+    "runs/stage3-main-v1/qwen05b/audit.json": "691c8f59be9a64f4e9b673d5e97d1ac78d20a16a8e4be8520425ef820fdaaf35",
+    "runs/stage3-main-v1/qwen05b/audit_local.json": "7ed75135b492f393c0e735f2b8e9201e188f60cd987a9d289213c76fc1335577",
+    "runs/stage3-main-v1/qwen05b/metadata.json": "0799ac32c947cf8be7a780ed4aa45bddd005592c26bddd051093ed27f5c9257a",
+    "runs/stage3-main-v1/qwen05b/profiles.jsonl": "7d6c54ec36b8dab929fb66bffbe3be45522210fe75b1bfc122427054444e9d3f",
+    "runs/stage3-main-v1/qwen05b/references.jsonl": "7afadf19b0d7f518f928b1c2f66ca666b3af2d2b28540c7985c363f2f4449d6c",
+    "runs/stage3-main-v1/qwen05b/sessions.jsonl": "9b7ca03351af6dfc72be11f355f27af3e2f4b8c0d8795d14711a493a5309e742",
+    "runs/stage3-main-v1/qwen05b/summary.json": "49d3fc25844f3f53eb2e9ac6f33de8ce5abfea7d604da17ace40f01929bf95f7",
+    "runs/stage3-main-v1/qwen05b/summary_corrected.json": "4abd9c5d363647a6b8e502cedacc1c25e5f5172f070a2ab0de840163e237492a",
+    "runs/stage3-main-v1/qwen05b/warmups.jsonl": "f880000929e453c6a32ca120a6abd9a16b8d43dcdc751a9f100dae38ddeb23f5",
+    "runs/stage3-main-v1/qwen7b/analysis_corrections.json": "ece069330025fea3a1fa69de7932dea6a98226e97f32c6cb4c53127d25dcf196",
+    "runs/stage3-main-v1/qwen7b/audit.json": "3ccca39e808431d1acc39f7d5d473f9f5163b4af4272800fb473d13f72d08b1b",
+    "runs/stage3-main-v1/qwen7b/audit_local.json": "34614bb78caa04031692e938e686694aeddf47f9ed374521902e66165d1cc377",
+    "runs/stage3-main-v1/qwen7b/metadata.json": "65278117c1b9dbaf58f3fb24ae8d24042184dbed8af06a03c5c2628ef99babfc",
+    "runs/stage3-main-v1/qwen7b/profiles.jsonl": "4334fefd25e131334f3f91c7a3bb629f58c49aab4fea4d31a28e4f277d60eea9",
+    "runs/stage3-main-v1/qwen7b/references.jsonl": "9ad4f1f6cd35051a0ceecf9cee557e2e6e48ebcbf9b8db8a7e97d806a8192f49",
+    "runs/stage3-main-v1/qwen7b/sessions.jsonl": "3b4fd1c27e18c1d835ff03c5cc8a2adf63abf449e19ee0d8ecce3d3ccae29811",
+    "runs/stage3-main-v1/qwen7b/summary.json": "d79a1823c003c415aba5b9485291ea4338e6e3fb29a6ca160d64042484ab439c",
+    "runs/stage3-main-v1/qwen7b/summary_corrected.json": "e045cbdce083aaa6d6b9c8def1333b4198710ecc49fb561880cb70fdad188a34",
+    "runs/stage3-main-v1/qwen7b/warmups.jsonl": "0b904f59504a11d8bb545cae967e5b77385c3ad3d6fa64163eabe4d77f2e3639"
+  },
+  "tables": {
+    "clean_ms": "| Model / prefix | Native ms | Bare ms | Full ms | Sparse ms | All-cuts ms |\n| --- | --- | --- | --- | --- | --- |\n| Smol-135M / 128 | 748.9 | 749.2 | 790.9 | 795.5 | 827.8 |\n| Smol-135M / 2048 | 1482.8 | 1494.8 | 1816.6 | 1829.5 | 1885.4 |\n| Qwen-0.5B / 128 | 613.0 | 616.8 | 639.5 | 652.2 | 681.7 |\n| Qwen-0.5B / 2048 | 1219.0 | 1228.6 | 1386.6 | 1400.4 | 1460.0 |\n| Qwen-7B / 128 | 768.1 | 765.7 | 835.3 | 835.9 | 865.2 |\n| Qwen-7B / 2048 | 1592.8 | 1596.2 | 2371.5 | 2379.5 | 2427.9 |",
+    "clean_ratios": "| Model / prefix | Sparse / bare | Sparse / native |\n| --- | --- | --- |\n| Smol-135M / 128 | 1.06x | 1.06x |\n| Smol-135M / 2048 | 1.23x | 1.23x |\n| Qwen-0.5B / 128 | 1.05x | 1.06x |\n| Qwen-0.5B / 2048 | 1.14x | 1.15x |\n| Qwen-7B / 128 | 1.09x | 1.09x |\n| Qwen-7B / 2048 | 1.49x | 1.50x |",
+    "fault_ratios": "| Model / prefix | E-K | E-V | M-K | M-V | L-K | L-V | Multi | Repeat |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Smol-135M / 128 | 0.99 | 0.99 | 1.30 | 1.32 | 1.53 | 1.51 | 1.11 | 1.51 |\n| Smol-135M / 2048 | 0.99 | 1.00 | 1.28 | 1.26 | 1.46 | 1.46 | 1.10 | 1.47 |\n| Qwen-0.5B / 128 | 1.00 | 0.99 | 1.28 | 1.29 | 1.52 | 1.50 | 1.13 | 1.52 |\n| Qwen-0.5B / 2048 | 0.99 | 0.99 | 1.27 | 1.28 | 1.49 | 1.50 | 1.12 | 1.49 |\n| Qwen-7B / 128 | 1.00 | 1.00 | 1.26 | 1.27 | 1.46 | 1.46 | 1.11 | 1.47 |\n| Qwen-7B / 2048 | 1.00 | 0.99 | 1.22 | 1.21 | 1.38 | 1.38 | 1.10 | 1.37 |",
+    "session_ratios": "| Model / prefix | Full / sparse | Full / all-cuts | Sparse / all-cuts |\n| --- | --- | --- | --- |\n| Smol-135M / 128 | 1.13 | 1.08 | 0.97 |\n| Smol-135M / 2048 | 1.11 | 1.07 | 0.97 |\n| Qwen-0.5B / 128 | 1.12 | 1.08 | 0.96 |\n| Qwen-0.5B / 2048 | 1.11 | 1.08 | 0.97 |\n| Qwen-7B / 128 | 1.11 | 1.07 | 0.97 |\n| Qwen-7B / 2048 | 1.09 | 1.07 | 0.98 |",
+    "batch_ratios": "| Model / prefix | Clean full | Clean sparse | Late-V full | Late-V sparse |\n| --- | --- | --- | --- | --- |\n| Smol-135M / 128 | 1.02 | 1.01 | 1.01 | 1.01 |\n| Smol-135M / 2048 | 1.03 | 1.03 | 1.02 | 1.03 |\n| Qwen-0.5B / 128 | 1.01 | 1.01 | 1.01 | 1.00 |\n| Qwen-0.5B / 2048 | 1.03 | 1.03 | 1.04 | 1.03 |\n| Qwen-7B / 128 | 1.03 | 1.03 | 1.00 | 1.02 |\n| Qwen-7B / 2048 | 1.05 | 1.05 | 1.04 | 1.04 |",
+    "memory": "| Model / prefix | Peak GiB | Sparse KiB | All-cuts KiB |\n| --- | --- | --- | --- |\n| Smol-135M / 128 | 0.32 | 27 | 261 |\n| Smol-135M / 2048 | 0.82 | 54 | 522 |\n| Qwen-0.5B / 128 | 0.98 | 42 | 322 |\n| Qwen-0.5B / 2048 | 1.25 | 84 | 644 |\n| Qwen-7B / 128 | 14.35 | 168 | 1512 |\n| Qwen-7B / 2048 | 15.60 | 336 | 3024 |",
+    "memory_increment": "| Model / prefix | Bare increase MiB | Sparse increase MiB | Checkpoint MiB |\n| --- | --- | --- | --- |\n| Smol-135M / 128 | 0.587 | 9.797 | 2.988 |\n| Smol-135M / 2048 | 5.932 | 137.625 | 45.352 |\n| Qwen-0.5B / 128 | 1.104 | 5.493 | 1.594 |\n| Qwen-0.5B / 2048 | 8.172 | 73.696 | 24.188 |\n| Qwen-7B / 128 | 2.780 | 24.517 | 7.438 |\n| Qwen-7B / 2048 | 31.768 | 344.199 | 112.875 |",
+    "availability": "| Model / prefix | Native ms | Bare ms | Sparse ms | Median mean hold ms |\n| --- | --- | --- | --- | --- |\n| Smol-135M / 128 | 31.3 | 31.1 | 261.6 | 117.6 |\n| Smol-135M / 2048 | 30.7 | 31.5 | 607.8 | 304.4 |\n| Qwen-0.5B / 128 | 26.0 | 25.8 | 215.8 | 95.9 |\n| Qwen-0.5B / 2048 | 25.6 | 25.8 | 464.8 | 228.7 |\n| Qwen-7B / 128 | 31.7 | 31.6 | 278.9 | 125.7 |\n| Qwen-7B / 2048 | 33.3 | 33.4 | 790.8 | 421.6 |",
+    "break_even": "| Model / prefix | Defined / all | Median p* | No extra H | Other signs |\n| --- | --- | --- | --- | --- |\n| Smol-135M / 128 | 39/60 | 1.4% | 13 | 8 |\n| Smol-135M / 2048 | 36/60 | 1.3% | 16 | 8 |\n| Qwen-0.5B / 128 | 38/60 | 3.3% | 13 | 9 |\n| Qwen-0.5B / 2048 | 48/60 | 2.6% | 2 | 10 |\n| Qwen-7B / 128 | 39/60 | 1.7% | 13 | 8 |\n| Qwen-7B / 2048 | 47/60 | 0.9% | 6 | 7 |",
+    "validation": "| Model | Audit checks | Tensor pairs | Partial-to-full |\n| --- | --- | --- | --- |\n| Smol-135M | 312,645 | 854 | 4 |\n| Qwen-0.5B | 313,628 | 686 | 0 |\n| Qwen-7B | 392,720 | 798 | 0 |"
+  },
+  "numeric_rows": {
+    "clean_ms": [
+      [
+        "Smol-135M / 128",
+        "748.9",
+        "749.2",
+        "790.9",
+        "795.5",
+        "827.8"
+      ],
+      [
+        "Smol-135M / 2048",
+        "1482.8",
+        "1494.8",
+        "1816.6",
+        "1829.5",
+        "1885.4"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "613.0",
+        "616.8",
+        "639.5",
+        "652.2",
+        "681.7"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "1219.0",
+        "1228.6",
+        "1386.6",
+        "1400.4",
+        "1460.0"
+      ],
+      [
+        "Qwen-7B / 128",
+        "768.1",
+        "765.7",
+        "835.3",
+        "835.9",
+        "865.2"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "1592.8",
+        "1596.2",
+        "2371.5",
+        "2379.5",
+        "2427.9"
+      ]
+    ],
+    "clean_ratios": [
+      [
+        "Smol-135M / 128",
+        "1.06x",
+        "1.06x"
+      ],
+      [
+        "Smol-135M / 2048",
+        "1.23x",
+        "1.23x"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "1.05x",
+        "1.06x"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "1.14x",
+        "1.15x"
+      ],
+      [
+        "Qwen-7B / 128",
+        "1.09x",
+        "1.09x"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "1.49x",
+        "1.50x"
+      ]
+    ],
+    "fault_ratios": [
+      [
+        "Smol-135M / 128",
+        "0.99",
+        "0.99",
+        "1.30",
+        "1.32",
+        "1.53",
+        "1.51",
+        "1.11",
+        "1.51"
+      ],
+      [
+        "Smol-135M / 2048",
+        "0.99",
+        "1.00",
+        "1.28",
+        "1.26",
+        "1.46",
+        "1.46",
+        "1.10",
+        "1.47"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "1.00",
+        "0.99",
+        "1.28",
+        "1.29",
+        "1.52",
+        "1.50",
+        "1.13",
+        "1.52"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "0.99",
+        "0.99",
+        "1.27",
+        "1.28",
+        "1.49",
+        "1.50",
+        "1.12",
+        "1.49"
+      ],
+      [
+        "Qwen-7B / 128",
+        "1.00",
+        "1.00",
+        "1.26",
+        "1.27",
+        "1.46",
+        "1.46",
+        "1.11",
+        "1.47"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "1.00",
+        "0.99",
+        "1.22",
+        "1.21",
+        "1.38",
+        "1.38",
+        "1.10",
+        "1.37"
+      ]
+    ],
+    "session_ratios": [
+      [
+        "Smol-135M / 128",
+        "1.13",
+        "1.08",
+        "0.97"
+      ],
+      [
+        "Smol-135M / 2048",
+        "1.11",
+        "1.07",
+        "0.97"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "1.12",
+        "1.08",
+        "0.96"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "1.11",
+        "1.08",
+        "0.97"
+      ],
+      [
+        "Qwen-7B / 128",
+        "1.11",
+        "1.07",
+        "0.97"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "1.09",
+        "1.07",
+        "0.98"
+      ]
+    ],
+    "batch_ratios": [
+      [
+        "Smol-135M / 128",
+        "1.02",
+        "1.01",
+        "1.01",
+        "1.01"
+      ],
+      [
+        "Smol-135M / 2048",
+        "1.03",
+        "1.03",
+        "1.02",
+        "1.03"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "1.01",
+        "1.01",
+        "1.01",
+        "1.00"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "1.03",
+        "1.03",
+        "1.04",
+        "1.03"
+      ],
+      [
+        "Qwen-7B / 128",
+        "1.03",
+        "1.03",
+        "1.00",
+        "1.02"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "1.05",
+        "1.05",
+        "1.04",
+        "1.04"
+      ]
+    ],
+    "memory": [
+      [
+        "Smol-135M / 128",
+        "0.32",
+        "27",
+        "261"
+      ],
+      [
+        "Smol-135M / 2048",
+        "0.82",
+        "54",
+        "522"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "0.98",
+        "42",
+        "322"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "1.25",
+        "84",
+        "644"
+      ],
+      [
+        "Qwen-7B / 128",
+        "14.35",
+        "168",
+        "1512"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "15.60",
+        "336",
+        "3024"
+      ]
+    ],
+    "memory_increment": [
+      [
+        "Smol-135M / 128",
+        "0.587",
+        "9.797",
+        "2.988"
+      ],
+      [
+        "Smol-135M / 2048",
+        "5.932",
+        "137.625",
+        "45.352"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "1.104",
+        "5.493",
+        "1.594"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "8.172",
+        "73.696",
+        "24.188"
+      ],
+      [
+        "Qwen-7B / 128",
+        "2.780",
+        "24.517",
+        "7.438"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "31.768",
+        "344.199",
+        "112.875"
+      ]
+    ],
+    "availability": [
+      [
+        "Smol-135M / 128",
+        "31.3",
+        "31.1",
+        "261.6",
+        "117.6"
+      ],
+      [
+        "Smol-135M / 2048",
+        "30.7",
+        "31.5",
+        "607.8",
+        "304.4"
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "26.0",
+        "25.8",
+        "215.8",
+        "95.9"
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "25.6",
+        "25.8",
+        "464.8",
+        "228.7"
+      ],
+      [
+        "Qwen-7B / 128",
+        "31.7",
+        "31.6",
+        "278.9",
+        "125.7"
+      ],
+      [
+        "Qwen-7B / 2048",
+        "33.3",
+        "33.4",
+        "790.8",
+        "421.6"
+      ]
+    ],
+    "break_even": [
+      [
+        "Smol-135M / 128",
+        "39/60",
+        "1.4%",
+        13,
+        8
+      ],
+      [
+        "Smol-135M / 2048",
+        "36/60",
+        "1.3%",
+        16,
+        8
+      ],
+      [
+        "Qwen-0.5B / 128",
+        "38/60",
+        "3.3%",
+        13,
+        9
+      ],
+      [
+        "Qwen-0.5B / 2048",
+        "48/60",
+        "2.6%",
+        2,
+        10
+      ],
+      [
+        "Qwen-7B / 128",
+        "39/60",
+        "1.7%",
+        13,
+        8
+      ],
+      [
+        "Qwen-7B / 2048",
+        "47/60",
+        "0.9%",
+        6,
+        7
+      ]
+    ],
+    "validation": [
+      [
+        "Smol-135M",
+        "312,645",
+        854,
+        4
+      ],
+      [
+        "Qwen-0.5B",
+        "313,628",
+        686,
+        0
+      ],
+      [
+        "Qwen-7B",
+        "392,720",
+        798,
+        0
+      ]
+    ]
+  },
+  "totals": {
+    "measured_sessions": 2358,
+    "workloads": 18,
+    "windows_attempted": 7020,
+    "committed_windows": 6966,
+    "rejected_windows": 54,
+    "gold_checked_commits": 6966,
+    "recovered_windows": 2358,
+    "replay_windows_with_token_divergence": 12,
+    "partial_to_full_replay_windows": 4,
+    "divergent_case_policy_windows_without_timing_repetitions": 6,
+    "committed_token_checks": 83592,
+    "native_custom_parity_positions": 684,
+    "warmup_sessions_excluded": 216,
+    "profiled_sessions_excluded": 72,
+    "snapshot_declarations": 21,
+    "snapshot_declared_bytes": 1115662954,
+    "case_policy_cells_without_timing_repetitions": 1170,
+    "configured_case_cells_without_policy_or_timing_repetitions": 342,
+    "measured_replay_token_steps": 28296,
+    "measured_partial_replay_token_steps": 14684,
+    "measured_full_replay_token_steps": 13612,
+    "measured_replay_layer_steps": 516282,
+    "measured_skipped_layer_steps_within_replay": 257142,
+    "largest_recorded_seal_batch_bytes": 119275520
+  },
+  "local_audit_checks": 1018993,
+  "snapshot_tensor_pairs": 2338,
+  "snapshot_bytewise_equal_pairs": 2338,
+  "headline": {
+    "Smol-135M / 128": {
+      "native_session_ms": 748.9343360066414,
+      "bare_session_ms": 749.2114790948108,
+      "full_session_ms": 790.9478879300877,
+      "sparse_session_ms": 795.4617670038715,
+      "sparse_over_bare": "1.06x",
+      "peak_allocated_GiB": 0.3182525634765625,
+      "full_over_sparse_fault_window": {
+        "key_early": 0.9862070351088266,
+        "value_early": 0.9911602778821337,
+        "key_mid": 1.296308191368708,
+        "value_mid": 1.3171958336138356,
+        "key_late": 1.5320479642727705,
+        "value_late": 1.509252325815779,
+        "multi_prefix": 1.1149923041752454,
+        "repeated_prefix": 1.5106067704337314
+      }
+    },
+    "Smol-135M / 2048": {
+      "native_session_ms": 1482.7817459590733,
+      "bare_session_ms": 1494.8106270749122,
+      "full_session_ms": 1816.6233679512516,
+      "sparse_session_ms": 1829.493406927213,
+      "sparse_over_bare": "1.23x",
+      "peak_allocated_GiB": 0.8152008056640625,
+      "full_over_sparse_fault_window": {
+        "key_early": 0.9943474148107494,
+        "value_early": 0.9992534950799723,
+        "key_mid": 1.2791074058431833,
+        "value_mid": 1.262079168938127,
+        "key_late": 1.457729634788563,
+        "value_late": 1.4647257143851897,
+        "multi_prefix": 1.1034974324030524,
+        "repeated_prefix": 1.4673279763906342
+      }
+    },
+    "Qwen-0.5B / 128": {
+      "native_session_ms": 612.9596149548888,
+      "bare_session_ms": 616.7790270410478,
+      "full_session_ms": 639.4759409595281,
+      "sparse_session_ms": 652.2407750599086,
+      "sparse_over_bare": "1.05x",
+      "peak_allocated_GiB": 0.9806008338928223,
+      "full_over_sparse_fault_window": {
+        "key_early": 0.9953348525028077,
+        "value_early": 0.9924974712529545,
+        "key_mid": 1.2830301460328037,
+        "value_mid": 1.2944922718159555,
+        "key_late": 1.5164392408796252,
+        "value_late": 1.5046001788699583,
+        "multi_prefix": 1.1270818981648465,
+        "repeated_prefix": 1.520094766898747
+      }
+    },
+    "Qwen-0.5B / 2048": {
+      "native_session_ms": 1218.9525400754064,
+      "bare_session_ms": 1228.6397230345756,
+      "full_session_ms": 1386.6091801319271,
+      "sparse_session_ms": 1400.4242388764396,
+      "sparse_over_bare": "1.14x",
+      "peak_allocated_GiB": 1.2458138465881348,
+      "full_over_sparse_fault_window": {
+        "key_early": 0.9920657452093147,
+        "value_early": 0.9888678746220835,
+        "key_mid": 1.2736676453126274,
+        "value_mid": 1.2815748347712856,
+        "key_late": 1.4903771429139674,
+        "value_late": 1.500746758797833,
+        "multi_prefix": 1.1245516221089706,
+        "repeated_prefix": 1.490266067872946
+      }
+    },
+    "Qwen-7B / 128": {
+      "native_session_ms": 768.0596620775759,
+      "bare_session_ms": 765.7027578679845,
+      "full_session_ms": 835.2746869204566,
+      "sparse_session_ms": 835.9312058892101,
+      "sparse_over_bare": "1.09x",
+      "peak_allocated_GiB": 14.350047588348389,
+      "full_over_sparse_fault_window": {
+        "key_early": 0.9965561721574605,
+        "value_early": 0.9977162190358504,
+        "key_mid": 1.263751690957112,
+        "value_mid": 1.26685706324395,
+        "key_late": 1.4609160703973953,
+        "value_late": 1.4586913231788685,
+        "multi_prefix": 1.1116747116809929,
+        "repeated_prefix": 1.4651302842059795
+      }
+    },
+    "Qwen-7B / 2048": {
+      "native_session_ms": 1592.800994985737,
+      "bare_session_ms": 1596.1537861730903,
+      "full_session_ms": 2371.4792750542983,
+      "sparse_session_ms": 2379.482022835873,
+      "sparse_over_bare": "1.49x",
+      "peak_allocated_GiB": 15.595537662506104,
+      "full_over_sparse_fault_window": {
+        "key_early": 1.0036855707599026,
+        "value_early": 0.9886791091919556,
+        "key_mid": 1.2219965452512496,
+        "value_mid": 1.2131025189462576,
+        "key_late": 1.3753264655028552,
+        "value_late": 1.3787038961810323,
+        "multi_prefix": 1.0987499035986823,
+        "repeated_prefix": 1.3683685058898016
+      }
+    }
+  },
+  "aggregation_notes": {
+    "hierarchy": "Median timing repetitions within a workload/scenario/seed/variant first; then median across matched case ratios, separately by model and prefix/window shape.",
+    "sessions": "All session-cost tables include the separately timed constructor; common initial fork, prefill and reference checks remain excluded.",
+    "fault_columns": "All eight configured fault strata are shown separately. Fault-session aggregate weights each configured case-policy cell once; guard challenges are excluded.",
+    "memory": "Peak GiB is the maximum recorded GPU allocation over all measured variants/scenarios at that model/shape; journal KiB are clean logical payload medians, not GPU peaks.",
+    "memory_increment": "Clean case-window medians after within-case repetition reduction: nine prompt/window cells per model/shape. Increase is allocator peak minus that window's starting allocation, not total GPU allocation or a logical protection-only payload; experimental allocation effects and temporary batching can contribute. Checkpoint MiB is logical sparse-policy payload. Host peak is not measured.",
+    "availability": "Per-window first-token availability medians; hold column is the median of per-case-window mean token hold durations, not end-to-end network TTFT.",
+    "break_even": "Defined/all uses all matched affected case-windows. Repeated-prefix contributes three affected windows per case; the seven other fault strata contribute one each. Undefined sign combinations remain in the denominator.",
+    "audits": "Only local audit checks and tensor pairs are totaled; the HPC rerun of the same audit is not added."
+  }
+}

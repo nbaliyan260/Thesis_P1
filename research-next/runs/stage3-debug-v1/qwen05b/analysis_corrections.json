@@ -1,0 +1,586 @@
+{
+  "status": "reporting_only_correction",
+  "generated_utc": "2026-09-16T12:55:39.118161+00:00",
+  "correction_script_sha256": "66e5a3e3af4d80a57594cb51d4008d9ec1a9c5bedef3090f957841b2f75fb108",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "input_sha256": {
+    "summary.json": "6a064291cbd5fa3dec5fd08f736d0e15855a432ac00511781ae2e748e29d34c0",
+    "metadata.json": "54838fb9b5d74c58232a3a3f65b2dd28230698e5d9f0a262ac5551f23f78a9e9",
+    "sessions.jsonl": "bd6fbbafb49bf77cdb4a0c2eab22b851d3a7845262076b4f6c2c215989a6de50",
+    "references.jsonl": "8eb5526041e99a41fc8c6dec4d8f23a373049f3862f7c64a777da00533557293",
+    "warmups.jsonl": "a61af2a65aa319b4cd5906faf572ae0e708903ae9735d06cf509be3c3a3be57f",
+    "profiles.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "corrected_summary_sha256": "81ca2a0d805160676a45ce0f058cee4629944a826ea6a9c07ab71854f17e0599",
+  "explanation": "The frozen analyzer defaulted rejected-window seal counters to zero because it read top-level controller_metadata. The raw rejected window correctly retained performed work in rejection.controller_metadata. This sidecar recomputes only those case counter medians and their grouped counter distributions.",
+  "unchanged": [
+    "summary.json",
+    "all raw sessions and reference evidence",
+    "all measured timing values and ratios",
+    "all correctness/refusal results",
+    "all integrity gates",
+    "all source-freeze files",
+    "all tensor snapshot evidence"
+  ],
+  "affected_case_windows": [
+    {
+      "case": [
+        "Qwen--Qwen2.5-0.5B--cloud--p16--w4",
+        "checkpoint_corruption",
+        7431,
+        "allcuts_batched"
+      ],
+      "window_index": 1,
+      "timing_repetitions": 1
+    },
+    {
+      "case": [
+        "Qwen--Qwen2.5-0.5B--cloud--p16--w4",
+        "checkpoint_corruption",
+        7431,
+        "full_batched"
+      ],
+      "window_index": 1,
+      "timing_repetitions": 1
+    },
+    {
+      "case": [
+        "Qwen--Qwen2.5-0.5B--cloud--p16--w4",
+        "checkpoint_corruption",
+        7431,
+        "sparse_batched"
+      ],
+      "window_index": 1,
+      "timing_repetitions": 1
+    }
+  ],
+  "changed_json_leaf_count": 105,
+  "changes": [
+    {
+      "json_pointer": "/case_medians/0/windows/1/counter_medians/seal_calls",
+      "before": 0,
+      "after": 6
+    },
+    {
+      "json_pointer": "/case_medians/0/windows/1/counter_medians/seal_logical_bytes",
+      "before": 0,
+      "after": 656384
+    },
+    {
+      "json_pointer": "/case_medians/0/windows/1/counter_medians/seal_transfer_calls",
+      "before": 0,
+      "after": 6
+    },
+    {
+      "json_pointer": "/case_medians/0/windows/1/counter_medians/seal_transfer_bytes",
+      "before": 0,
+      "after": 656384
+    },
+    {
+      "json_pointer": "/case_medians/0/windows/1/counter_medians/seal_peak_batch_bytes",
+      "before": 0,
+      "after": 245760
+    },
+    {
+      "json_pointer": "/case_medians/1/windows/1/counter_medians/seal_calls",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "json_pointer": "/case_medians/1/windows/1/counter_medians/seal_logical_bytes",
+      "before": 0,
+      "after": 491520
+    },
+    {
+      "json_pointer": "/case_medians/1/windows/1/counter_medians/seal_transfer_calls",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "json_pointer": "/case_medians/1/windows/1/counter_medians/seal_transfer_bytes",
+      "before": 0,
+      "after": 491520
+    },
+    {
+      "json_pointer": "/case_medians/1/windows/1/counter_medians/seal_peak_batch_bytes",
+      "before": 0,
+      "after": 245760
+    },
+    {
+      "json_pointer": "/case_medians/2/windows/1/counter_medians/seal_calls",
+      "before": 0,
+      "after": 6
+    },
+    {
+      "json_pointer": "/case_medians/2/windows/1/counter_medians/seal_logical_bytes",
+      "before": 0,
+      "after": 513024
+    },
+    {
+      "json_pointer": "/case_medians/2/windows/1/counter_medians/seal_transfer_calls",
+      "before": 0,
+      "after": 6
+    },
+    {
+      "json_pointer": "/case_medians/2/windows/1/counter_medians/seal_transfer_bytes",
+      "before": 0,
+      "after": 513024
+    },
+    {
+      "json_pointer": "/case_medians/2/windows/1/counter_medians/seal_peak_batch_bytes",
+      "before": 0,
+      "after": 245760
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/min",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/q25",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/median",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/q75",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/max",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_calls/mean",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/min",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/q25",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/median",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/q75",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/max",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_logical_bytes/mean",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/min",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/q25",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/median",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/q75",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/max",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_calls/mean",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/min",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/q25",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/median",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/q75",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/max",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_transfer_bytes/mean",
+      "before": 0.0,
+      "after": 656384.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/min",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/q25",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/median",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/q75",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/max",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/0/window_strata/1/counters/seal_peak_batch_bytes/mean",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/min",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/q25",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/median",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/q75",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/max",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_calls/mean",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/min",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/q25",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/median",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/q75",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/max",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_logical_bytes/mean",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/min",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/q25",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/median",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/q75",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/max",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_calls/mean",
+      "before": 0.0,
+      "after": 2.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/min",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/q25",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/median",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/q75",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/max",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_transfer_bytes/mean",
+      "before": 0.0,
+      "after": 491520.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/min",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/q25",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/median",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/q75",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/max",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/1/window_strata/1/counters/seal_peak_batch_bytes/mean",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/min",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/q25",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/median",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/q75",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/max",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_calls/mean",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/min",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/q25",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/median",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/q75",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/max",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_logical_bytes/mean",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/min",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/q25",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/median",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/q75",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/max",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_calls/mean",
+      "before": 0.0,
+      "after": 6.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/min",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/q25",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/median",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/q75",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/max",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_transfer_bytes/mean",
+      "before": 0.0,
+      "after": 513024.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/min",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/q25",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/median",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/q75",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/max",
+      "before": 0.0,
+      "after": 245760.0
+    },
+    {
+      "json_pointer": "/groups/2/window_strata/1/counters/seal_peak_batch_bytes/mean",
+      "before": 0.0,
+      "after": 245760.0
+    }
+  ],
+  "usage": "Use summary_corrected.json together with this sidecar for refusal counter displays. Original summary.json remains the immutable frozen-analyzer output. This is post-measurement reporting, not a rerun or an experiment amendment."
+}

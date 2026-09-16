@@ -1,0 +1,12 @@
+{
+  "study": "RECUT stage2 diagnostic preflight, excluded from main measurements",
+  "models": ["HuggingFaceTB/SmolLM2-135M", "Qwen/Qwen2.5-0.5B"],
+  "prefixes": [16],
+  "windows": [4],
+  "n_windows": 3,
+  "seeds": [7431],
+  "scenarios": ["clean", "single_prefix", "multi_prefix", "repeated_prefix", "journal_corruption", "checkpoint_corruption"],
+  "methods": ["full", "sparse"],
+  "repetitions": 1,
+  "warmups": 1
+}

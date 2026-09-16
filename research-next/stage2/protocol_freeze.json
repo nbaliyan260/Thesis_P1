@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-16T12:13:07.783951+00:00",
+  "purpose": "Stage-2 prespecified code/config freeze, after synthetic tests and before pretrained measurement",
+  "files_sha256": {
+    "stage2/controller.py": "87e7d2adc37f3a38f9a00c419c4044dbb20b456f153d7fc91c2fc2d1ab46b16e",
+    "stage2/run_sessions.py": "c246862a12b35217294c0ca8959fa5c0a5d896624f24a6e5d33b0f3a095ee417",
+    "stage2/analyze_sessions.py": "372da6e27961d2302604d604dbaa3b249cc1b8002ce6ae0afc0ca5aef1103b28",
+    "stage2/audit_sessions.py": "9ec155bc7c9291c979bce533f1dcbdb01a7bb3b339db56a1bb51b527d586624e",
+    "stage2/test_transactional.py": "10463392c03f6cdf95a4ec5ff0e05593a11d2b7a54bc42741d0ceeb19e476787",
+    "stage2/freeze_stage2.py": "a9bc5cb7f5756c0d7300c03fd358039286647dfdf6928f5ac931f23075aeab35",
+    "stage2/config_debug.json": "dff914b477c991f61cd9e86fea0f04229dbe631d737ae419d5b75c12970fbb97",
+    "stage2/config_sessions.json": "bf4f8e32b186e33fab0f692d0d5ca5143fb765b89b6b621055b252e7f8214442",
+    "stage2/PLAN.md": "c4ee3432c17b193a5511e9563e69979802634c126ea223ccd50593dcc5d378f2",
+    "stage2/README.md": "0d13106b682936575db57b2674c51c348b7a904dfa0165776b10eb75fc7b1e78",
+    "stage2/run_hpc.sbatch": "0c6b99f17ca5f21fa123cd5155d4d4d2bde4b83af8fde303097d5e31cf9e1f05",
+    "experiments/recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "experiments/run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9",
+    "experiments/prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "experiments/model_manifest.json": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+    "experiments/test_recut_engine.py": "a7a72d7b1eab6ce041ae46be3800220a86ef9ae821ff6ce379bb42bd6b2a13ed",
+    "experiments/tests_independent.py": "7aecdb9d929a7b806c1031e79a4245995162e13605fac8113a45dbc0bdfa7ae3"
+  },
+  "expected_main": {
+    "sessions": 192,
+    "attempted_windows": 544,
+    "committed_windows": 512,
+    "expected_aborts": 32,
+    "recovered_windows": 192,
+    "native_parity_positions": 944
+  },
+  "interpretation": "Controlled software injections only; repeated timing trials are not independent faults."
+}

@@ -24,7 +24,12 @@ pytorch_model*.bin
 models/
 model-cache/
 *.zip
-research-next/artifacts/qa/
+research-next/artifacts/qa/*
+!research-next/artifacts/qa/RECUT_04_Complete_Prototype_and_Validation/
 tmp/
 
-# Generated audit snapshots under research-next/runs are deliberately tracked.
+# Phase-1 audit snapshots remain tracked for historical reproducibility.
+# Complete Phase-2 stage-3 snapshots are distributed in the hash-bound release.
+research-next/runs/stage3-debug-v1/*/snapshots/
+research-next/runs/stage3-main-v1/*/snapshots/
+research-next/runs/stage3-fallback-diagnostic-v1/*/snapshots/

@@ -1,0 +1,24 @@
+{
+  "study": "RECUT stage3 post-hoc natural-fallback validation only",
+  "models": ["HuggingFaceTB/SmolLM2-135M"],
+  "prompts": [
+    {"id": "code", "text": "Consider a Python program that reads a sequence of integers, stores each partial sum, and periodically writes a checkpoint. Its functions are parse_record(line), update_total(state, value), verify_checkpoint(saved), and replay_suffix(records, start). Tests include empty input, negative integers, duplicate records, malformed lines, and interruption immediately before a checkpoint is committed. Explain invariants and propose clear unit tests."}
+  ],
+  "prompt_construction": "Tokenize repetitions of each authored passage separated by numbered Section i labels; truncate to declared prefix. Synthetic domain prompts, not an external task benchmark.",
+  "shapes": [{"prefix_tokens": 128, "window": 8}],
+  "n_windows": 3,
+  "seeds": [7431],
+  "repetitions": 1,
+  "clean_repetitions": 1,
+  "fault_cases": ["multi_prefix"],
+  "policies": ["full", "sparse", "allcuts"],
+  "guard_cases": ["checkpoint_corruption"],
+  "legacy_cases": ["clean"],
+  "snapshot_cases": ["multi_prefix"],
+  "snapshot_prompt": "code",
+  "snapshot_short_prefix": 128,
+  "snapshot_long_case": "multi_prefix",
+  "profile": false,
+  "warmup": false,
+  "prefill": "One common native batched prefill per workload; clean native/custom equality checked at every subsequent decode position, not against alternate incremental prefill kernels."
+}

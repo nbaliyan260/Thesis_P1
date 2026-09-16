@@ -1,0 +1,6 @@
+2026-09-16T16:33:48+04:00
+ws-l1-001
+{"model": "HuggingFaceTB/SmolLM2-135M", "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2", "path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--HuggingFaceTB--SmolLM2-135M/snapshots/93efa2f097d58c2a74874c7e644dbc9b0cee75a2"}
+{"model": "Qwen/Qwen2.5-0.5B", "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987", "path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"}
+{"model": "Qwen/Qwen2.5-7B", "revision": "d149729398750b98c0af14eb82c78cfe92750796", "path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-7B/snapshots/d149729398750b98c0af14eb82c78cfe92750796"}
+2026-09-16T16:44:59+04:00

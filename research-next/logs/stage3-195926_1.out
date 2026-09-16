@@ -1,0 +1,84 @@
+2026-09-16T16:47:35+04:00
+ws-l1-005
+Wed Sep 16 16:47:35 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX 5000 Ada Gene...    On  |   00000000:55:00.0 Off |                  Off |
+| 30%   40C    P8             21W /  250W |     184MiB /  32760MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            4869      G   /usr/lib/xorg/Xorg                      175MiB |
++-----------------------------------------------------------------------------------------+
+{"action": "verify", "files": 23, "passed": true}
+........................................................................ [ 25%]
+........................................................................ [ 50%]
+........................................................................ [ 75%]
+......................................................................   [100%]
+286 passed in 24.81s
+{"session": 1, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "native", "status": "complete", "valid": true}
+{"session": 2, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "bare", "status": "complete", "valid": true}
+{"session": 3, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 4, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 5, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 6, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "full_legacy", "status": "complete", "valid": true}
+{"session": 7, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "clean", "seed": 7431, "repetition": 0, "variant": "sparse_legacy", "status": "complete", "valid": true}
+{"session": 8, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_early", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 9, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_early", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 10, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_early", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 11, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_early", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 12, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_early", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 13, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_early", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 14, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_mid", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 15, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_mid", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 16, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_mid", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 17, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_mid", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 18, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_mid", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 19, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_mid", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 20, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_late", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 21, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_late", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 22, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "key_late", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 23, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_late", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 24, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_late", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 25, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_late", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 26, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_late", "seed": 7431, "repetition": 0, "variant": "full_legacy", "status": "complete", "valid": true}
+{"session": 27, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "value_late", "seed": 7431, "repetition": 0, "variant": "sparse_legacy", "status": "complete", "valid": true}
+{"session": 28, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "multi_prefix", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 29, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "multi_prefix", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 30, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "multi_prefix", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 31, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "repeated_prefix", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 32, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "repeated_prefix", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 33, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "repeated_prefix", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 34, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "journal_corruption", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "complete", "valid": true}
+{"session": 35, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "journal_corruption", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "complete", "valid": true}
+{"session": 36, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "journal_corruption", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "complete", "valid": true}
+{"session": 37, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "checkpoint_corruption", "seed": 7431, "repetition": 0, "variant": "full_batched", "status": "expected_abort", "valid": true}
+{"session": 38, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "checkpoint_corruption", "seed": 7431, "repetition": 0, "variant": "sparse_batched", "status": "expected_abort", "valid": true}
+{"session": 39, "of": 39, "workload_id": "Qwen--Qwen2.5-0.5B--cloud--p16--w4", "scenario": "checkpoint_corruption", "seed": 7431, "repetition": 0, "variant": "allcuts_batched", "status": "expected_abort", "valid": true}
+{
+  "status": "complete_descriptive_stage3",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "measured_sessions": 39,
+  "workloads": 1,
+  "committed_windows": 111,
+  "rejected_windows": 3,
+  "gold_checked_commits": 111,
+  "snapshot_declarations": 7
+}
+{
+  "status": "passed",
+  "checks": 23649,
+  "failures": []
+}
+{"action": "verify", "files": 23, "passed": true}
+2026-09-16T16:48:40+04:00

@@ -1,0 +1,203 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "hashes": {
+    "sessions.jsonl": "9f71ead97cc20344bee4f5dc6aed91bb59eadeef1a6c7b82fdff46c426d5c645",
+    "references.jsonl": "3c8f34cde64d853e5138c70756118d7ad59ff4255ccdab4f256b5394b956ebb4",
+    "warmups.jsonl": "96ad28ed7f52d22c0684039e631e2b171de9ada21bf918bd070927d21d7c9384",
+    "profiles.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata": "5a9cfc91d712d8399dada53265686af0116b45604240d4d8941806df878d2ecd",
+    "config": "cb7f8f6d9037f91baddda71abb1e1133f962005fda55f92c75859304440bcbb1",
+    "manifest": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+    "auditor": "2cdcc1ec39c68579ad7cf332df5f7bf431c95148bcad18646c262a2a0b2a75a3"
+  },
+  "counts": {
+    "workloads": 1,
+    "sessions": {
+      "sessions": 39,
+      "windows_attempted": 114,
+      "windows_committed": 111,
+      "windows_rejected": 3,
+      "recovered_windows": 35
+    },
+    "warmups": {
+      "sessions": 12,
+      "windows_attempted": 36,
+      "windows_committed": 36,
+      "windows_rejected": 0,
+      "recovered_windows": 5
+    },
+    "profiles": {
+      "sessions": 0,
+      "windows_attempted": 0,
+      "windows_committed": 0,
+      "windows_rejected": 0,
+      "recovered_windows": 0
+    },
+    "native_parity_positions": 14,
+    "snapshot_archives_declared": 7,
+    "snapshot_archives_reloaded": 7,
+    "measured_fault_targets": {
+      "working_prefix": 38,
+      "journal": 2,
+      "checkpoint": 3
+    },
+    "measured_fault_types": {
+      "additive_8rms": 34,
+      "fraction_bit_flip": 9
+    },
+    "measured_first_divergence_histogram": {
+      "None": 35
+    }
+  },
+  "snapshot_results": [
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--key_early--s7431--r0--full_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "full_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "99a3b3fe28db2302c4a070c6d4c6cdb4db487e51f6de4374a046fa97f618246e",
+      "bytes": 2800810
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--key_early--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "75f7a6eabf8de4aef60ed5f7122a06e441f5421c6eb86c387b125e7886563978",
+      "bytes": 2801306
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--key_early--s7431--r0--allcuts_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "allcuts_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "a3c59159547a1d3c6fd060bf88a655b5fee6dd590d94a77763956811a073a116",
+      "bytes": 2801618
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--value_late--s7431--r0--full_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "full_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "bb5b7c94211b67b1f35923ae55882bcc262395fd3845c139e3e30309bad720fa",
+      "bytes": 2801058
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--value_late--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "b40b25dd5929e259d51e8896768ef4da89f70902c470aa0960bc2cdaa538449a",
+      "bytes": 2801618
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--value_late--s7431--r0--allcuts_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "allcuts_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "72ec5125570c330a3976063d9759beb64e2df3ed670058868a0ffc0b4ee1a6a6",
+      "bytes": 2801866
+    },
+    {
+      "file": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4--multi_prefix--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "HuggingFaceTB--SmolLM2-135M--cloud--p16--w4",
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "scenario": "multi_prefix",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 244,
+      "tensor_payload_bytes_checked": 2697216,
+      "bytewise_equal_tensor_pairs": 122,
+      "tensor_pairs": 122,
+      "status": "passed",
+      "sha256": "16a6b00e0b735dbbe2f429baf41003150315266832196f91ab771db50ea0245e",
+      "bytes": 2802114
+    }
+  ],
+  "tensor_reload_requested": true,
+  "version": "RECUT-stage3-independent-evidence-audit-v1",
+  "status": "passed",
+  "checks": 24606,
+  "failures": [],
+  "audited_utc": "2026-09-16T12:51:55.094428+00:00",
+  "limitations": [
+    "No model re-execution or external replication.",
+    "Unsaved trials rely on recorded live native-comparison and no-early-commit verdicts.",
+    "Snapshot reload checks only the prespecified subset; hashes bind saved tensors to native-reference records.",
+    "Gaussian draws and tokenizer outputs are not independently regenerated.",
+    "Fault arithmetic, placement, timing, and same-treatment pairing are checked, not physical fault realism.",
+    "Model-file hash records are checked for structure, not reloaded against remote model weights.",
+    "Prefix detector's bounded contract excludes suffix-only, reverted, computation-origin, and pre-checkpoint faults.",
+    "No production-service, field-failure-rate, throughput, external novelty, or publication-readiness guarantee."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "passed_validation_only",
+  "post_hoc_selected": true,
+  "prospective_diagnostic_binding": {
+    "freeze_sha256": "66a2fd31894992ae94d7150453428071f8e6814e324efbc0bcf414aeecd6f2dd",
+    "amendment_sha256": "5f5c42db73f493e9c947428f46107320a00cc5344d361533c481e1ed9a35701b"
+  },
+  "excluded_from_main_performance_counts_novelty_and_iid_claims": true,
+  "original_main_file_sha256": {
+    "metadata.json": "8a1695ba05c046af03fb7e1a6a7910c53b53efc594a94ab9cfe596f3220633e4",
+    "sessions.jsonl": "fe8b1c0c4d785590c66d8582bfff6b8bc23f1115e35255ab55923d1fc41fd403",
+    "references.jsonl": "0f1f36d1d0ea802d49e0a32e46d6d11362e56f3818018edc2cd8086fa5a2d7f5"
+  },
+  "original_source_canonical_sha256": "b0726201ade8978a20daeb7edaaec192f5eadea864ede656e4ad40c83bfdb51d",
+  "native_reference_canonical_sha256": "4940d983e78f347cf57ac5133d4d07db61fafac6d647816da6a0a0d427bea149",
+  "faults_canonical_sha256": "1f95e81b06757c50fedc9f2f6fdc23ee320a547fff52fceb0f955766ffde4e35",
+  "case_trace_sha256": {
+    "full_batched": "0eb0f62ed2c415964bcd43ed6ad1f9343f9928fa9c1075442a9624bfca2bfe4e",
+    "sparse_batched": "4b2733420fc00bfc2b6da799b37430d27029cc30d41d27117a91770a92957c6f",
+    "allcuts_batched": "f9a82a731e53bab958581e0c55896be031048e74ebd273109204e37f55592942"
+  },
+  "diagnostic_input_sha256": {
+    "metadata": "6fbbdb56a9b1bc68d9ee5aad709aff4b1661e1827d7b0b68995067b8650f92b2",
+    "sessions.jsonl": "415b42122dc4a1bdc22c88bbea34cc721f34ed00b15a64a7aa68bb9c74d685e9",
+    "references.jsonl": "159d1765bd7bf38c90bf03f06ba8e78ba8b8ba7593fc69884a441ec11335b5d5",
+    "warmups.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "profiles.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "config_sha256": "50621dffa1bb1907c89f2aa24de71b8a663122b210a13710bc2b538d65271d7d",
+  "manifest_sha256": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+  "verifier_sha256": "e83aa39e403d56404f049fc924252f087a9b576dfc284f0e472a8c869da76adc",
+  "audit_bindings": {
+    "audit.json": {
+      "sha256": "a79880525585adbd0baa15612e7d86d72795384225f00ed1dafd790858df5cf9",
+      "checks": 8124
+    },
+    "audit_local.json": {
+      "sha256": "fe2d343437d71f1317f417fc73b37b497feab585e25aef0c2a20e51f301b5465",
+      "checks": 8124
+    }
+  },
+  "counts": {
+    "sessions": 13,
+    "windows_attempted": 36,
+    "committed_windows": 33,
+    "specified_refusals": 3,
+    "snapshots_reloaded": 3,
+    "native_parity_positions": 26,
+    "snapshot_tensor_pairs": 366
+  },
+  "observed_replay_starts": {
+    "full_batched": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sparse_batched": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      0
+    ],
+    "allcuts_batched": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      0
+    ]
+  },
+  "scope": "Validation-only replay selected after observing the original main case. No independent fault sample, additional main performance evidence, new mechanism, or novelty evidence."
+}

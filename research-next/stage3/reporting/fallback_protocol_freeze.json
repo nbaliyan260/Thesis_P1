@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-16T13:36:44Z",
+  "scope": "post_hoc_validation_only_before_diagnostic_submission",
+  "files_sha256": {
+    "notes/stage3_fallback_diagnostic_amendment.md": "5f5c42db73f493e9c947428f46107320a00cc5344d361533c481e1ed9a35701b",
+    "stage3/reporting/fallback_config.json": "50621dffa1bb1907c89f2aa24de71b8a663122b210a13710bc2b538d65271d7d",
+    "stage3/reporting/run_fallback_diagnostic.sbatch": "5878ccc2722a8c8dd8f02383a8ad4659ce42009cb894e17f08f580eed4723ac4",
+    "stage3/reporting/verify_fallback_diagnostic.py": "e83aa39e403d56404f049fc924252f087a9b576dfc284f0e472a8c869da76adc"
+  }
+}

@@ -1,0 +1,272 @@
+2026-09-16T16:13:15+04:00
+ws-l1-014
+Wed Sep 16 16:13:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX 5000 Ada Gene...    On  |   00000000:55:00.0 Off |                  Off |
+| 30%   38C    P8             18W /  250W |     195MiB /  32760MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            4818      G   /usr/lib/xorg/Xorg                      187MiB |
++-----------------------------------------------------------------------------------------+
+{"action": "verify", "files": 17, "passed": true}
+........................................................................ [ 67%]
+...................................                                      [100%]
+107 passed in 25.06s
+{"session": 1, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 2, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 3, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 4, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 5, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 6, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 7, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 8, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 9, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 10, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 11, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 12, "of": 24, "workload": "HuggingFaceTB--SmolLM2-135M-p16-w4-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 13, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 14, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 15, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 16, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 17, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 18, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 19, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 20, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 21, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 22, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 23, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 24, "of": 24, "workload": "Qwen--Qwen2.5-0.5B-p16-w4-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{
+  "status": "complete",
+  "sessions": 24,
+  "windows_attempted": 68,
+  "windows_committed": 64,
+  "windows_rejected": 4,
+  "recovered_windows": 24,
+  "all_recorded_checks_pass": true
+}
+{
+  "status": "passed",
+  "checks": 15007,
+  "failures": []
+}
+{"session": 1, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 2, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 3, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 4, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 5, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 6, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 7, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 8, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 9, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 10, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 11, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 12, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 13, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 14, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 15, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 16, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 17, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 18, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 19, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 20, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 21, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 22, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 23, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 24, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 25, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 26, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 27, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 28, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 29, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 30, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 31, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 32, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 33, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 34, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 35, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 36, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 37, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 38, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 39, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 40, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 41, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 42, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 43, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 44, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 45, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 46, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 47, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 48, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 49, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 50, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 51, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 52, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 53, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 54, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 55, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 56, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 57, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 58, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 59, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 60, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 61, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 62, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 63, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 64, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 65, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 66, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 67, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 68, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 69, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 70, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 71, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 72, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 73, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 74, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 75, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 76, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 77, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 78, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 79, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 80, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 81, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 82, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 83, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 84, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 85, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 86, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 87, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 88, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 89, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 90, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 91, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 92, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 93, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 94, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 95, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 96, "of": 192, "workload": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 97, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 98, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 99, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 100, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 101, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 102, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 103, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 104, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 105, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 106, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 107, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 108, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 109, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 110, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 111, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 112, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 113, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 114, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 115, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 116, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 117, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 118, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 119, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 120, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 121, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 122, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 123, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 124, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 125, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 126, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 127, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 128, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 129, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 130, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 131, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 132, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 133, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 134, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 135, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 136, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 137, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 138, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 139, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 140, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 141, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 142, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 143, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 144, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p32-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 145, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 146, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 147, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 148, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 149, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 150, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 151, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 152, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 153, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 154, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 155, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 156, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 157, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 158, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 159, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 160, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 161, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 162, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 163, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 164, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 165, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 166, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 167, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 168, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w8-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 169, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "clean", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 170, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "clean", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 171, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "clean", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 172, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "clean", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 173, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 174, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "single_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 175, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 176, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "single_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 177, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 178, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 179, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 180, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "multi_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 181, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 182, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 183, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 184, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "repeated_prefix", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 185, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "full", "status": "complete", "valid": true}
+{"session": 186, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 0, "method": "sparse", "status": "complete", "valid": true}
+{"session": 187, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "sparse", "status": "complete", "valid": true}
+{"session": 188, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "journal_corruption", "repetition": 1, "method": "full", "status": "complete", "valid": true}
+{"session": 189, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "full", "status": "expected_abort", "valid": true}
+{"session": 190, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 0, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 191, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "sparse", "status": "expected_abort", "valid": true}
+{"session": 192, "of": 192, "workload": "Qwen--Qwen2.5-0.5B-p128-w16-s7431", "scenario": "checkpoint_corruption", "repetition": 1, "method": "full", "status": "expected_abort", "valid": true}
+{
+  "status": "complete",
+  "sessions": 192,
+  "windows_attempted": 544,
+  "windows_committed": 512,
+  "windows_rejected": 32,
+  "recovered_windows": 192,
+  "all_recorded_checks_pass": true
+}
+{
+  "status": "passed",
+  "checks": 85379,
+  "failures": []
+}
+{"action": "verify", "files": 17, "passed": true}
+2026-09-16T16:19:53+04:00

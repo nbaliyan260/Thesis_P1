@@ -1,0 +1,205 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "hashes": {
+    "sessions.jsonl": "468f84fb499e392e7f87031c4eb015011ef3d0805d0ed6761de194417ac0f924",
+    "references.jsonl": "676925dd574ac14e9857a74cba6a55cec154a46963f6b68f1d77023114d67822",
+    "warmups.jsonl": "80adbccb9bf0a35becc06b2769ff35b608f4ab669c06aa805d70dbf031d86cee",
+    "profiles.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata": "714ffc72a17d18f0801fda4d1e04cef646c9e690fc2da5deae8ccd54e79355d9",
+    "config": "cb7f8f6d9037f91baddda71abb1e1133f962005fda55f92c75859304440bcbb1",
+    "manifest": "10740dcbfa8a94336f424a34b729b74fa02303db7f6f39c754d3dd83cc2360fd",
+    "auditor": "2cdcc1ec39c68579ad7cf332df5f7bf431c95148bcad18646c262a2a0b2a75a3"
+  },
+  "counts": {
+    "workloads": 1,
+    "sessions": {
+      "sessions": 39,
+      "windows_attempted": 114,
+      "windows_committed": 111,
+      "windows_rejected": 3,
+      "recovered_windows": 35
+    },
+    "warmups": {
+      "sessions": 12,
+      "windows_attempted": 36,
+      "windows_committed": 36,
+      "windows_rejected": 0,
+      "recovered_windows": 5
+    },
+    "profiles": {
+      "sessions": 0,
+      "windows_attempted": 0,
+      "windows_committed": 0,
+      "windows_rejected": 0,
+      "recovered_windows": 0
+    },
+    "native_parity_positions": 14,
+    "snapshot_archives_declared": 7,
+    "snapshot_archives_reloaded": 7,
+    "measured_fault_targets": {
+      "working_prefix": 38,
+      "journal": 2,
+      "checkpoint": 3
+    },
+    "measured_fault_types": {
+      "additive_8rms": 34,
+      "fraction_bit_flip": 9
+    },
+    "measured_first_divergence_histogram": {
+      "None": 29,
+      "2": 3,
+      "4": 3
+    }
+  },
+  "snapshot_results": [
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--key_early--s7431--r0--full_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "full_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "9bd00fc4931ed3062d7fd6a69be2e8e64a27a1f0c0fb4c329239cec92d6d0d6d",
+      "bytes": 7045202
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--key_early--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "bed4efd39be87764a394abb2fe737063891b847ad19b6b2ac880ef554acc0555",
+      "bytes": 7045666
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--key_early--s7431--r0--allcuts_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "key_early",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "allcuts_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "0afa9c6e750d302901d959d177634d1f20cd03836849dff1a5bbe02bb04e26a5",
+      "bytes": 7045898
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--value_late--s7431--r0--full_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "full_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "c2920dd61d23b8b7d5ab9317c3402f0bfd6417d1844c4b54962e30da51775e46",
+      "bytes": 7045434
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--value_late--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "ace5cb687356244bf915043ffd8ed7aea0fea7a7a86aa0d075b9db29878c5be2",
+      "bytes": 7045898
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--value_late--s7431--r0--allcuts_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "value_late",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "allcuts_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "b90be19df81cc8e1f9d0024a058182d8528cd9b0ad9ea7b2c8a68c206c131676",
+      "bytes": 7046130
+    },
+    {
+      "file": "Qwen--Qwen2.5-7B--cloud--p16--w4--multi_prefix--s7431--r0--sparse_batched--w1.pt",
+      "identity": {
+        "workload_id": "Qwen--Qwen2.5-7B--cloud--p16--w4",
+        "model": "Qwen/Qwen2.5-7B",
+        "scenario": "multi_prefix",
+        "seed": 7431,
+        "repetition": 0,
+        "variant": "sparse_batched",
+        "window_index": 1
+      },
+      "tensors_reloaded": 228,
+      "tensor_payload_bytes_checked": 6950912,
+      "bytewise_equal_tensor_pairs": 114,
+      "tensor_pairs": 114,
+      "status": "passed",
+      "sha256": "7f9e9a93d61b78df878f4a1f35a7478b426bfaed861da92038be10adcc650bf0",
+      "bytes": 7046362
+    }
+  ],
+  "tensor_reload_requested": true,
+  "version": "RECUT-stage3-independent-evidence-audit-v1",
+  "status": "passed",
+  "checks": 32461,
+  "failures": [],
+  "audited_utc": "2026-09-16T12:50:04.889742+00:00",
+  "limitations": [
+    "No model re-execution or external replication.",
+    "Unsaved trials rely on recorded live native-comparison and no-early-commit verdicts.",
+    "Snapshot reload checks only the prespecified subset; hashes bind saved tensors to native-reference records.",
+    "Gaussian draws and tokenizer outputs are not independently regenerated.",
+    "Fault arithmetic, placement, timing, and same-treatment pairing are checked, not physical fault realism.",
+    "Model-file hash records are checked for structure, not reloaded against remote model weights.",
+    "Prefix detector's bounded contract excludes suffix-only, reverted, computation-origin, and pre-checkpoint faults.",
+    "No production-service, field-failure-rate, throughput, external novelty, or publication-readiness guarantee."
+  ]
+}

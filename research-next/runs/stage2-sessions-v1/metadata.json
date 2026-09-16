@@ -1,0 +1,918 @@
+{
+  "status": "complete",
+  "started_unix_seconds": 1789560857.46202,
+  "config_sha256": "bf4f8e32b186e33fab0f692d0d5ca5143fb765b89b6b621055b252e7f8214442",
+  "manifest_sha256": "01a234d552e2655b27451081a4dd3c8a45aaeb62830a7645440961973b043b90",
+  "source_sha256": {
+    "analyze_sessions.py": "372da6e27961d2302604d604dbaa3b249cc1b8002ce6ae0afc0ca5aef1103b28",
+    "audit_sessions.py": "9ec155bc7c9291c979bce533f1dcbdb01a7bb3b339db56a1bb51b527d586624e",
+    "controller.py": "87e7d2adc37f3a38f9a00c419c4044dbb20b456f153d7fc91c2fc2d1ab46b16e",
+    "freeze_stage2.py": "a9bc5cb7f5756c0d7300c03fd358039286647dfdf6928f5ac931f23075aeab35",
+    "run_sessions.py": "c246862a12b35217294c0ca8959fa5c0a5d896624f24a6e5d33b0f3a095ee417",
+    "test_transactional.py": "10463392c03f6cdf95a4ec5ff0e05593a11d2b7a54bc42741d0ceeb19e476787",
+    "../experiments/recut_engine.py": "c0e0949ccf415853c3c047dbbba727df81539531a53704bb3479856bf8b7cac9",
+    "../experiments/prefix_detector.py": "0324ad63f6e63c573afd6ee94c978629b03b197e9fe072bc70e999191df93418",
+    "../experiments/run_recut.py": "969fa347eed616fce8956809ec612d991e08afa6ac48bcce5342491fb4b5f7c9"
+  },
+  "python": "3.13.9",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.51.3",
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "cuda_runtime": "12.4",
+  "timing_scope": "BEGIN through finish, including artificial fault injection, guards, checkpoint, journals, delayed detection, recovery and COMMIT; common session input fork, constructor, prefill, parity and oracle checks excluded",
+  "adjusted_timing_scope": "Wall time minus separately measured injection harness; residual harness bookkeeping remains. Not measured deployment latency.",
+  "memory_scope": "Logical payloads exclude Python metadata/allocator; GPU peaks include resident native correctness fixtures and model",
+  "equality": "Exact finite elementwise tensors, greedy tokens, and native two-step continuation",
+  "oracle_storage": "Native gold tensors held live; persisted hashes and per-window comparison records, not full gold tensors",
+  "models_completed": [
+    "HuggingFaceTB/SmolLM2-135M",
+    "Qwen/Qwen2.5-0.5B"
+  ],
+  "warmup_results": [
+    {
+      "workload_id": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431",
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "prefix_tokens": 32,
+      "num_layers": 30,
+      "window": 8,
+      "n_windows": 1,
+      "seed": 7431,
+      "scenario": "clean",
+      "method": "full",
+      "repetition": -1,
+      "method_order": [
+        "full"
+      ],
+      "sparse_cuts": [
+        7,
+        15,
+        22
+      ],
+      "windows": [
+        {
+          "window_index": 0,
+          "wall_seconds": 0.2589515410363674,
+          "injection_harness_seconds": 0.0,
+          "wall_minus_injection_seconds": 0.2589515410363674,
+          "faults": [],
+          "no_early_commit": true,
+          "committed_before": 0,
+          "committed_after": 8,
+          "logical_input_cache_bytes": 737280,
+          "logical_checkpoint_bytes": 737280,
+          "logical_journal_bytes": 0,
+          "allocated_before_bytes": 311492608,
+          "peak_allocated_bytes": 313526272,
+          "peak_increment_bytes": 2033664,
+          "speculative_tokens": [
+            253,
+            4461,
+            6376,
+            30,
+            378,
+            5615,
+            5328,
+            418
+          ],
+          "status": "committed",
+          "valid": true,
+          "checks": {
+            "cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "tokens_equal": true,
+            "committed_tokens_equal": true,
+            "next_token_equal": true,
+            "continuation_cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "continuation_logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "continuation_tokens_equal": true,
+            "not_poisoned": true,
+            "all_equal": true,
+            "detected_layers_equal_injection": true,
+            "recovery_expected": true,
+            "committed_windows_equal": true,
+            "no_early_commit": true,
+            "unexpected_checkpoint_commit": true
+          },
+          "tokens": [
+            253,
+            4461,
+            6376,
+            30,
+            378,
+            5615,
+            5328,
+            418
+          ],
+          "detected_layers": [],
+          "selected_cut": 0,
+          "replay_starts": [],
+          "first_divergence": null,
+          "fallback_reason": null,
+          "recovered": false,
+          "controller_metadata": {
+            "window_index": 0,
+            "prefix_tokens": 32,
+            "window_tokens": 8,
+            "checkpoint_bytes": 737280,
+            "preserved_committed_cache_bytes": 737280,
+            "journal_bytes": 0,
+            "replay_layer_steps": 0,
+            "replay_seconds": 0.0,
+            "journal_integrity_checked": false,
+            "route": "clean"
+          }
+        }
+      ],
+      "valid": true,
+      "same_policy_treatment": true,
+      "status": "complete",
+      "committed_tokens": [
+        253,
+        4461,
+        6376,
+        30,
+        378,
+        5615,
+        5328,
+        418
+      ],
+      "windows_committed": 1,
+      "poisoned": false,
+      "total_wall_seconds": 0.2589515410363674,
+      "total_injection_harness_seconds": 0.0
+    },
+    {
+      "workload_id": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431",
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "prefix_tokens": 32,
+      "num_layers": 30,
+      "window": 8,
+      "n_windows": 1,
+      "seed": 7431,
+      "scenario": "clean",
+      "method": "sparse",
+      "repetition": -1,
+      "method_order": [
+        "sparse"
+      ],
+      "sparse_cuts": [
+        7,
+        15,
+        22
+      ],
+      "windows": [
+        {
+          "window_index": 0,
+          "wall_seconds": 0.2508588850032538,
+          "injection_harness_seconds": 0.0,
+          "wall_minus_injection_seconds": 0.2508588850032538,
+          "faults": [],
+          "no_early_commit": true,
+          "committed_before": 0,
+          "committed_after": 8,
+          "logical_input_cache_bytes": 737280,
+          "logical_checkpoint_bytes": 737280,
+          "logical_journal_bytes": 27648,
+          "allocated_before_bytes": 311492608,
+          "peak_allocated_bytes": 313563136,
+          "peak_increment_bytes": 2070528,
+          "speculative_tokens": [
+            253,
+            4461,
+            6376,
+            30,
+            378,
+            5615,
+            5328,
+            418
+          ],
+          "status": "committed",
+          "valid": true,
+          "checks": {
+            "cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "tokens_equal": true,
+            "committed_tokens_equal": true,
+            "next_token_equal": true,
+            "continuation_cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "continuation_logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "continuation_tokens_equal": true,
+            "not_poisoned": true,
+            "all_equal": true,
+            "detected_layers_equal_injection": true,
+            "recovery_expected": true,
+            "committed_windows_equal": true,
+            "no_early_commit": true,
+            "unexpected_checkpoint_commit": true
+          },
+          "tokens": [
+            253,
+            4461,
+            6376,
+            30,
+            378,
+            5615,
+            5328,
+            418
+          ],
+          "detected_layers": [],
+          "selected_cut": 0,
+          "replay_starts": [],
+          "first_divergence": null,
+          "fallback_reason": null,
+          "recovered": false,
+          "controller_metadata": {
+            "window_index": 0,
+            "prefix_tokens": 32,
+            "window_tokens": 8,
+            "checkpoint_bytes": 737280,
+            "preserved_committed_cache_bytes": 737280,
+            "journal_bytes": 27648,
+            "replay_layer_steps": 0,
+            "replay_seconds": 0.0,
+            "journal_integrity_checked": false,
+            "route": "clean"
+          }
+        }
+      ],
+      "valid": true,
+      "same_policy_treatment": true,
+      "status": "complete",
+      "committed_tokens": [
+        253,
+        4461,
+        6376,
+        30,
+        378,
+        5615,
+        5328,
+        418
+      ],
+      "windows_committed": 1,
+      "poisoned": false,
+      "total_wall_seconds": 0.2508588850032538,
+      "total_injection_harness_seconds": 0.0
+    },
+    {
+      "workload_id": "Qwen--Qwen2.5-0.5B-p32-w8-s7431",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "prefix_tokens": 32,
+      "num_layers": 24,
+      "window": 8,
+      "n_windows": 1,
+      "seed": 7431,
+      "scenario": "clean",
+      "method": "full",
+      "repetition": -1,
+      "method_order": [
+        "full"
+      ],
+      "sparse_cuts": [
+        6,
+        12,
+        18
+      ],
+      "windows": [
+        {
+          "window_index": 0,
+          "wall_seconds": 0.20605326700024307,
+          "injection_harness_seconds": 0.0,
+          "wall_minus_injection_seconds": 0.20605326700024307,
+          "faults": [],
+          "no_early_commit": true,
+          "committed_before": 0,
+          "committed_after": 8,
+          "logical_input_cache_bytes": 393216,
+          "logical_checkpoint_bytes": 393216,
+          "logical_journal_bytes": 0,
+          "allocated_before_bytes": 1036100096,
+          "peak_allocated_bytes": 1038347776,
+          "peak_increment_bytes": 2247680,
+          "speculative_tokens": [
+            32,
+            13,
+            6966,
+            518,
+            279,
+            3015,
+            198,
+            33
+          ],
+          "status": "committed",
+          "valid": true,
+          "checks": {
+            "cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "tokens_equal": true,
+            "committed_tokens_equal": true,
+            "next_token_equal": true,
+            "continuation_cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "continuation_logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "continuation_tokens_equal": true,
+            "not_poisoned": true,
+            "all_equal": true,
+            "detected_layers_equal_injection": true,
+            "recovery_expected": true,
+            "committed_windows_equal": true,
+            "no_early_commit": true,
+            "unexpected_checkpoint_commit": true
+          },
+          "tokens": [
+            32,
+            13,
+            6966,
+            518,
+            279,
+            3015,
+            198,
+            33
+          ],
+          "detected_layers": [],
+          "selected_cut": 0,
+          "replay_starts": [],
+          "first_divergence": null,
+          "fallback_reason": null,
+          "recovered": false,
+          "controller_metadata": {
+            "window_index": 0,
+            "prefix_tokens": 32,
+            "window_tokens": 8,
+            "checkpoint_bytes": 393216,
+            "preserved_committed_cache_bytes": 393216,
+            "journal_bytes": 0,
+            "replay_layer_steps": 0,
+            "replay_seconds": 0.0,
+            "journal_integrity_checked": false,
+            "route": "clean"
+          }
+        }
+      ],
+      "valid": true,
+      "same_policy_treatment": true,
+      "status": "complete",
+      "committed_tokens": [
+        32,
+        13,
+        6966,
+        518,
+        279,
+        3015,
+        198,
+        33
+      ],
+      "windows_committed": 1,
+      "poisoned": false,
+      "total_wall_seconds": 0.20605326700024307,
+      "total_injection_harness_seconds": 0.0
+    },
+    {
+      "workload_id": "Qwen--Qwen2.5-0.5B-p32-w8-s7431",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "prefix_tokens": 32,
+      "num_layers": 24,
+      "window": 8,
+      "n_windows": 1,
+      "seed": 7431,
+      "scenario": "clean",
+      "method": "sparse",
+      "repetition": -1,
+      "method_order": [
+        "sparse"
+      ],
+      "sparse_cuts": [
+        6,
+        12,
+        18
+      ],
+      "windows": [
+        {
+          "window_index": 0,
+          "wall_seconds": 0.20776284905150533,
+          "injection_harness_seconds": 0.0,
+          "wall_minus_injection_seconds": 0.20776284905150533,
+          "faults": [],
+          "no_early_commit": true,
+          "committed_before": 0,
+          "committed_after": 8,
+          "logical_input_cache_bytes": 393216,
+          "logical_checkpoint_bytes": 393216,
+          "logical_journal_bytes": 43008,
+          "allocated_before_bytes": 1036100096,
+          "peak_allocated_bytes": 1038396928,
+          "peak_increment_bytes": 2296832,
+          "speculative_tokens": [
+            32,
+            13,
+            6966,
+            518,
+            279,
+            3015,
+            198,
+            33
+          ],
+          "status": "committed",
+          "valid": true,
+          "checks": {
+            "cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "tokens_equal": true,
+            "committed_tokens_equal": true,
+            "next_token_equal": true,
+            "continuation_cache": {
+              "equal": true,
+              "eq": true,
+              "max_abs_error": 0.0,
+              "finite": true,
+              "mismatches": []
+            },
+            "continuation_logits": {
+              "equal": true,
+              "finite": true,
+              "max_abs_error": 0.0
+            },
+            "continuation_tokens_equal": true,
+            "not_poisoned": true,
+            "all_equal": true,
+            "detected_layers_equal_injection": true,
+            "recovery_expected": true,
+            "committed_windows_equal": true,
+            "no_early_commit": true,
+            "unexpected_checkpoint_commit": true
+          },
+          "tokens": [
+            32,
+            13,
+            6966,
+            518,
+            279,
+            3015,
+            198,
+            33
+          ],
+          "detected_layers": [],
+          "selected_cut": 0,
+          "replay_starts": [],
+          "first_divergence": null,
+          "fallback_reason": null,
+          "recovered": false,
+          "controller_metadata": {
+            "window_index": 0,
+            "prefix_tokens": 32,
+            "window_tokens": 8,
+            "checkpoint_bytes": 393216,
+            "preserved_committed_cache_bytes": 393216,
+            "journal_bytes": 43008,
+            "replay_layer_steps": 0,
+            "replay_seconds": 0.0,
+            "journal_integrity_checked": false,
+            "route": "clean"
+          }
+        }
+      ],
+      "valid": true,
+      "same_policy_treatment": true,
+      "status": "complete",
+      "committed_tokens": [
+        32,
+        13,
+        6966,
+        518,
+        279,
+        3015,
+        198,
+        33
+      ],
+      "windows_committed": 1,
+      "poisoned": false,
+      "total_wall_seconds": 0.20776284905150533,
+      "total_injection_harness_seconds": 0.0
+    }
+  ],
+  "workloads": [
+    {
+      "id": "HuggingFaceTB--SmolLM2-135M-p32-w8-s7431",
+      "parity_positions": 58,
+      "passed": true
+    },
+    {
+      "id": "HuggingFaceTB--SmolLM2-135M-p32-w16-s7431",
+      "parity_positions": 82,
+      "passed": true
+    },
+    {
+      "id": "HuggingFaceTB--SmolLM2-135M-p128-w8-s7431",
+      "parity_positions": 154,
+      "passed": true
+    },
+    {
+      "id": "HuggingFaceTB--SmolLM2-135M-p128-w16-s7431",
+      "parity_positions": 178,
+      "passed": true
+    },
+    {
+      "id": "Qwen--Qwen2.5-0.5B-p32-w8-s7431",
+      "parity_positions": 58,
+      "passed": true
+    },
+    {
+      "id": "Qwen--Qwen2.5-0.5B-p32-w16-s7431",
+      "parity_positions": 82,
+      "passed": true
+    },
+    {
+      "id": "Qwen--Qwen2.5-0.5B-p128-w8-s7431",
+      "parity_positions": 154,
+      "passed": true
+    },
+    {
+      "id": "Qwen--Qwen2.5-0.5B-p128-w16-s7431",
+      "parity_positions": 178,
+      "passed": true
+    }
+  ],
+  "config": {
+    "study": "RECUT stage2 bounded multi-window integration",
+    "models": [
+      "HuggingFaceTB/SmolLM2-135M",
+      "Qwen/Qwen2.5-0.5B"
+    ],
+    "prefixes": [
+      32,
+      128
+    ],
+    "windows": [
+      8,
+      16
+    ],
+    "n_windows": 3,
+    "seeds": [
+      7431
+    ],
+    "scenarios": [
+      "clean",
+      "single_prefix",
+      "multi_prefix",
+      "repeated_prefix",
+      "journal_corruption",
+      "checkpoint_corruption"
+    ],
+    "methods": [
+      "full",
+      "sparse"
+    ],
+    "repetitions": 2,
+    "warmups": 1,
+    "scope": "Persistent numerical old-prefix changes during speculation only; no physical faults or serving throughput claim"
+  },
+  "manifest": [
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--HuggingFaceTB--SmolLM2-135M/snapshots/93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "local_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987"
+    }
+  ],
+  "deterministic_algorithms": true,
+  "tf32": false,
+  "attention": "eager",
+  "batch_size": 1,
+  "allow_bf16_reduced_precision_reduction": true,
+  "float32_matmul_precision": "highest",
+  "cublas_workspace_config": ":4096:8",
+  "gpu": "NVIDIA RTX 5000 Ada Generation",
+  "expected_sessions": 192,
+  "model_files": {
+    "HuggingFaceTB/SmolLM2-135M": [
+      {
+        "file": "config.json",
+        "bytes": 704,
+        "sha256": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843"
+      },
+      {
+        "file": "generation_config.json",
+        "bytes": 111,
+        "sha256": "2056c988e990b0d13670f63f2f3b87b3b6d07edaf7a3416998ba27dab2d8a059"
+      },
+      {
+        "file": "merges.txt",
+        "bytes": 466391,
+        "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 269060552,
+        "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1"
+      },
+      {
+        "file": "special_tokens_map.json",
+        "bytes": 831,
+        "sha256": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 2104556,
+        "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 3658,
+        "sha256": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424"
+      },
+      {
+        "file": "vocab.json",
+        "bytes": 800662,
+        "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+      }
+    ],
+    "Qwen/Qwen2.5-0.5B": [
+      {
+        "file": "config.json",
+        "bytes": 681,
+        "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
+      },
+      {
+        "file": "generation_config.json",
+        "bytes": 138,
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      },
+      {
+        "file": "merges.txt",
+        "bytes": 1671839,
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 988097824,
+        "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 7031645,
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 7228,
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      {
+        "file": "vocab.json",
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ]
+  },
+  "model_configs": {
+    "HuggingFaceTB/SmolLM2-135M": {
+      "vocab_size": 49152,
+      "max_position_embeddings": 8192,
+      "hidden_size": 576,
+      "intermediate_size": 1536,
+      "num_hidden_layers": 30,
+      "num_attention_heads": 9,
+      "num_key_value_heads": 3,
+      "hidden_act": "silu",
+      "initializer_range": 0.041666666666666664,
+      "rms_norm_eps": 1e-05,
+      "pretraining_tp": 1,
+      "use_cache": true,
+      "rope_theta": 100000,
+      "rope_scaling": null,
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "mlp_bias": false,
+      "head_dim": 64,
+      "return_dict": true,
+      "output_hidden_states": false,
+      "output_attentions": false,
+      "torchscript": false,
+      "torch_dtype": "bfloat16",
+      "use_bfloat16": false,
+      "tf_legacy_loss": false,
+      "pruned_heads": {},
+      "tie_word_embeddings": true,
+      "chunk_size_feed_forward": 0,
+      "is_encoder_decoder": false,
+      "is_decoder": false,
+      "cross_attention_hidden_size": null,
+      "add_cross_attention": false,
+      "tie_encoder_decoder": false,
+      "max_length": 20,
+      "min_length": 0,
+      "do_sample": false,
+      "early_stopping": false,
+      "num_beams": 1,
+      "num_beam_groups": 1,
+      "diversity_penalty": 0.0,
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1.0,
+      "typical_p": 1.0,
+      "repetition_penalty": 1.0,
+      "length_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "encoder_no_repeat_ngram_size": 0,
+      "bad_words_ids": null,
+      "num_return_sequences": 1,
+      "output_scores": false,
+      "return_dict_in_generate": false,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": false,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "finetuning_task": null,
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "tokenizer_class": null,
+      "prefix": null,
+      "bos_token_id": 0,
+      "pad_token_id": null,
+      "eos_token_id": 0,
+      "sep_token_id": null,
+      "decoder_start_token_id": null,
+      "task_specific_params": null,
+      "problem_type": null,
+      "_name_or_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--HuggingFaceTB--SmolLM2-135M/snapshots/93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "_attn_implementation_autoset": true,
+      "transformers_version": "4.51.3",
+      "is_llama_config": true,
+      "model_type": "llama",
+      "rope_interleaved": false
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "vocab_size": 151936,
+      "max_position_embeddings": 32768,
+      "hidden_size": 896,
+      "intermediate_size": 4864,
+      "num_hidden_layers": 24,
+      "num_attention_heads": 14,
+      "use_sliding_window": false,
+      "sliding_window": 32768,
+      "max_window_layers": 24,
+      "num_key_value_heads": 2,
+      "hidden_act": "silu",
+      "initializer_range": 0.02,
+      "rms_norm_eps": 1e-06,
+      "use_cache": true,
+      "rope_theta": 1000000.0,
+      "rope_scaling": null,
+      "attention_dropout": 0.0,
+      "return_dict": true,
+      "output_hidden_states": false,
+      "output_attentions": false,
+      "torchscript": false,
+      "torch_dtype": "bfloat16",
+      "use_bfloat16": false,
+      "tf_legacy_loss": false,
+      "pruned_heads": {},
+      "tie_word_embeddings": true,
+      "chunk_size_feed_forward": 0,
+      "is_encoder_decoder": false,
+      "is_decoder": false,
+      "cross_attention_hidden_size": null,
+      "add_cross_attention": false,
+      "tie_encoder_decoder": false,
+      "max_length": 20,
+      "min_length": 0,
+      "do_sample": false,
+      "early_stopping": false,
+      "num_beams": 1,
+      "num_beam_groups": 1,
+      "diversity_penalty": 0.0,
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1.0,
+      "typical_p": 1.0,
+      "repetition_penalty": 1.0,
+      "length_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "encoder_no_repeat_ngram_size": 0,
+      "bad_words_ids": null,
+      "num_return_sequences": 1,
+      "output_scores": false,
+      "return_dict_in_generate": false,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": false,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "finetuning_task": null,
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "tokenizer_class": null,
+      "prefix": null,
+      "bos_token_id": 151643,
+      "pad_token_id": null,
+      "eos_token_id": 151643,
+      "sep_token_id": null,
+      "decoder_start_token_id": null,
+      "task_specific_params": null,
+      "problem_type": null,
+      "_name_or_path": "/l/users/nazish.baliyan/recut-20260916/hf-cache/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "_attn_implementation_autoset": true,
+      "transformers_version": "4.51.3",
+      "model_type": "qwen2",
+      "use_mrope": false
+    }
+  },
+  "sessions_completed": 192,
+  "finished_unix_seconds": 1789561192.9961803,
+  "sessions_sha256": "ef964452d839c7aa26bd92a12b7637ce403295a1fcb99bc3d26f1587c0cb78cc",
+  "references_sha256": "90344fa398d8fe318e561d5e625e2919e3ed3f2621971d618f4398563dfc13e7"
+}

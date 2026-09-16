@@ -1,0 +1,29 @@
+{
+  "manuscript_sha256": "b88e8d8e37c897d15053b237cf5305ea58e128c746af8a996f0f9acca55959c7",
+  "template_sha256": "c514dfb71b2b0d9a58aa63e7c10bc3f3137d5dd45a08108698676f01cd4bb367",
+  "tables_sha256": "8ed9e2a32e62cde898d04d3f732fecbca92e8b4576052f605c3cae4af80279e8",
+  "interpretation_sha256": "fd8a5886a654349276c1a6d55f82d8e94129e9e67ac1566f97faaeb81456a388",
+  "independent_recomputation_sha256": "ff14bea7a237b171e3c7db8a2b224e459378e983ef5186188abbc94b1dfe3121",
+  "selected_diagnostic_sha256": "6ff264fc92e4a02b310ba5ea2c2aec843c97acf066621b64511983889e7aee29",
+  "selected_diagnostic_amendment_sha256": "5f5c42db73f493e9c947428f46107320a00cc5344d361533c481e1ed9a35701b",
+  "selected_diagnostic_pre_run_log_sha256": "5872305d0d95c1aaa0090b75a6d9a131a00643c50cb8130bb78f58dd60281e25",
+  "composer_sha256": "3fe42e2803e5713ed7247bdd0dc905c7e9eda24acb92c3483f4b3cd6609388b4",
+  "blocks": [
+    "AVAILABILITY",
+    "BREAK_EVEN",
+    "CLEAN_COST",
+    "DIVERGENCE",
+    "EXECUTIVE",
+    "MEMORY",
+    "PROFESSOR_SUMMARY",
+    "PUBLICATION",
+    "RECOVERY_COST",
+    "REPORTING_CORRECTION",
+    "REPRODUCTION",
+    "SEALING",
+    "SELECTED_DIAGNOSTIC",
+    "SESSION_COST",
+    "VALIDATION"
+  ],
+  "independent_numeric_comparisons": 81309
+}

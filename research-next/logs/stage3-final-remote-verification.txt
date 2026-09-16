@@ -1,0 +1,4 @@
+{"action": "verify", "files": 23, "passed": true}
+{"status": "original_case_and_reduction_verified", "original_sessions_sha256": "fe8b1c0c4d785590c66d8582bfff6b8bc23f1115e35255ab55923d1fc41fd403", "config_sha256": "50621dffa1bb1907c89f2aa24de71b8a663122b210a13710bc2b538d65271d7d", "verifier_sha256": "e83aa39e403d56404f049fc924252f087a9b576dfc284f0e472a8c869da76adc", "prospective_diagnostic_binding": {"freeze_sha256": "66a2fd31894992ae94d7150453428071f8e6814e324efbc0bcf414aeecd6f2dd", "amendment_sha256": "5f5c42db73f493e9c947428f46107320a00cc5344d361533c481e1ed9a35701b"}}
+2026-09-16T17:45:26+04:00
+             JOBID                     NAME    STATE       TIME NODELIST(REASON)
